@@ -751,7 +751,9 @@ nav .mbr-section-btn {
   -webkit-align-items: center; }
 
 .card-wrapper {
-  -webkit-flex: 1; }
+  -webkit-flex: 1;
+  margin-bottom: 30px;
+}
 
 .carousel-control {
   z-index: 10;

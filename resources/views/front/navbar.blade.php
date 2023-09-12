@@ -9,7 +9,7 @@
 			<div class="navbar-brand">
 				<span class="navbar-logo">
 					<a href="index.html">
-						<img src="https://mobirise.com/extensions/petsm4/assets/images/logo2.png" alt="Mobirise"
+						<img src="{{ asset('img/main_logo.png') }}" alt="kuipedia-logo"
 							title="" style="height: 3rem;">
 					</a>
 				</span>
