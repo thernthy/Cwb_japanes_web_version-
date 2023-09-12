@@ -9,9 +9,9 @@ return [
          * The default configurations to be used by the meta generator.
          */
         'defaults'       => [
-            'title'        => "CWB Team - New World", // set false to total remove
+            'title'        => "Kuipedia", // set false to total remove
             'titleBefore'  => false, // Put defaults.title before page title, like 'It's Over 9000! - Dashboard'
-            'description'  => 'CWB is stand for Community Works without Border. We participate in each community to make jobs for community youth to make each community sustainable. We make network of such community work without border.', // set false to total remove
+            'description'  => 'Kuipedia ជា​មូលដ្ឋាន​ចំណេះដឹង​របស់​សហគមន៍​គុយ​ក្នុង​ប្រទេស​កម្ពុជា។', // set false to total remove
             'separator'    => ' - ',
             'keywords'     => [],
             'canonical'    => false, // Set to null or 'full' to use Url::full(), set to 'current' to use Url::current(), set false to total remove

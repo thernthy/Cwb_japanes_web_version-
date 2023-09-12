@@ -1,257 +1,523 @@
 @extends('front.layout')
 
 @push('styles')
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-<link rel="stylesheet" href="{{ asset('css/home.css') }}">
+	<link rel="stylesheet" href="{{ asset('css/home.css') }}">
 
-<style>
+	<style>
 
-</style>
+	</style>
 @endpush
 
 @section('content')
-<!-- <div class="row tm-content-boxes-row">
-	<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 offset-md-6">
-		<form class="form-inline">
-			<input class="form-control" type="search" placeholder="Search" aria-label="Search">
-		</form>
-		<p>Please choose keywords from the circle to start!</p>
-	</div>
-</div> -->
-<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 img-logo">
-    <img src="{{ asset('vendor/img/new-world.png') }}" alt="new-world-logo">
-</div>
-<div class="row">
-    <div class="card-body" id="map" style="width: 100%; height: 400px;"></div>
-</div>
+<section class="cid-rGsOE1E5qe" id="header1-1k">
 
-<!-- 
-<div class="row tm-row-margin-b tm-content-boxes-row">
-	<div class="col-md-12 bunderan">
-		<div class="icon"><img src="{{ asset('vendor/img/new_world_center.png') }}" alt="">
-			<ul class="menu">
-			@foreach($data['keywords'] as $item)  
-				<li class="spread">
-					<a class="unit" href="{{ url('keyword').'/'.$item->slug }}">
-						<span class="text-bunder">{{ $item->title_jp }}<br>{{ $item->title_en }}</span>
-					</a>
-				</li>
-			@endforeach
-			</ul>
+
+
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12 content align-left py-4 col-lg-5 ">
+
+				<h1 class="mbr-section-title align-left mbr-bold pb-3 mbr-fonts-style display-2">សូមស្វាគមន៍មកកាន់គេហទំព័ររបស់យើង។
+				</h1>
+				<p class="mbr-text pb-3 align-left mbr-fonts-style display-7"> Kuipedia ជា​មូលដ្ឋាន​ចំណេះដឹង​របស់​សហគមន៍​គុយ​ក្នុង​ប្រទេស​កម្ពុជា។</p>
+
+				<div class="align-wrap align-left">
+					<div class="icons-wrap">
+						<div class="icon-wrap">
+							<h3 class="icon-title mbr-bold mbr-fonts-style display-7">EAT</h3>
+						</div>
+						<div class="icon-wrap">
+							<h3 class="icon-title mbr-bold mbr-fonts-style display-7">PLAY</h3>
+						</div>
+						<div class="icon-wrap">
+							<h3 class="icon-title mbr-bold mbr-fonts-style display-7">BRUSH</h3>
+						</div>
+
+					</div>
+				</div>
+
+
+
+				<div class="align-left mbr-section-btn"><a class="btn btn-md btn-primary display-4"
+						href="{{ url('/about') }}">អំពី​ពួក​យើង</a> <a class="btn btn-md btn-primary-outline display-4"
+						href="{{ url('/contact') }}">ទំនាក់ទំនង</a></div>
+
+			</div>
+			<div class="col-md-12 col-lg-7 img-col">
+				<div class="mbr-figure">
+					<img src="{{ asset('img/kui_header.png') }}" alt="Mobirise">
+				</div>
+
+			</div>
 		</div>
 	</div>
-</div> -->
-<div class="row section intro">
-    <div class="col-xs-12 text-tengah bg-text">
-        <h1 class="text-xs-center big-font">
-            <span><i>C</i>ommunity <i>N</i>etwork <i>W</i>ithout <i>B</i>order</span>
-        </h1>
-        <div class="text-center intro-page">
-            {!! CRUDBooster::getSetting("intro_text") !!}
-        </div>
-    </div>
-</div>
+</section>
 
-<div class="row story-page section">
-    <div class="col-xs-12 text-tengah">
-        <div class="section-header">
-            <h2><span>Success Story</span></h2>
-            <p>These articles below are our success story with the communities around the world.</p>
-        </div>
-    </div>
-    <div class="row">
-        @foreach($data['story'] as $item)
-        <div class="col-md-4">
-            <a href="{{ url('story').'/'.$item->slug }}">
-                <div class="card mb-4 box-shadow">
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span class="label label-default"><i class="fa fa-clock-o"></i>
-                                {{ date('F d, Y', strtotime($item->created_at)) }}</span> <span
-                                class="label label-default"> {{ $item->country_title }}</span>
-                        </div>
-                        <h5>{{ $item->title }}</h5>
-                        <p class="card-text">{!! Str::limit(strip_tags($item->caption_desc), 150) !!}</p>
-                    </div>
-                    <img class="card-img-top" alt="Photo of {{ $item->title }}"
-                        style="height: 225px; width: 100%; display: block;" src="{{ asset($item->img_header) }}"
-                        data-holder-rendered="true">
+
+
+<section class="cid-rGsSqYA5s6" id="content2-19">
+    
+
+    
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-md-12 col-lg-6 img-col">
+                <div class="mbr-figure">
+                    <img src="{{ asset('img/about_header.png') }}" alt="About">
                 </div>
-            </a>
-        </div>
-        @endforeach
-    </div>
-    <!-- .row-fluid -->
-</div>
 
-<div class="row section cwb-category">
-    <div class="col-xs-12 text-tengah">
-        <div class="section-header">
-            <h2><span>CWB Category</span></h2>
-            <p>These are our comunity work, these community work divided into some category.</p>
-        </div>
-    </div>
+            </div>
 
-    <div class="col-xs-12 cards">
-	@php $i = 1; @endphp
-	@foreach($data['actions'] as $item)
-		@if($i==8) @php $i = 1; @endphp @endif
-        <div class="card card-{{ $i++ }}">
-            <div class="card__icon">
-				<img src="{{ asset($item->img) }}">
-			</div>
-            <h4 class="card__title">{{ $item->title_en }}</h4>
-			<div class="card__body">
-			{!! Str::limit(strip_tags($item->desc_en), 100) !!}
-			</div>
-            <p class="card__apply">
-                <a class="card__link" href="{{ url('action').'/'.$item->slug }}">Read More <i class="fa fa-chevron-right"></i></a>
-            </p>
-        </div>
-	@endforeach
-        
-    </div>
-</div>
 
-<div class="row story-page section">
-    <div class="col-xs-12 text-tengah">
-        <div class="section-header">
-            <h2><span>Our Galleries</span></h2>
-            <p>These are our photos doing some activities with the youngs and others in each of the CWB Community.</p>
-        </div>
-    </div>
-    <div class="col-xs-12">
-        <article class='gallery'>
-            @foreach($data['gallery'] as $item)
-            @if(!empty($item->slug))
-            <a class='gallery-link' onclick="location.href='{{ url('activity').'/'.$item->slug }}';">
-            @else
-            <a class='gallery-link' href='{{ asset($item->img) }}'>
-            @endif
-                <figure class='gallery-image'>
-                    <img height='1000' src='{{ asset($item->img) }}' width='1400'>
-                    <figcaption>{{ $item->title }}</figcaption>
-                </figure>
-            </a>
+            <div class="col-md-12 content py-4 col-lg-6">
+
+                <h1 class="mbr-section-title align-left mbr-bold pb-4 mbr-fonts-style display-2"><a href="#!"><strong>អប់រំឌីជីថលជនជាតិដើមភាគតិច
+                        </strong></a>
+                    <div>Digindigenous</div>
+                </h1>
+
+                <h2 class="mbr-section-title align-left mbr-bold mbr-fonts-style display-7">ការអប់រំឌីជីថលសម្រាប់ជនជាតិដើមភាគតិច</h2>
+
+                <p class="mbr-text pb-3 align-left mbr-fonts-style display-7"> Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Vivamus scelerisque est ex, in tempor leo suscipit ut. Etiam quis elit sed dui dignissim
+                    posuere id sit amet ligula. Aenean semper magna a sapien eleifend maximus. Aenean faucibus vehicula
+                    arcu, non tristique risus vulputate et. Nullam lectus ligula, viverra ut urna vitae, efficitur
+                    ultricies purus.</p>
+
+
+
+                <ul class="list">
+                    
+                    
+                    
+
+
+                <li class="item-wrap">
+                        <span class="mbr-iconfont mbrib-success" style="color: rgb(118, 118, 118); fill: rgb(118, 118, 118);"></span>
+                        <h4 class="item1 mbr-regular mbr-fonts-style display-7">Sed cursus ex eu justo consectetur, odio convallis</h4>
+                    </li><li class="item-wrap">
+                        <span class="mbr-iconfont mbrib-success" style="color: rgb(118, 118, 118); fill: rgb(118, 118, 118);"></span>
+                        <h4 class="item1 mbr-regular mbr-fonts-style display-7">Integer ullamcorper elementum felis in bibendum</h4>
+                    </li><li class="item-wrap">
+                        <span class="mbr-iconfont mbrib-success" style="color: rgb(118, 118, 118); fill: rgb(118, 118, 118);"></span>
+                        <h4 class="item1 mbr-regular mbr-fonts-style display-7">Aenean ultrices tortor at est placerat interdum</h4>
+                    </li></ul>
+
                 
-            @endforeach
-        </article>
-    </div>
-</div>
 
-<!-- <div class="row section">
-    <div class="col-xs-12 text-tengah">
-        <div class="section-header">
-            <h3><span>Instagram</span></h3>
-            <p>Our activites on social media.</p>
+            </div>
+
         </div>
     </div>
+</section>
 
-    <div class="col-md-12">
-        <script src="https://s.electricblaze.com/widget.js" defer></script>
-        <div class="electricblaze-id-2Uhx9Oy"></div>
+<section class="cid-rGsSrg8y6k" id="content3-1a">
+
+    
+
+    
+
+    <div class="container">
+        <div class="row justify-content-center">
+
+            <div class="col-12 col-md-12 col-lg-12">
+                <h3 class="col-title1 mbr-bold align-left pb-4 mbr-fonts-style display-7">WHAT WE STAND FOR</h3>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6 md-pb">
+
+
+                <p class="mbr-text pb-3 align-left mbr-fonts-style display-7">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Donec ullamcorper neque dapibus ipsum semper, sit amet luctus turpis porttitor. Ut libero
+                    ante, varius quis ligula in, aliquet consectetur tortor. Proin aliquet neque nibh, pretium rutrum
+                    quam mattis a. Morbi vitae sodales metus. Pellentesque vel elit ullamcorper, pellentesque magna nec,
+                    dictum purus. Nullam scelerisque nisi eu lacus elementum, ac sodales nulla congue. Suspendisse eu
+                    lorem vitae odio imperdiet.</p>
+
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-6 md-pb">
+
+
+                <ul class="list">
+                    
+
+
+
+
+                    
+                    
+                    
+                    
+                <li class="item-wrap">
+                        <span class="mbr-iconfont mbrib-success" style="color: rgb(118, 118, 118); fill: rgb(118, 118, 118);"></span>
+                        <h4 class="item1 mbr-regular mbr-fonts-style display-7">Nulla ut tellus imperdiet, ultrices nulla eu, porttitor quam</h4>
+                    </li><li class="item-wrap">
+                        <span class="mbr-iconfont mbrib-success" style="color: rgb(118, 118, 118); fill: rgb(118, 118, 118);"></span>
+                        <h4 class="item1 mbr-regular mbr-fonts-style display-7">Donec condimentum volutpat eget sodales velit faucibus</h4>
+                    </li><li class="item-wrap">
+                        <span class="mbr-iconfont mbrib-success" style="color: rgb(118, 118, 118); fill: rgb(118, 118, 118);"></span>
+                        <h4 class="item1 mbr-regular mbr-fonts-style display-7">Mauris non neque sollicitudin porttitor pulvinar ipsum</h4>
+                    </li><li class="item-wrap">
+                        <span class="mbr-iconfont mbrib-success" style="color: rgb(118, 118, 118); fill: rgb(118, 118, 118);"></span>
+                        <h4 class="item1 mbr-regular mbr-fonts-style display-7">Quisque mattis consequat odio suscipit vulputate</h4>
+                    </li><li class="item-wrap">
+                        <span class="mbr-iconfont mbrib-success" style="color: rgb(118, 118, 118); fill: rgb(118, 118, 118);"></span>
+                        <h4 class="item1 mbr-regular mbr-fonts-style display-7">Morbi a tortor sodales, malesuada lectus sed mauris</h4>
+                    </li></ul>
+
+            </div>
+
+
+
+
+
+        </div>
     </div>
-</div> -->
+</section>
 
-<!-- The Modal -->
-<div id="myModal" class="modal">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="img01">
-    <div id="caption"></div>
-</div>
+<section class="features1 cid-rGtBqmc2gI" id="features6-33">
+	<div class="container">
+		<div class="row">
 
+			<div class="card col-12 col-md-6 col-lg-4">
+				<div class="card-wrapper align-left card1 ">
+					<svg xmlns="http://www.w3.org/2000/svg" width="269.19780227841716" height="147.43955898849208"
+						style="">
+						<rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="transparent"
+							stroke="none" class="" style="" fill-opacity="1"></rect>
+						<g class="currentLayer" style="">
+							<title>Layer 1</title>
+							<path fill="white" fill-opacity="1" stroke="none" stroke-width="2" stroke-dasharray="none"
+								stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero"
+								opacity="1" marker-start="" marker-mid="" marker-end=""
+								d="M-110.40659359291077,50.950556279754636 C-110.40659359291077,-2.4372237202453633 -10.614843592910766,-81.94505372024535 88.16483640708924,-81.94505372024535 C186.94450640708922,-81.94505372024535 266.9560464070892,-38.70095372024536 266.9560464070892,14.686816279754638 C266.9560464070892,68.07458627975464 186.94450640708922,111.31868627975464 88.16483640708924,111.31868627975464 C-10.614843592910766,111.31868627975464 -110.40659359291077,104.33832627975464 -110.40659359291077,50.950556279754636 z"
+								id="svg_1" class=""
+								transform="rotate(-4.22603702545166 78.27473449707026,14.686810493469203) "></path>
+						</g>
+					</svg>
+					<div class="card-img">
+						<span class="fa fa-book fa-4x"></span>
+					</div>
+					<div class="card-box">
+						<h4 class="card-title pb-2 mbr-bold mbr-fonts-style display-5">Investment</h4>
+						<p class="mbr-text pb-4 mbr-fonts-style display-4">Pellentesque habitant felis morbi tristique
+							senectus et
+							netus et malesuada fames ac turpis netus egestas.</p>
+						<h5 class="link mbr-semibold mbr-fonts-style display-4"><a href="#" class="text-black">
+								VIEW MORE</a></h5>
+					</div>
+				</div>
+			</div>
+			<div class="card col-12 col-md-6 col-lg-4">
+				<div class="card-wrapper  align-left card2 ">
+					<svg xmlns="http://www.w3.org/2000/svg" width="269.19780227841716" height="147.43955898849208"
+						style="">
+						<rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="transparent"
+							stroke="none" class="" style="" fill-opacity="1"></rect>
+						<g class="currentLayer" style="">
+							<title>Layer 1</title>
+							<path fill="white" fill-opacity="1" stroke="none" stroke-width="2" stroke-dasharray="none"
+								stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero"
+								opacity="1" marker-start="" marker-mid="" marker-end=""
+								d="M-110.40659359291077,50.950556279754636 C-110.40659359291077,-2.4372237202453633 -10.614843592910766,-81.94505372024535 88.16483640708924,-81.94505372024535 C186.94450640708922,-81.94505372024535 266.9560464070892,-38.70095372024536 266.9560464070892,14.686816279754638 C266.9560464070892,68.07458627975464 186.94450640708922,111.31868627975464 88.16483640708924,111.31868627975464 C-10.614843592910766,111.31868627975464 -110.40659359291077,104.33832627975464 -110.40659359291077,50.950556279754636 z"
+								id="svg_1" class=""
+								transform="rotate(-4.22603702545166 78.27473449707026,14.686810493469203) "></path>
+						</g>
+					</svg>
+					<div class="card-img">
+						<span class="fa fa-folder fa-4x"></span>
+					</div>
+					<div class="card-box">
+						<h4 class="card-title pb-2 mbr-bold mbr-fonts-style display-5">
+							News Articles</h4>
+						<p class="mbr-text pb-4 mbr-fonts-style display-4">
+							Pellentesque habitant felis morbi tristique senectus et netus et malesuada fames ac turpis
+							netus egestas. </p>
+						<h5 class="link mbr-semibold mbr-fonts-style display-4"><a href="#" class="text-black">
+								VIEW MORE</a></h5>
+					</div>
+				</div>
+			</div>
+			<div class="card col-12 col-md-6 col-lg-4">
+				<div class="card-wrapper  align-left card3 ">
+					<svg xmlns="http://www.w3.org/2000/svg" width="269.19780227841716" height="147.43955898849208"
+						style="">
+						<rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="transparent"
+							stroke="none" class="" style="" fill-opacity="1"></rect>
+						<g class="currentLayer" style="">
+							<title>Layer 1</title>
+							<path fill="white" fill-opacity="1" stroke="none" stroke-width="2" stroke-dasharray="none"
+								stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero"
+								opacity="1" marker-start="" marker-mid="" marker-end=""
+								d="M-110.40659359291077,50.950556279754636 C-110.40659359291077,-2.4372237202453633 -10.614843592910766,-81.94505372024535 88.16483640708924,-81.94505372024535 C186.94450640708922,-81.94505372024535 266.9560464070892,-38.70095372024536 266.9560464070892,14.686816279754638 C266.9560464070892,68.07458627975464 186.94450640708922,111.31868627975464 88.16483640708924,111.31868627975464 C-10.614843592910766,111.31868627975464 -110.40659359291077,104.33832627975464 -110.40659359291077,50.950556279754636 z"
+								id="svg_1" class=""
+								transform="rotate(-4.22603702545166 78.27473449707026,14.686810493469203) "></path>
+						</g>
+					</svg>
+					<div class="card-img">
+						<span class="fa fa-globe fa-4x"></span>
+					</div>
+					<div class="card-box">
+						<h4 class="card-title pb-2 mbr-bold mbr-fonts-style display-5">
+							Tourism Service</h4>
+						<p class="mbr-text pb-4 mbr-fonts-style display-4">
+							Pellentesque habitant felis morbi tristique senectus et netus et malesuada fames ac turpis
+							netus egestas. </p>
+						<h5 class="link mbr-semibold mbr-fonts-style display-4"><a href="#" class="text-black">
+								VIEW MORE</a></h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</section>
+
+<section class="features1 cid-rGsSnQK7nI" id="features3-z">
+
+    
+
+    
+    <div class="container">
+        <div class="row">
+            <div class="card col-12 col-md-6 col-lg-3">
+
+                <svg class="svg31" xmlns="http://www.w3.org/2000/svg" width="309.28570556640625" height="336.02197265625" style="">
+
+                    <rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="transparent" stroke="none">
+                    </rect>
+                    <g style="" class="currentLayer">
+                        <path fill="#f06538" fill-opacity="1" stroke="none" stroke-opacity="1" stroke-width="2" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M7.36264,184.55495C7.36264,65.42739 73.80818,33.47253 153.12638,33.47253C232.44458,33.47253 289.54946,75.86694 298.89012,197.19231C308.23078,318.51768 219.80721,227.94506 126.20331,280.69232C32.5994,333.43958 7.36264,303.68251 7.36264,184.55495z" id="svg_3" class="selected"></path>
+                    </g>
+                    <defs>
+                        <marker id="Arrow1Mend" refX="0" refY="0" orient="auto" inkscape:stockid="Arrow1Mend" overflow="visible">
+                            <path d="M-4,0 l-2,2 l7,-2 l-7,-2 l2,2 z" fill-rule="evenodd" stroke="#000" stroke-width="1pt" style="fill: none; stroke: none; stroke-dasharray: none;" id="svg_2">
+                            </path>
+                        </marker>
+                    </defs>
+                </svg>
+
+                <svg class="svg32" xmlns="http://www.w3.org/2000/svg" width="309.28570556640625" height="336.02197265625" style="">
+
+                    <rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="transparent" stroke="none">
+                    </rect>
+                    <g style="" class="currentLayer">
+                        <path fill="#f2f2f4" fill-opacity="1" stroke="none" stroke-opacity="1" stroke-width="2" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M7.36264,184.55495C7.36264,65.42739 73.80818,33.47253 153.12638,33.47253C232.44458,33.47253 289.54946,75.86694 298.89012,197.19231C308.23078,318.51768 219.80721,227.94506 126.20331,280.69232C32.5994,333.43958 7.36264,303.68251 7.36264,184.55495z" id="svg_3" class="selected"></path>
+                    </g>
+                    <defs>
+                        <marker id="Arrow1Mend" refX="0" refY="0" orient="auto" inkscape:stockid="Arrow1Mend" overflow="visible">
+                            <path d="M-4,0 l-2,2 l7,-2 l-7,-2 l2,2 z" fill-rule="evenodd" stroke="#000" stroke-width="1pt" style="fill: none; stroke: none; stroke-dasharray: none;" id="svg_2">
+                            </path>
+                        </marker>
+                    </defs>
+                </svg>
+
+
+                <div class="card-img">
+                    <span class="fa fa-commenting-o fa-2x"></span>
+                </div>
+                <div class="card-box m-auto">
+                    <h4 class="card-title align-center pb-3 mbr-white mbr-bold mbr-fonts-style display-5">
+                        Activity<br>Exercise</h4>
+                    <h5 class="link align-center mbr-semibold mbr-white mbr-fonts-style display-4"><a href="#" class="text-white">
+                            VIEW MORE</a></h5>
+                </div>
+            </div>
+
+
+            <div class="card col-12 col-md-6 col-lg-3">
+
+                <svg class="svg11" xmlns="http://www.w3.org/2000/svg" width="309.2857111417329" height="336.0219772158291" style="">
+                    <rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="transparent" stroke="none">
+                    </rect>
+                    <g style="" class="currentLayer">
+                        <path fill="#82be61" fill-opacity="1" stroke="none" stroke-width="2" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M12.94018937135995,167.8339367842981 C45.39609213191329,74.99004072503537 114.0034869014508,10.732177077026051 171.84437755680142,11.781618684882801 C229.68524100198806,12.831060292739558 256.7002265652424,72.7142506276199 272.1827010804898,104.66632999025076 C287.66518920081916,136.6184093528816 342.19907896082464,246.22742624641148 203.2184177990085,306.0457339450666 C64.2377294270283,365.8640552488038 -19.515740599357475,260.67786005372494 12.94018937135995,167.8339367842981 z" id="svg_1" class="" transform="rotate(-4.6006340980529785 150.8597869873048,167.6643524169921) " filter=""></path>
+                    </g>
+                </svg>
+
+                <svg class="svg12" xmlns="http://www.w3.org/2000/svg" width="309.2857111417329" height="336.0219772158291" style="">
+                    <rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="transparent" stroke="none">
+                    </rect>
+                    <g style="" class="currentLayer">
+                        <path fill="#f2f2f4" fill-opacity="1" stroke="none" stroke-width="2" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M12.94018937135995,167.8339367842981 C45.39609213191329,74.99004072503537 114.0034869014508,10.732177077026051 171.84437755680142,11.781618684882801 C229.68524100198806,12.831060292739558 256.7002265652424,72.7142506276199 272.1827010804898,104.66632999025076 C287.66518920081916,136.6184093528816 342.19907896082464,246.22742624641148 203.2184177990085,306.0457339450666 C64.2377294270283,365.8640552488038 -19.515740599357475,260.67786005372494 12.94018937135995,167.8339367842981 z" id="svg_1" class="" transform="rotate(-4.6006340980529785 150.8597869873048,167.6643524169921) " filter=""></path>
+                    </g>
+                </svg>
+
+                <div class="card-img">
+                    <span class="mbr-iconfont mbrib-github"></span>
+                </div>
+                <div class="card-box m-auto">
+                    <h4 class="card-title align-center pb-3 mbr-white mbr-bold mbr-fonts-style display-5">
+                        Pets<br>Boarding</h4>
+                    <h5 class="link align-center mbr-semibold mbr-white mbr-fonts-style display-4"><a href="#" class="text-white">
+                            VIEW MORE</a></h5>
+                </div>
+            </div>
+
+            <div class="card col-12 col-md-6 col-lg-3">
+
+                <svg class="svg21" xmlns="http://www.w3.org/2000/svg" width="309.28570556640625" height="336.02197265625" style="">
+                    <rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="transparent" stroke="none">
+                    </rect>
+                    <g style="" class="currentLayer">
+                        <path fill="#fcbc4d" fill-opacity="1" stroke="none" stroke-width="2" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M16.23957,92.58139C48.69547,-0.26251 138.67438,5.55148 201.82815,29.62874C264.98193,53.70599 372.00784,201.60914 247.27728,284.01577C122.54672,366.4224 112.51907,285.07282 76.57894,235.77145C40.63881,186.47008 -16.21636,185.42531 16.23957,92.58139z" id="svg_1" class="" transform="rotate(-4.6006340980529785 150.8597869873048,167.6643524169921) " filter=""></path>
+                    </g>
+                    <defs>
+                        <marker id="Arrow1Mend" refX="0" refY="0" orient="auto" inkscape:stockid="Arrow1Mend" overflow="visible">
+                            <path d="M-4,0 l-2,2 l7,-2 l-7,-2 l2,2 z" fill-rule="evenodd" stroke="#000" stroke-width="1pt" style="fill: none; stroke: none; stroke-dasharray: none;" id="svg_2">
+                            </path>
+                        </marker>
+                    </defs>
+                </svg>
+
+                <svg class="svg22" xmlns="http://www.w3.org/2000/svg" width="309.28570556640625" height="336.02197265625" style="">
+                    <rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="transparent" stroke="none">
+                    </rect>
+                    <g style="" class="currentLayer">
+                        <path fill="#f2f2f4" fill-opacity="1" stroke="none" stroke-width="2" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M16.23957,92.58139C48.69547,-0.26251 138.67438,5.55148 201.82815,29.62874C264.98193,53.70599 372.00784,201.60914 247.27728,284.01577C122.54672,366.4224 112.51907,285.07282 76.57894,235.77145C40.63881,186.47008 -16.21636,185.42531 16.23957,92.58139z" id="svg_1" class="" transform="rotate(-4.6006340980529785 150.8597869873048,167.6643524169921) " filter=""></path>
+                    </g>
+                    <defs>
+                        <marker id="Arrow1Mend" refX="0" refY="0" orient="auto" inkscape:stockid="Arrow1Mend" overflow="visible">
+                            <path d="M-4,0 l-2,2 l7,-2 l-7,-2 l2,2 z" fill-rule="evenodd" stroke="#000" stroke-width="1pt" style="fill: none; stroke: none; stroke-dasharray: none;" id="svg_2">
+                            </path>
+                        </marker>
+                    </defs>
+                </svg>
+
+
+                <div class="card-img">
+                    <span class="mbr-iconfont mbrib-apple"></span>
+                </div>
+                <div class="card-box m-auto">
+                    <h4 class="card-title align-center pb-3 mbr-white mbr-bold mbr-fonts-style display-5">
+                        Healthy<br>Meals</h4>
+                    <h5 class="link align-center mbr-semibold mbr-white mbr-fonts-style display-4"><a href="#" class="text-white">
+                            VIEW MORE</a></h5>
+                </div>
+            </div>
+
+            <div class="card col-12 col-md-6 col-lg-3">
+
+                <svg class="svg31 svg4" xmlns="http://www.w3.org/2000/svg" width="309.28570556640625" height="336.02197265625" style="">
+
+                    <rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="transparent" stroke="none">
+                    </rect>
+                    <g style="" class="currentLayer">
+                        <path fill="#f06538" fill-opacity="1" stroke="none" stroke-opacity="1" stroke-width="2" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M7.36264,184.55495C7.36264,65.42739 73.80818,33.47253 153.12638,33.47253C232.44458,33.47253 289.54946,75.86694 298.89012,197.19231C308.23078,318.51768 219.80721,227.94506 126.20331,280.69232C32.5994,333.43958 7.36264,303.68251 7.36264,184.55495z" id="svg_3" class="selected"></path>
+                    </g>
+                    <defs>
+                        <marker id="Arrow1Mend" refX="0" refY="0" orient="auto" inkscape:stockid="Arrow1Mend" overflow="visible">
+                            <path d="M-4,0 l-2,2 l7,-2 l-7,-2 l2,2 z" fill-rule="evenodd" stroke="#000" stroke-width="1pt" style="fill: none; stroke: none; stroke-dasharray: none;" id="svg_2">
+                            </path>
+                        </marker>
+                    </defs>
+                </svg>
+
+                <svg class="svg32" xmlns="http://www.w3.org/2000/svg" width="309.28570556640625" height="336.02197265625" style="">
+
+                    <rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="transparent" stroke="none">
+                    </rect>
+                    <g style="" class="currentLayer">
+                        <path fill="#f2f2f4" fill-opacity="1" stroke="none" stroke-opacity="1" stroke-width="2" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M7.36264,184.55495C7.36264,65.42739 73.80818,33.47253 153.12638,33.47253C232.44458,33.47253 289.54946,75.86694 298.89012,197.19231C308.23078,318.51768 219.80721,227.94506 126.20331,280.69232C32.5994,333.43958 7.36264,303.68251 7.36264,184.55495z" id="svg_3" class="selected"></path>
+                    </g>
+                    <defs>
+                        <marker id="Arrow1Mend" refX="0" refY="0" orient="auto" inkscape:stockid="Arrow1Mend" overflow="visible">
+                            <path d="M-4,0 l-2,2 l7,-2 l-7,-2 l2,2 z" fill-rule="evenodd" stroke="#000" stroke-width="1pt" style="fill: none; stroke: none; stroke-dasharray: none;" id="svg_2">
+                            </path>
+                        </marker>
+                    </defs>
+                </svg>
+
+
+                <div class="card-img">
+                    <span class="mbr-iconfont mbrib-globe"></span>
+                </div>
+                <div class="card-box m-auto">
+                    <h4 class="card-title align-center pb-3 mbr-white mbr-bold mbr-fonts-style display-5">
+                        Veterinary<br>Service</h4>
+                    <h5 class="link align-center mbr-semibold mbr-white mbr-fonts-style display-4"><a href="#" class="text-white">
+                            VIEW MORE</a></h5>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="features6 popup-btn-cards cid-rGsSo9FI9p" id="features4-10">
+    <div class="container">
+
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-8 col-md-8 pb-4">
+                <h4 class="align-left mbr-bold mbr-fonts-style display-7">OUR ACTIVITIES</h4>
+
+                <h2 class="align-left mbr-bold mbr-fonts-style mbr-section-title display-2">សូមក្រឡេកមើល</h2>
+            </div>
+
+            <div class="col-lg-4 col-md-4 btn-col pb-4">
+                <div class="align-left mbr-section-btn"><a class="btn btn-md btn-primary display-4" href="#!">មើលទាំងអស់។<br></a></div>
+            </div>
+
+
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card-wrapper">
+                    <img src="https://mobirise.com/extensions/petsm4/assets/images/01.jpg" alt="" title="">
+                    <div class="wrapper">
+                        <p class="mbr-text align-center mbr-semibold mbr-white mbr-fonts-style display-4">ACTIVITIES</p>
+                        <h3 class="card-title align-center mbr-bold mbr-fonts-style align-left mbr-white display-5">
+                            <div>Toys Playtime</div>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card-wrapper">
+                    <img src="https://mobirise.com/extensions/petsm4/assets/images/02.jpg" alt="" title="">
+                    <div class="wrapper">
+                        <p class="mbr-text align-center mbr-semibold mbr-white mbr-fonts-style display-4">
+                            ACTIVITIES</p>
+                        <h3 class="card-title align-center mbr-bold mbr-fonts-style align-left mbr-white display-5">
+                            Active Rest</h3>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card-wrapper">
+                    <img src="https://mobirise.com/extensions/petsm4/assets/images/03.jpg" alt="" title="">
+                    <div class="wrapper">
+                        <p class="mbr-text align-center mbr-semibold mbr-white mbr-fonts-style display-4">ACTIVITIES</p>
+                        <h3 class="card-title align-center mbr-bold mbr-fonts-style align-left mbr-white display-5">Game Walks
+                        </h3>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</section>
 @endsection
 
 @push('scripts')
-<!-- Make sure you put this AFTER Leaflet's CSS -->
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-
-<script>
-    // konfigurasi peta
-    $(function () {
-        setLocation = [17.8852266, 100.7893092];
-        var map = L.map('map', null, {
-            zoomControl: false
-        }).setView(setLocation, 14);
-        map.removeControl(map.zoomControl);
-        // 
-        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png', {
-            // L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg', {
-            maxZoom: 4,
-            minZoom: 4,
-        }).addTo(map);
-        map.attributionControl.setPrefix(false);
-        // var marker = new L.marker(setLocation, {
-        //     draggable: false
-        // });
-        // map.addLayer(marker);
-
-        const LeafIcon = L.Icon.extend({
-            options: {
-                iconSize: [45, 45],
-                iconAnchor: [15, 15],
-                shadowAnchor: [4, 62],
-                popupAnchor: [10, -10]
-            }
-        });
-
-        var dynamicIcon = [];
-        var mapMarker = [];
-
-        $.getJSON(window.location.origin + '/api-countries',
-            function (data) {
-                // console.log(data.list);
-                // exit();
-                for (var i = 0; i < data.list.length; i++) {
-                    dynamicIcon[i] = new LeafIcon({
-                        iconUrl: window.location.origin + '/' + data.list[i].logo
-                    })
-
-                    mapMarker[i] = L.marker([data.list[i].cord_lat, data.list[i].cord_long], {
-                        icon: dynamicIcon[i]
-                    }).bindPopup('<a href="' + window.location.origin + '/countries/' + data.list[i]
-                        .slug + '">CWB ' + data.list[i].title + '</a>').addTo(map);
-                }
-            });
-
-    })
-
-</script>
-
-<script src="{{ asset('js/magnific-popup.js') }}"></script>
-<script type="text/javascript">
-    $(document).ready(function ($) {
-        $('.gallery-link').magnificPopup({
-            type: 'image',
-            closeOnContentClick: true,
-            closeBtnInside: false,
-            mainClass: 'mfp-with-zoom mfp-img-mobile',
-            image: {
-                verticalFit: true,
-                titleSrc: function (item) {
-                    return item.el.find('figcaption').text() || item.el.attr('title');
-                }
-            },
-            zoom: {
-                enabled: true
-            },
-            // duration: 300
-            gallery: {
-                enabled: true,
-                navigateByImgClick: false,
-                tCounter: ''
-            },
-            disableOn: function () {
-                return $(window).width() > 640;
-            }
-        });
-
-    });
-
-    //# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiPGFub255bW91cz4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFBQSxDQUFBLENBQUUsZUFBRixDQUFrQixDQUFDLGFBQW5CLENBQ0U7SUFBQSxJQUFBLEVBQU0sT0FBTjtJQUNBLG1CQUFBLEVBQXFCLElBRHJCO0lBRUEsY0FBQSxFQUFnQixLQUZoQjtJQUdBLFNBQUEsRUFBVyw4QkFIWDtJQUlBLEtBQUEsRUFDRTtNQUFBLFdBQUEsRUFBYSxJQUFiO01BQ0EsUUFBQSxFQUFVLFFBQUEsQ0FBQyxJQUFELENBQUE7ZUFDUixJQUFJLENBQUMsRUFBRSxDQUFDLElBQVIsQ0FBYSxZQUFiLENBQTBCLENBQUMsSUFBM0IsQ0FBQSxDQUFBLElBQXFDLElBQUksQ0FBQyxFQUFFLENBQUMsSUFBUixDQUFhLE9BQWI7TUFEN0I7SUFEVixDQUxGO0lBUUEsSUFBQSxFQUNFO01BQUEsT0FBQSxFQUFTO0lBQVQsQ0FURjs7SUFXQSxPQUFBLEVBQ0U7TUFBQSxPQUFBLEVBQVMsSUFBVDtNQUNBLGtCQUFBLEVBQW9CLEtBRHBCO01BRUEsUUFBQSxFQUFVO0lBRlYsQ0FaRjtJQWVBLFNBQUEsRUFBVyxRQUFBLENBQUEsQ0FBQTthQUNULENBQUEsQ0FBRSxNQUFGLENBQVMsQ0FBQyxLQUFWLENBQUEsQ0FBQSxHQUFvQjtJQURYO0VBZlgsQ0FERjtBQUFBIiwic291cmNlc0NvbnRlbnQiOlsiJCgnLmdhbGxlcnktbGluaycpLm1hZ25pZmljUG9wdXBcbiAgdHlwZTogJ2ltYWdlJ1xuICBjbG9zZU9uQ29udGVudENsaWNrOiB0cnVlXG4gIGNsb3NlQnRuSW5zaWRlOiBmYWxzZVxuICBtYWluQ2xhc3M6ICdtZnAtd2l0aC16b29tIG1mcC1pbWctbW9iaWxlJ1xuICBpbWFnZTogXG4gICAgdmVydGljYWxGaXQ6IHRydWVcbiAgICB0aXRsZVNyYzogKGl0ZW0pIC0+XG4gICAgICBpdGVtLmVsLmZpbmQoJ2ZpZ2NhcHRpb24nKS50ZXh0KCkgfHwgaXRlbS5lbC5hdHRyKCd0aXRsZScpXG4gIHpvb206XG4gICAgZW5hYmxlZDogdHJ1ZVxuICAgICMgZHVyYXRpb246IDMwMFxuICBnYWxsZXJ5OlxuICAgIGVuYWJsZWQ6IHRydWVcbiAgICBuYXZpZ2F0ZUJ5SW1nQ2xpY2s6IGZhbHNlXG4gICAgdENvdW50ZXI6ICcnXG4gIGRpc2FibGVPbjogLT5cbiAgICAkKHdpbmRvdykud2lkdGgoKSA+IDY0MCAiXX0=
-    //# sourceURL=coffeescript
-
-</script>
+	<script type="text/javascript">
+		
+	</script>
 @endpush

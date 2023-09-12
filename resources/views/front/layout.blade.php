@@ -1,51 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html  >
+
+<!-- Mirrored from mobirise.com/extensions/petsm4/school/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 12 Sep 2023 03:44:01 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
-<meta charset="utf-8">
+<!-- Site made with Mobirise Website Builder v4.11.2, https://mobirise.com -->
+<meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
 {!! SEO::generate() !!}
 
-<!-- load stylesheets -->
-<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400">
-<!-- Google web font "Open Sans" -->
+<!-- <link rel="stylesheet" href="https://mobirise.com/extensions/petsm4/assets/web/assets/mobirise-icons-bold/mobirise-icons-bold.css">
+<link rel="stylesheet" href="https://mobirise.com/extensions/petsm4/assets/web/assets/mobirise-icons2/mobirise2.css">
+<link rel="stylesheet" href="https://mobirise.com/extensions/petsm4/assets/web/assets/mobirise-icons/mobirise-icons.css">
+
+<link rel="stylesheet" href="https://mobirise.com/extensions/petsm4/assets/theme/css/style.css">
+<link rel="stylesheet" href="https://mobirise.com/extensions/petsm4/assets/formoid-css/recaptcha.css">
+<link rel="stylesheet" href="{{ asset('css/themes/tether.min.css') }}">
+-->
+<link rel="stylesheet" href="{{ asset('css/themes/bootstrap.min.css') }}">
+<link rel="stylesheet" href="{{ asset('css/themes/bootstrap-grid.min.css') }}">
+<link rel="stylesheet" href="{{ asset('css/themes/bootstrap-reboot.min.css') }}">
+<link rel="stylesheet" href="{{ asset('css/themes/progress.min.css') }}">
+<link rel="stylesheet" href="{{ asset('css/themes/style.css') }}">
+<link rel="stylesheet" href="{{ asset('css/themes/jquery.formstyler.css') }}">
+<link rel="stylesheet" href="{{ asset('css/themes/jquery.formstyler.theme.css') }}">
+<link rel="stylesheet" href="{{ asset('css/themes/jquery.datetimepicker.min.css') }}">
+<link rel="stylesheet" href="{{ asset('css/themes/styles.css') }}">
+<link rel="preload" as="style" href="{{ asset('css/themes/mbr-additional.css') }}">
+<link rel="stylesheet" href="{{ asset('css/themes/mbr-additional.css') }}" type="text/css">
+
+</head>
+
 <link rel="stylesheet" href="{{ asset('vendor/font-awesome-4.5.0/css/font-awesome.min.css') }}">
-<!-- Font Awesome -->
-<link rel="stylesheet" href="{{ asset('vendor/css/bootstrap.min.css') }}">
-<!-- Bootstrap style -->
-<link rel="stylesheet" href="{{ asset('vendor/css/magnific-popup.css') }}">
-<!-- Magnific popup style (http://dimsemenov.com/plugins/magnific-popup/) -->
-<link rel="stylesheet" href="{{ asset('vendor/css/style.css') }}">
 
 <!-- custom css -->
 <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
 
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<![endif]-->
 @stack('styles')
 </head>
-@if(Request::segment(1) == 'action')
-    <body class="bg-image">
-@else
-    <body>
-@endif
-<!-- Header gallery -->
-<div class="container">
-    <!-- navbar -->
-    @include('front.navbar')
+<body>
 
-    <!-- content -->
-    @yield('content')
+<!-- navbar -->
+@include('front.navbar')
 
-@if(Request::segment(1) != 'action')
-<!-- footer -->
-@endif
-</div>
+<!-- content -->
+@yield('content')
+
 @include('front.footer')
 <!-- Placed at the end of the document so the pages load faster -->
 @include('front.scripts')

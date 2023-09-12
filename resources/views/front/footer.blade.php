@@ -1,59 +1,138 @@
-<!-- ======= Footer ======= -->
-<footer class="bg-light text-lg-start">
-	<!-- Grid container -->
-	<div class="container p-4">
-		<!--Grid row-->
+<section class="form cid-rGtBGu0BpJ" id="footer2-3a">
+
+
+	<div class="container">
 		<div class="row">
-			<!--Grid column-->
-			<div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-				<h6>About Us</h6>
 
-				<p>
-				All our activities are based on and/or reflect our Philosophy, ‘Inspired Economy’.
-First of all, economy means that we do not reject money itself, nor market system. But we do not accept its tendency to make humans into mere money-mongers. In Inspired Economy, money is just one of the tools of transactions. Also we use a market system to make each transaction easier.
-				</p>
-				<br>
 
-				<h6>Tags/Keywords</h6>
+			<div class="col-md-6 title-col align-left col-lg-3">
 
-				<div>
-				@foreach($data['nav_footer']['foot_keyword'] as $item)
-					<a class="bn" href="{{ url('keyword').'/'.$item->slug }}">
-						<span class="badge-normal badge-primary">
-							{{ $item->title_en }}
-						</span>
+				<div class="item-wrap pb-4">
+					<div class="icons-wrap">
+						<img src="https://mobirise.com/extensions/petsm4/assets/images/logo24.png" alt="Kuipedia">
+						<h2 class="title1 align-left p-0 mbr-bold mbr-fonts-style display-5">Kuipedia</h2>
+					</div>
+				</div>
+				<div class="socicon-wrap">
+					<a href="#!">
+						<span class="mbr-iconfont fa fa-facebook socicon"></span>
 					</a>
-				@endforeach
+					<a href="#!">
+						<span class="mbr-iconfont fa fa-instagram socicon"></span>
+					</a>
+					<a href="#!">
+						<span class="mbr-iconfont fa fa-youtube socicon"></span>
+					</a>
+
 				</div>
+
+
 			</div>
-			<!--Grid column-->
 
-			<!--Grid column-->
-			<div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-				<h5 class="text-uppercase">Community Without Border</h5>
 
-				<p>
-				CWB is stand for Community Works without Border. We participate in each community to make jobs for community youth to make each community sustainable. Till now, youth go outside to get new opportunity. That is not bad thing. Youth go outside, meet various kinds of persons, customs, religions, get new insight of themself and their community. But in the tide of globalisation, going out of community makes youth (and also their parents) as uniform style. We lost our global diversity. We want to keep diversity of customs, traditions in each community through making jobs.
-				</p>
-				<br>
+			<div class="col-md-6 col-lg-3">
 
-				<div>
-				<!-- flag countries -->
-				@foreach($data['nav_footer']['nav_country'] as $item)
-					<a href="{{ url('countries').'/'.$item->slug }}"><img class="flag-small" src="{{ asset($item->logo) }}"></a>
-				@endforeach
+				<h2 class="title align-left mbr-bold pb-2 mbr-fonts-style display-5">អំពី</h2>
+
+				<div class="align-wrap align-left">
+
+					<div class="item-wrap">
+						<div class="icons-wrap pb-2">
+							<span class="mbr-iconfont mbrib-clock"></span>
+							<h3 class="icon-title mbr-regular mbr-fonts-style display-4">PO BOX Collins Street West</h3>
+						</div>
+					</div>
+
+					<div class="item-wrap">
+						<div class="icons-wrap pb-2">
+
+							<span class="mbr-iconfont mbrib-key"></span>
+
+							<h3 class="icon-title align-left mbr-regular mbr-fonts-style display-4">+2342 5446 67</h3>
+
+
+						</div>
+
+					</div>
+					<div class="item-wrap">
+						<div class="icons-wrap pb-2">
+
+							<span class="mbr-iconfont mbrib-pin"></span>
+
+							<h3 class="icon-title align-left mbr-regular mbr-fonts-style display-4">Mon - Sun: 8AM - 8PM
+							</h3>
+
+						</div>
+
+
+					</div>
 				</div>
+
 			</div>
-			<!--Grid column-->
+
+
+			<div class="col-md-6 col-lg-3">
+
+
+				<h2 class="title mbr-bold align-left pb-2 mbr-fonts-style display-5">តំណភ្ជាប់រហ័ស</h2>
+
+				<h3 class="links-title align-left pb-2 mbr-regular mbr-fonts-style display-4">Dog Boarding Services</h3>
+
+				<h3 class="links-title align-left pb-2 mbr-regular mbr-fonts-style display-4">Cat Boarding Services</h3>
+
+				<h3 class="links-title align-left pb-2 mbr-regular mbr-fonts-style display-4">Spa and Grooming Services
+				</h3>
+
+
+
+
+
+			</div>
+
+
+
+
+			<div class="col-md-6 col-lg-3 mbr-form" data-form-type="formoid">
+				<!--Formbuilder Form-->
+				<form action="https://mobirise.com/" method="POST" class="mbr-form form-with-styler"
+					data-form-title="Form Name"><input type="hidden" name="email" data-form-email="true"
+						value="gCmPNu6fJen+flhLjufigRL0Ut65QAgyydyucCdcB/k2FxT7UzlvzGi1pmJ3qbCUGsp3JAAfcL7EJCZSxq7oW9siHx8omkpAmIJBi1NK/XWYhj+83h6lU4L5tcCyBKuc.13yppxpng5ASZgxRMyemCCbKMPS9KsKNh4k7suiZjjscO7nUVneN4MD4VqUjWdYIFJyWHSsw7flxuNRgRjqmtTVkjh8y9qtmhKVw+yVKFZAzhuAyD9qO6slqO6Xgf61j">
+					<h2 class="title align-left mbr-bold pb-2 mbr-fonts-style display-5">Newsletter</h2>
+					<div class="form-row">
+						<div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling
+							out
+							the form!</div>
+						<div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">Oops...! some
+							problem!</div>
+					</div>
+					<div class="dragArea form-row">
+						<div class="col-lg-12 col-md-12 col-sm-12 form-group" data-for="email">
+							<input type="email" name="email" placeholder="Your email" data-form-field="email"
+								class="form-control display-7" value="" id="email-footer2-3a">
+						</div>
+						<div class="col-lg-12 col-md-12 col-sm-12"><button type="submit"
+								class="btn btn-primary display-4">SUBSCRIBE</button></div>
+					</div>
+				</form>
+				<!--Formbuilder Form-->
+			</div>
 		</div>
-		<!--Grid row-->
 	</div>
-	<!-- Grid container -->
+</section>
 
-	<!-- Copyright -->
-	<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-	<small>Copyright © 2023 Community Work without Border. <u><a href="{{ url('privacy-policy') }}">Privacy Policy</a></u></small>
+<section class="cid-rGsJ0Syn9D" id="footer1-1b">
+
+
+
+
+
+	<div class="container">
+		<div class="media-container-row align-center mbr-white">
+			<div class="col-12">
+				<p class="mbr-text mb-0 mbr-fonts-style display-7">
+					© Copyright {{ Date('Y') }} Kuipedia - All Rights Reserved
+				</p>
+			</div>
+		</div>
 	</div>
-	<!-- Copyright -->
-</footer>
-<!-- End Footer -->
+</section>
