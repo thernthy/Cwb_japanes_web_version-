@@ -22,7 +22,7 @@
 				</h1>
 				<p class="mbr-text pb-3 align-left mbr-fonts-style display-7"> Kuipedia ជា​មូលដ្ឋាន​ចំណេះដឹង​របស់​សហគមន៍​គុយ​ក្នុង​ប្រទេស​កម្ពុជា។</p>
 
-				<div class="align-wrap align-left">
+				<!-- <div class="align-wrap align-left">
 					<div class="icons-wrap">
 						<div class="icon-wrap">
 							<h3 class="icon-title mbr-bold mbr-fonts-style display-7">EAT</h3>
@@ -35,7 +35,7 @@
 						</div>
 
 					</div>
-				</div>
+				</div> -->
 
 
 

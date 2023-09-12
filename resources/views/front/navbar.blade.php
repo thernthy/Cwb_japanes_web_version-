@@ -37,11 +37,11 @@
 					<li class="nav-item dropdown"><a class="nav-link link text-black dropdown-toggle display-4"
 							href="#!" aria-expanded="false" data-toggle="dropdown-submenu">ប្រភេទ</a>
 						<div class="dropdown-menu"><a class="text-black dropdown-item display-4"
-								href="boardingdemo.html" aria-expanded="false">Pets Boarding Services</a><a
+								href="boardingdemo.html" aria-expanded="false">Menu One</a><a
 								class="text-black dropdown-item display-4" href="shopdemo.html"
-								aria-expanded="false">Pets Toys and Food Shop</a><a
+								aria-expanded="false">Menu Two</a><a
 								class="text-black dropdown-item display-4" href="schooldemo.html"
-								aria-expanded="false">Pets Training School</a></div>
+								aria-expanded="false">Menu Three</a></div>
 					</li>
 					<li class="nav-item dropdown"><a class="nav-link link text-black dropdown-toggle display-4"
 							href="#!" data-toggle="dropdown-submenu" aria-expanded="false">

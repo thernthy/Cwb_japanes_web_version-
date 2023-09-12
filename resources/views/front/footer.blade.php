@@ -39,7 +39,7 @@
 					<div class="item-wrap">
 						<div class="icons-wrap pb-2">
 							<span class="mbr-iconfont mbrib-clock"></span>
-							<h3 class="icon-title mbr-regular mbr-fonts-style display-4">Phumasia, Kampong Thom</h3>
+							<h3 class="icon-title mbr-regular mbr-fonts-style display-4">Phumasia, Achar Leak Commune, Krong Stueng Sean, Kampong Thom</h3>
 						</div>
 					</div>
 
