@@ -237,7 +237,7 @@
                         <p class="mbr-text pb-4 mbr-fonts-style display-4">Pellentesque habitant felis morbi tristique
                             senectus et
                             netus et malesuada fames ac turpis netus egestas.</p>
-                        <h5 class="link mbr-semibold mbr-fonts-style display-4"><a href="#" class="text-black">
+                        <h5 class="link mbr-semibold mbr-fonts-style display-4"><a href="{{ url('main-feature/tes') }}" class="text-black">
                                 មើល​ច្រើន​ទៀត <span class="fa fa-arrow-right"></span></a></h5>
                     </div>
                 </div>
@@ -297,7 +297,7 @@
                         <p class="mbr-text pb-4 mbr-fonts-style display-4">
                             Pellentesque habitant felis morbi tristique senectus et netus et malesuada fames ac turpis
                             netus egestas. </p>
-                        <h5 class="link mbr-semibold mbr-fonts-style display-4"><a href="#" class="text-black">
+                        <h5 class="link mbr-semibold mbr-fonts-style display-4"><a href="{{ url('community-tourism') }}" class="text-black">
                                 មើល​ច្រើន​ទៀត <span class="fa fa-arrow-right"></span></a></h5>
                     </div>
                 </div>
@@ -318,6 +318,7 @@
 
             <div class="col-lg-4 col-md-6">
                 <div class="card-wrapper">
+                    <a href="#!">
                     <img src="https://picsum.photos/seed/chacha/600/600">
                     <div class="wrapper">
                         <p class="mbr-text align-center mbr-semibold mbr-white mbr-fonts-style display-4">ACTIVITIES</p>
@@ -325,6 +326,7 @@
                             <div>Toys Playtime</div>
                         </h3>
                     </div>
+                    </a>
                 </div>
             </div>
 
@@ -407,42 +409,43 @@
 
                 <div class="content flip">
 					
-					<a class="card" href="#!">
+					<a class="card" href="{{ url('category/test') }}">
                         <div class="front" style="background-image: url(//source.unsplash.com/300x401)">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisi.</p>
+                            <p>កម្មវិធីអប់រំឌីជីថល</p>
                         </div>
                         <div class="back">
                             <div>
                                 <p>Consectetur adipisicing elit. Possimus, praesentium?</p>
                                 <p>Provident consectetur natus voluptatem quis tenetur sed beatae eius sint.</p>
-                                <button class="button">Click Here</button>
+                                <button class="button">មើលទាំងអស់។</button>
                             </div>
                         </div>
-                    </a><a class="card" href="#!">
+                    </a>
+                    <a class="card" href="{{ url('category/test') }}">
                         <div class="front" style="background-image: url(//source.unsplash.com/300x402)">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisi.</p>
+                            <p>សកម្មភាព និងកម្មវិធី សហគម</p>
                         </div>
                         <div class="back">
                             <div>
                                 <p>Consectetur adipisicing elit. Possimus, praesentium?</p>
                                 <p>Provident consectetur natus voluptatem quis tenetur sed beatae eius sint.</p>
-                                <button class="button">Click Here</button>
+                                <button class="button">មើលទាំងអស់។</button>
                             </div>
                         </div>
-                    </a><a class="card" href="#!">
+                    </a>
+                    <a class="card" href="{{ url('products') }}">
                         <div class="front" style="background-image: url(//source.unsplash.com/300x403)">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisi.</p>
+                            <p>ផលិតផល</p>
                         </div>
                         <div class="back">
                             <div>
                                 <p>Consectetur adipisicing elit. Possimus, praesentium?</p>
                                 <p>Provident consectetur natus voluptatem quis tenetur sed beatae eius sint.</p>
-                                <button class="button">Click Here</button>
                             </div>
                         </div>
-                    </a><a class="card" href="#!">
+                    </a><a class="card" href="{{ url('tourism-community') }}">
                         <div class="front" style="background-image: url(//source.unsplash.com/300x404)">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisi.</p>
+                            <p>ទេសចរណ៍ និង ផ្ទះស្នាក់</p>
                         </div>
                         <div class="back">
                             <div>
@@ -453,7 +456,7 @@
                         </div>
                     </a><a class="card" href="#!">
                         <div class="front" style="background-image: url(//source.unsplash.com/300x405)">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisi.</p>
+                            <p>វប្បធម៌ និងអាហារ</p>
                         </div>
                         <div class="back">
                             <div>
@@ -464,7 +467,7 @@
                         </div>
                     </a><a class="card" href="#!">
                         <div class="front" style="background-image: url(//source.unsplash.com/300x406)">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisi.</p>
+                            <p>សារមន្ទីរដែក</p>
                         </div>
                         <div class="back">
                             <div>

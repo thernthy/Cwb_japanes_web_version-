@@ -42,9 +42,7 @@
 					sit amet, consectetur adipiscing elit. Donec ullamcorper neque dapibus ipsum semper, sit amet luctus
 					turpis porttitor. Ut libero ante, varius quis ligula in, aliquet consectetur tortor. Proin aliquet
 					neque nibh, pretium rutrum quam mattis a. Morbi vitae sodales metus.</p>
-				<div class="align-left mbr-section-btn"><a class="btn btn-md btn-primary display-4"
-						href="https://mobirise.co/">LIVE DEMO</a> <a class="btn btn-md btn-primary-outline display-4"
-						href="https://mobirise.co/">BUY NOW</a></div>
+				
 
 			</div>
 

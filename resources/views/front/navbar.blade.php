@@ -1,9 +1,5 @@
 <!-- Navigation -->
 <section class="menu cid-rGsqBtahAB" once="menu" id="menu1-1a">
-
-
-
-
 	<nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
 		<div class="container">
 			<div class="navbar-brand">
@@ -14,7 +10,7 @@
 					</a>
 				</span>
 				<span class="navbar-caption-wrap"><a class="navbar-caption text-black display-5"
-						href="index.html">Kuipedia</a></span>
+						href="{{ url('/') }}">Kuipedia</a></span>
 			</div>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 				aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
