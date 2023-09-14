@@ -8,7 +8,7 @@
 		<div class="container">
 			<div class="navbar-brand">
 				<span class="navbar-logo">
-					<a href="index.html">
+					<a href="{{ url('/') }}">
 						<img src="{{ asset('img/main_logo.png') }}" alt="kuipedia-logo"
 							title="" style="height: 3rem;">
 					</a>
