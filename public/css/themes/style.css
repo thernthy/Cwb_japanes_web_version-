@@ -513,7 +513,9 @@ figure[mbr-media-size] {
 .mbr-section-btn {
   margin-left: -.25rem;
   margin-right: -.25rem;
-  font-size: 0; }
+  font-size: 0; 
+  /* margin: auto; */
+}
 
 nav .mbr-section-btn {
   margin-left: 0rem;

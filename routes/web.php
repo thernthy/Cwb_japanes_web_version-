@@ -22,9 +22,7 @@ Route::get('/', function () {
 });
 
 Route::get('/', 'HomeController@index');
-Route::get('/about', 'HomeController@about');
-Route::get('/contact', 'HomeController@contact');
-Route::get('/join-us', 'HomeController@joinus');
+Route::get('/main-features/{slug}', 'HomeController@mainFeatures');
 
 // ------------------------------
 Route::get('/privacy-policy', 'HomeController@privacy');

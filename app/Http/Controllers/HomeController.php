@@ -476,16 +476,16 @@ class HomeController extends Controller
 		return response()->json($data);
 	}
 
-	public function about()
+	public function mainFeatures($slug)
 	{
 		$data['test'] = 'test';
 		$data['nav_footer'] = $this->navbar;
 
 		// --------- seo ------------
-		SEOTools::setTitle('About Us');
+		SEOTools::setTitle('Main Features');
 		// --------------------------
 
-		return view('front.about')
+		return view('front.main-features')
 		->with('data', $data);
 	}
 
