@@ -24,6 +24,7 @@ Route::get('/', function () {
 Route::get('/', 'HomeController@index');
 Route::get('/main-features/{slug}', 'HomeController@mainFeatures');
 Route::get('/community-tourism', 'HomeController@communityTourism');
+Route::get('/category/{slug}', 'HomeController@category');
 
 // ------------------------------
 Route::get('/trust-member', 'HomeController@trustMember');
