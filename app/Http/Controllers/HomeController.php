@@ -489,34 +489,6 @@ class HomeController extends Controller
 		->with('data', $data);
 	}
 
-	public function privacy()
-	{
-		$data['test'] = 'test';
-		$data['nav_footer'] = $this->navbar;
-
-		// --------- seo ------------
-		SEOTools::setTitle('Privacy Policy');
-		// --------------------------
-
-		return view('front.privacy-policy')
-		->with('data', $data);
-	}
-
-	// ---------------
-
-	public function joinus()
-	{
-		$data['test'] = 'test';
-		$data['nav_footer'] = $this->navbar;
-
-		// --------- seo ------------
-		SEOTools::setTitle('Join Us');
-		// --------------------------
-
-		return view('front.joinus')
-		->with('data', $data);
-	}
-
 	public function communityTourism()
 	{
 		$data['test'] = 'test';
@@ -526,20 +498,7 @@ class HomeController extends Controller
 		SEOTools::setTitle('Community Tourism');
 		// --------------------------
 
-		return view('front.community-tourism')
-		->with('data', $data);
-	}
-
-	public function trustMember()
-	{
-		$data['test'] = 'test';
-		$data['nav_footer'] = $this->navbar;
-
-		// --------- seo ------------
-		SEOTools::setTitle('Trust Member');
-		// --------------------------
-
-		return view('front.trust-member')
+		return view('front.tourism')
 		->with('data', $data);
 	}
 

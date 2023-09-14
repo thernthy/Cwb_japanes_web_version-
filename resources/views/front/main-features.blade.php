@@ -8,10 +8,6 @@
 
 @section('content')
 <section class="cid-rGsSmPNPFZ" id="header2-v">
-    
-
-    
-
     <div class="container-fluid">
         <div class="row">
 
@@ -19,10 +15,7 @@
                 <div class="mbr-figure">
                     <img src="https://mobirise.com/extensions/petsm4/assets/images/02.png" alt="Mobirise">
                 </div>
-
             </div>
-
-
             <div class="col-md-12 content align-left py-4 col-lg-5">
 
                 <h1 class="mbr-section-title align-left mbr-bold pb-3 mbr-fonts-style display-2">We can keep <a href="#"><strong>them happy</strong></a></h1>
@@ -98,120 +91,57 @@
     </div>
 </section>
 
-<section class="features1 cid-rGsSnrvfGF" id="features1-x">
+
+<section class="features6 popup-btn-cards cid-rGsSo9FI9p" id="features4-10">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-4 col-md-6">
-                <div class="card-wrapper popup-btn">
-                    <img src="https://mobirise.com/extensions/petsm4/assets/images/face1.png" alt="" title="">
-                    <div class="wrapper">
-                        <h3 class="card-title align-center mbr-bold mbr-fonts-style align-left display-5">Pic one</h3>
+        <div class="row justify-content-center">
 
+            <div class="col-lg-4 col-md-6">
+                <div class="card-wrapper">
+                    <img src="https://picsum.photos/seed/chacha/600/600">
+                    <div class="wrapper">
+                        <p class="mbr-text align-center mbr-semibold mbr-white mbr-fonts-style display-4">ACTIVITIES</p>
+                        <h3 class="card-title align-center mbr-bold mbr-fonts-style align-left mbr-white display-5">
+                            <div>Toys Playtime</div>
+                        </h3>
                     </div>
                 </div>
             </div>
 
             <div class="col-lg-4 col-md-6">
-                <div class="card-wrapper popup-btn">
-                    <img src="https://mobirise.com/extensions/petsm4/assets/images/face1.png" alt="" title="">
+                <div class="card-wrapper">
+                    <img src="https://picsum.photos/seed/putri/600/600">
                     <div class="wrapper">
-                        <h3 class="card-title align-center mbr-bold mbr-fonts-style align-left display-5">Pic one</h3>
-
+                        <p class="mbr-text align-center mbr-semibold mbr-white mbr-fonts-style display-4">
+                            ACTIVITIES</p>
+                        <h3 class="card-title align-center mbr-bold mbr-fonts-style align-left mbr-white display-5">
+                            Active Rest</h3>
                     </div>
                 </div>
             </div>
 
             <div class="col-lg-4 col-md-6">
-                <div class="card-wrapper popup-btn">
-                    <img src="https://mobirise.com/extensions/petsm4/assets/images/face1.png" alt="" title="">
+                <div class="card-wrapper">
+                    <img src="https://picsum.photos/seed/neneng/600/600" alt="" title="">
                     <div class="wrapper">
-                        <h3 class="card-title align-center mbr-bold mbr-fonts-style align-left display-5">Pic one</h3>
-
+                        <p class="mbr-text align-center mbr-semibold mbr-white mbr-fonts-style display-4">ACTIVITIES</p>
+                        <h3 class="card-title align-center mbr-bold mbr-fonts-style align-left mbr-white display-5">Game
+                            Walks
+                        </h3>
                     </div>
                 </div>
             </div>
-        
+
+            <!-- <div class="col-lg-4 col-md-4 btn-col pb-4">
+                <div class="align-center mbr-section-btn"><a class="btn btn-md btn-primary display-4"
+                        href="#!">មើលទាំងអស់។<br></a></div>
+            </div> -->
+
         </div>
     </div>
 </section>
 
-<section class="features1 cid-rGsSnCvfDm" id="features2-y">
-
-    
-
-    
-    <div class="container">
-        <div class="row">
-
-            <div class="card col-12 col-md-6 col-lg-3">
-                <div class="card-wrapper align-left">
-                    <div class="card-img">
-                        <span class="mbr-iconfont mbrib-home"></span>
-                    </div>
-                    <div class="card-box">
-                        <h4 class="card-title pb-2 mbr-bold mbr-fonts-style display-5">Pets
-                            Boarding</h4>
-                        <p class="mbr-text pb-4 mbr-fonts-style display-4">Pellentesque habitant felis morbi tristique senectus et
-                            netus et malesuada fames ac turpis netus egestas.</p>
-                        <h5 class="link mbr-semibold mbr-fonts-style display-4"><a href="#" class="text-primary">
-                                VIEW MORE</a></h5>
-                    </div>
-                </div>
-            </div>
-            <div class="card col-12 col-md-6 col-lg-3">
-                <div class="card-wrapper align-left">
-                    <div class="card-img">
-                        <span class="mbr-iconfont mbrib-apple"></span>
-                    </div>
-                    <div class="card-box">
-                        <h4 class="card-title pb-2 mbr-bold mbr-fonts-style display-5">
-                            Healthy Meals</h4>
-                        <p class="mbr-text pb-4 mbr-fonts-style display-4">
-                            Pellentesque habitant felis morbi tristique senectus et netus et malesuada fames ac turpis
-                            netus egestas. </p>
-                        <h5 class="link mbr-semibold mbr-fonts-style display-4"><a href="#" class="text-primary">
-                                VIEW MORE</a></h5>
-                    </div>
-                </div>
-            </div>
-            <div class="card col-12 col-md-6 col-lg-3">
-                <div class="card-wrapper align-left">
-                    <div class="card-img">
-                        <span class="mbr-iconfont mbrib-globe"></span>
-                    </div>
-                    <div class="card-box">
-                        <h4 class="card-title pb-2 mbr-bold mbr-fonts-style display-5">
-                            Activity Games</h4>
-                        <p class="mbr-text pb-4 mbr-fonts-style display-4">
-                            Pellentesque habitant felis morbi tristique senectus et netus et malesuada fames ac turpis
-                            netus egestas. </p>
-                        <h5 class="link mbr-semibold mbr-fonts-style display-4"><a href="#" class="text-primary">
-                                VIEW MORE</a></h5>
-                    </div>
-                </div>
-            </div>
-            <div class="card col-12 col-md-6 col-lg-3">
-                <div class="card-wrapper align-left">
-                    <div class="card-img">
-                        <span class="mbr-iconfont mbrib-github"></span>
-                    </div>
-                    <div class="card-box">
-                        <h4 class="card-title pb-2 mbr-bold mbr-fonts-style display-5">Pet Taxi</h4>
-                        <p class="mbr-text pb-4 mbr-fonts-style display-4">
-                            Pellentesque habitant felis morbi tristique senectus et netus et malesuada fames ac turpis
-                            netus egestas. </p>
-                        <h5 class="link mbr-semibold mbr-fonts-style display-4"><a href="#" class="text-primary">
-                                VIEW MORE</a></h5>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-</section>
-
-<section class="cid-rGsSrw3Foq" id="content4-1b">
+<section class="cid-rGsSrg8y6k" id="content3-1a">
 
     
 
@@ -220,121 +150,40 @@
     <div class="container">
         <div class="row justify-content-center">
 
+            <div class="col-12 col-md-12 col-lg-12">
+                <h3 class="col-title1 mbr-bold align-left pb-4 mbr-fonts-style display-7">WHAT WE STAND FOR</h3>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6 md-pb">
 
 
-            <div class="col-12 col-md-6 col-lg-4 md-pb">
-
-                <div class="align-wrap">
-                    <div class="icons-wrap">
-                        <div class="icon-wrap">
-                            <span class="mbr-iconfont mbrib-home"></span>
-                            <div class="text-wrap">
-                                <h3 class="icon-title mbr-bold mbr-fonts-style display-5">Dog Boarding</h3>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <ul class="list">
-                    
-
-                    
-                    
-
-
-                <li class="item-wrap">
-                        <span class="mbr-iconfont mbrib-success" style="color: rgb(118, 118, 118); fill: rgb(118, 118, 118);"></span>
-                        <h4 class="item1 mbr-regular mbr-fonts-style display-7">Sed cursus justo convallis</h4>
-                    </li><li class="item-wrap">
-                        <span class="mbr-iconfont mbrib-success" style="color: rgb(118, 118, 118); fill: rgb(118, 118, 118);"></span>
-                        <h4 class="item1 mbr-regular mbr-fonts-style display-7">Integer ullamcor felis</h4>
-                    </li><li class="item-wrap">
-                        <span class="mbr-iconfont mbrib-success" style="color: rgb(118, 118, 118); fill: rgb(118, 118, 118);"></span>
-                        <h4 class="item1 mbr-regular mbr-fonts-style display-7">Aenean ultrices placerat</h4>
-                    </li></ul>
+                <p class="mbr-text pb-3 align-left mbr-fonts-style display-7">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Donec ullamcorper neque dapibus ipsum semper, sit amet luctus turpis porttitor. Ut libero
+                    ante, varius quis ligula in, aliquet consectetur tortor. Proin aliquet neque nibh, pretium rutrum
+                    quam mattis a. Morbi vitae sodales metus. Pellentesque vel elit ullamcorper, pellentesque magna nec,
+                    dictum purus. Nullam scelerisque nisi eu lacus elementum, ac sodales nulla congue. Suspendisse eu
+                    lorem vitae odio imperdiet.</p>
 
             </div>
 
-            <div class="col-12 col-md-6 col-lg-4 md-pb">
-
-                <div class="align-wrap">
-                    <div class="icons-wrap">
-                        <div class="icon-wrap">
-                            <span class="mbr-iconfont mbrib-github"></span>
-                            <div class="text-wrap">
-                                <h3 class="icon-title mbr-bold mbr-fonts-style display-5">Cat Boarding</h3>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <ul class="list">
-                    
-
-                    
-                    
-
-
-                <li class="item-wrap">
+            <div class="col-12 col-md-6 col-lg-6 md-pb">
+                <ul class="list">    
+                    <li class="item-wrap">
                         <span class="mbr-iconfont mbrib-success" style="color: rgb(118, 118, 118); fill: rgb(118, 118, 118);"></span>
-                        <h4 class="item1 mbr-regular mbr-fonts-style display-7">Sed cursus justo convallis</h4>
+                        <h4 class="item1 mbr-regular mbr-fonts-style display-7">Nulla ut tellus imperdiet, ultrices nulla eu, porttitor quam</h4>
                     </li><li class="item-wrap">
                         <span class="mbr-iconfont mbrib-success" style="color: rgb(118, 118, 118); fill: rgb(118, 118, 118);"></span>
-                        <h4 class="item1 mbr-regular mbr-fonts-style display-7">Integer ullamcor felis</h4>
+                        <h4 class="item1 mbr-regular mbr-fonts-style display-7">Donec condimentum volutpat eget sodales velit faucibus</h4>
                     </li><li class="item-wrap">
                         <span class="mbr-iconfont mbrib-success" style="color: rgb(118, 118, 118); fill: rgb(118, 118, 118);"></span>
-                        <h4 class="item1 mbr-regular mbr-fonts-style display-7">Aenean ultrices placerat</h4>
+                        <h4 class="item1 mbr-regular mbr-fonts-style display-7">Mauris non neque sollicitudin porttitor pulvinar ipsum</h4>
+                    </li><li class="item-wrap">
+                        <span class="mbr-iconfont mbrib-success" style="color: rgb(118, 118, 118); fill: rgb(118, 118, 118);"></span>
+                        <h4 class="item1 mbr-regular mbr-fonts-style display-7">Quisque mattis consequat odio suscipit vulputate</h4>
+                    </li><li class="item-wrap">
+                        <span class="mbr-iconfont mbrib-success" style="color: rgb(118, 118, 118); fill: rgb(118, 118, 118);"></span>
+                        <h4 class="item1 mbr-regular mbr-fonts-style display-7">Morbi a tortor sodales, malesuada lectus sed mauris</h4>
                     </li></ul>
-
             </div>
-
-
-
-            <div class="col-12 col-md-6 col-lg-4 md-pb">
-
-                <div class="align-wrap">
-                    <div class="icons-wrap">
-                        <div class="icon-wrap">
-                            <span class="mbr-iconfont mbrib-cloud"></span>
-                            <div class="text-wrap">
-                                <h3 class="icon-title mbr-bold mbr-fonts-style display-5">Spa and Grooming
-                                </h3>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <ul class="list">
-                    
-
-                    
-                    
-
-
-                <li class="item-wrap">
-                        <span class="mbr-iconfont mbrib-success" style="color: rgb(118, 118, 118); fill: rgb(118, 118, 118);"></span>
-                        <h4 class="item1 mbr-regular mbr-fonts-style display-7">Sed cursus justo convallis</h4>
-                    </li><li class="item-wrap">
-                        <span class="mbr-iconfont mbrib-success" style="color: rgb(118, 118, 118); fill: rgb(118, 118, 118);"></span>
-                        <h4 class="item1 mbr-regular mbr-fonts-style display-7">Integer ullamcor felis</h4>
-                    </li><li class="item-wrap">
-                        <span class="mbr-iconfont mbrib-success" style="color: rgb(118, 118, 118); fill: rgb(118, 118, 118);"></span>
-                        <h4 class="item1 mbr-regular mbr-fonts-style display-7">Aenean ultrices placerat</h4>
-                    </li></ul>
-
-            </div>
-
-
-
-
-
-
         </div>
     </div>
 </section>
