@@ -302,6 +302,36 @@ class HomeController extends Controller
 		->with('data', $data);
 	}
 
+	public function detail($slug)
+	{
+		$data['test'] = 'test';
+		// $data['nav_footer'] = $this->navbar;
+
+		// $data['footer_menu'] = DB::table('packages')
+		// 	->select('id', 'slug', 'title', 'price')
+		// 	->limit(6)
+		// 	->orderBy('id', 'asc')
+		// 	->get();
+			
+		// $data['data'] = DB::table('posts')
+		// 	->join(
+		// 		'categories',
+		// 		'posts.cat_id',
+		// 		'=',
+		// 		'categories.id'
+		// 	)
+		// 	->select('posts.title', 'posts.id', 'slug', 'img', 'created_at', 'categories.title as cat')
+		// 	->orderBy('id', 'desc')
+		// 	->get();
+		
+		// --------- seo ------------
+		// SEOTools::setTitle('Blog');
+		// --------------------------
+
+		return view('front.detail')
+		->with('data', $data);
+	}
+
 	public function products()
 	{
 		$data['test'] = 'test';

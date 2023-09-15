@@ -10,10 +10,6 @@
 
 @section('content')
 <section class="cid-rGsOE1E5qe" id="header1-1k">
-
-
-
-
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12 content align-left py-4 col-lg-5 ">
@@ -39,8 +35,6 @@
 					</div>
 				</div> -->
 
-
-
                 <div class="align-left mbr-section-btn"><a class="btn btn-md btn-primary display-4"
                         href="{{ url('/about') }}">អំពី​ពួក​យើង</a> <a
                         class="btn btn-md btn-primary-outline display-4"
@@ -57,13 +51,7 @@
     </div>
 </section>
 
-
-
 <section class="cid-rGsSqYA5s6" id="content2-19">
-
-
-
-
     <div class="container-fluid">
         <div class="row">
 
@@ -71,9 +59,7 @@
                 <div class="mbr-figure">
                     <img src="{{ asset('img/about_header.png') }}" alt="About">
                 </div>
-
             </div>
-
 
             <div class="col-md-12 content py-4 col-lg-6">
 
@@ -92,14 +78,7 @@
                     posuere id sit amet ligula. Aenean semper magna a sapien eleifend maximus. Aenean faucibus vehicula
                     arcu, non tristique risus vulputate et. Nullam lectus ligula, viverra ut urna vitae, efficitur
                     ultricies purus.</p>
-
-
-
                 <ul class="list">
-
-
-
-
 
                     <li class="item-wrap">
                         <span class="mbr-iconfont mbrib-success"
@@ -120,21 +99,12 @@
                             interdum</h4>
                     </li>
                 </ul>
-
-
-
             </div>
 
         </div>
     </div>
 </section>
-
 <section class="cid-rGsSrg8y6k" id="content3-1a">
-
-
-
-
-
     <div class="container">
         <div class="row justify-content-center">
 
@@ -151,22 +121,9 @@
                     quam mattis a. Morbi vitae sodales metus. Pellentesque vel elit ullamcorper, pellentesque magna nec,
                     dictum purus. Nullam scelerisque nisi eu lacus elementum, ac sodales nulla congue. Suspendisse eu
                     lorem vitae odio imperdiet.</p>
-
             </div>
-
             <div class="col-12 col-md-6 col-lg-6 md-pb">
-
-
                 <ul class="list">
-
-
-
-
-
-
-
-
-
                     <li class="item-wrap">
                         <span class="mbr-iconfont mbrib-success"
                             style="color: rgb(118, 118, 118); fill: rgb(118, 118, 118);"></span>
@@ -234,10 +191,11 @@
                     </div>
                     <div class="card-box">
                         <h4 class="card-title pb-2 mbr-bold mbr-fonts-style display-5">ចូលរួម បង្កើតការងារដល់សហគមន៍</h4>
+                        <img class="img-responsive" src="https://source.unsplash.com/300x439">
                         <p class="mbr-text pb-4 mbr-fonts-style display-4">Pellentesque habitant felis morbi tristique
                             senectus et
                             netus et malesuada fames ac turpis netus egestas.</p>
-                        <h5 class="link mbr-semibold mbr-fonts-style display-4"><a href="{{ url('main-feature/tes') }}" class="text-black">
+                        <h5 class="link mbr-semibold mbr-fonts-style display-4"><a href="{{ url('main-feature/contribute-kui-bussines') }}" class="text-black">
                                 មើល​ច្រើន​ទៀត <span class="fa fa-arrow-right"></span></a></h5>
                     </div>
                 </div>
@@ -262,12 +220,14 @@
                         <span class="fa fa-folder fa-4x"></span>
                     </div>
                     <div class="card-box">
-                        <h4 class="card-title pb-2 mbr-bold mbr-fonts-style display-5">
-                            កម្មវិធីអប់រំឌីជីថល</h4>
+                        <h4 class="card-title pb-2 mbr-bold mbr-fonts-style display-5">កម្មវិធីអប់រំឌីជីថល</h4>
+                        <img class="img-responsive" src="https://source.unsplash.com/300x429">
+                            
                         <p class="mbr-text pb-4 mbr-fonts-style display-4">
                             Pellentesque habitant felis morbi tristique senectus et netus et malesuada fames ac turpis
                             netus egestas. </p>
-                        <h5 class="link mbr-semibold mbr-fonts-style display-4"><a href="#" class="text-black">
+                        <h5 class="link mbr-semibold mbr-fonts-style display-4">
+                            <a href="{{ url('main-feature/digital-education-program') }}" class="text-black">
                                 មើល​ច្រើន​ទៀត <span class="fa fa-arrow-right"></span></a></h5>
                     </div>
                 </div>
@@ -294,10 +254,13 @@
                     <div class="card-box">
                         <h4 class="card-title pb-2 mbr-bold mbr-fonts-style display-5">
                             ទេសចរណ៍សហគមន៍</h4>
+                        <img class="img-responsive" src="https://source.unsplash.com/300x419">
+                        
                         <p class="mbr-text pb-4 mbr-fonts-style display-4">
                             Pellentesque habitant felis morbi tristique senectus et netus et malesuada fames ac turpis
                             netus egestas. </p>
-                        <h5 class="link mbr-semibold mbr-fonts-style display-4"><a href="{{ url('community-tourism') }}" class="text-black">
+                        <h5 class="link mbr-semibold mbr-fonts-style display-4">
+                            <a href="{{ url('community-tourism') }}" class="text-black">
                                 មើល​ច្រើន​ទៀត <span class="fa fa-arrow-right"></span></a></h5>
                     </div>
                 </div>
@@ -318,7 +281,7 @@
 
             <div class="col-lg-4 col-md-6">
                 <div class="card-wrapper">
-                    <a href="#!">
+                    <a href="{{ url('detail/etnic-ceremony') }}">
                     <img src="https://picsum.photos/seed/chacha/600/600">
                     <div class="wrapper">
                         <p class="mbr-text align-center mbr-semibold mbr-white mbr-fonts-style display-4">ACTIVITIES</p>
@@ -409,9 +372,9 @@
 
                 <div class="content flip">
 					
-					<a class="card" href="{{ url('category/test') }}">
+					<a class="card" href="{{ url('products') }}">
                         <div class="front" style="background-image: url(//source.unsplash.com/300x401)">
-                            <p>កម្មវិធីអប់រំឌីជីថល</p>
+                            <p>ព្រៃ</p>
                         </div>
                         <div class="back">
                             <div>
@@ -441,6 +404,7 @@
                             <div>
                                 <p>Consectetur adipisicing elit. Possimus, praesentium?</p>
                                 <p>Provident consectetur natus voluptatem quis tenetur sed beatae eius sint.</p>
+                                <button class="button">មើលទាំងអស់។</button>
                             </div>
                         </div>
                     </a><a class="card" href="{{ url('tourism-community') }}">
@@ -451,10 +415,10 @@
                             <div>
                                 <p>Consectetur adipisicing elit. Possimus, praesentium?</p>
                                 <p>Provident consectetur natus voluptatem quis tenetur sed beatae eius sint.</p>
-                                <button class="button">Click Here</button>
+                                <button class="button">មើលទាំងអស់។</button>
                             </div>
                         </div>
-                    </a><a class="card" href="#!">
+                    </a><a class="card" href="{{ url('products') }}">
                         <div class="front" style="background-image: url(//source.unsplash.com/300x405)">
                             <p>វប្បធម៌ និងអាហារ</p>
                         </div>
@@ -462,7 +426,7 @@
                             <div>
                                 <p>Consectetur adipisicing elit. Possimus, praesentium?</p>
                                 <p>Provident consectetur natus voluptatem quis tenetur sed beatae eius sint.</p>
-                                <button class="button">Click Here</button>
+                                <button class="button">មើលទាំងអស់។</button>
                             </div>
                         </div>
                     </a><a class="card" href="#!">
@@ -473,7 +437,7 @@
                             <div>
                                 <p>Consectetur adipisicing elit. Possimus, praesentium?</p>
                                 <p>Provident consectetur natus voluptatem quis tenetur sed beatae eius sint.</p>
-                                <button class="button">Click Here</button>
+                                <button class="button">មើលទាំងអស់។</button>
                             </div>
                         </div>
                     </a>
