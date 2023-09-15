@@ -2,6 +2,9 @@
 
 @push('styles')
 <script src="https://kit.fontawesome.com/c49fa14979.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin=""/>
 @endpush
 <style>
@@ -32,6 +35,51 @@
     }
     .alert-info{
         background-color: red;
+    }
+    .contact_option{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact_option h2{
+        border-bottom: 2px solid #2BFBE8;
+        padding-bottom: 5px;
+        margin-bottom: 20px;
+    }
+    .contact_option ul li{
+        display: flex;
+        padding: 15px 10px;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        font-weight: lighter;
+        letter-spacing: 1px;
+        font-family: 'Inclusive Sans', sans-serif;
+        animation: textarea_up 2s ease-in-out;
+    }
+    .contact_option ul li i{
+        font-size: 2.5rem;
+        color: #2BFBE8;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.20);
+        padding: 10px;
+        border-radius: 10px;
+        transition: box-shadow .5s ease-out;
+    }
+    .contact_option strong{
+        box-shadow:inset 1px 1px 10px rgba(0, 0, 0, 0.10);
+        padding: 6px 10px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+        transition: box-shadow .5s ease-out;
+    }
+    .contact_option li:hover strong{
+        box-shadow:unset;
+        
+    }
+    .contact_option li:hover i{
+        box-shadow:unset;
+        
     }
     @keyframes input_form_anime {
         from{
@@ -67,12 +115,25 @@
         </div>
     </div>-->
     <div class="row mt-5 pt-3 pd-5">
-        <div class="col-6">
-            <h1 class="text-xs-center">
-                <span>
-                Contact us
-                </span>
-            </h1>
+        <div class="col-6 contact_option">
+        <h2>ការិយាល័យសហគមន៍</h2>
+        <p>
+           ទំនាក់ទំនងតាមរយះព័ត៍មានខាងក្រោមនឹងទទួលបានការឆ្លើយតបយ៉ាងរហ័ស៖
+        </p>
+            <ul>
+                <li>
+                    <i class="fa-brands fa-facebook"></i>
+                    <strong>Kuipedia</strong>
+                </li>
+                <li>
+                    <i class="fa-brands fa-telegram"></i>
+                    <strong>@kuipedia</strong>
+                </li>
+                <li>
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <strong>+885| 2342 5446 67</strong>
+                </li>
+            </ul>
         </div>
         <div class="col-6">
         <!--    <div class="alert alert-success" role="alert">
@@ -105,7 +166,6 @@
                 <div class="alert alert-info" role="alert">
                     *Note: Make sure you check all the fields before submitting all data!
                 </div>
-
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
         </div>
