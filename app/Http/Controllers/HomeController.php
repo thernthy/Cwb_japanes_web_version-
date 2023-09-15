@@ -47,6 +47,8 @@ class HomeController extends Controller
 			->orderBy('id', 'asc')
 			->get();
 
+		// dd($data);
+
 		$data['gallery'] = DB::table('galleries')
 			->leftJoin(
 				'activities',
@@ -126,15 +128,15 @@ class HomeController extends Controller
 			->where('activities.status', 1)
 			->where('action_activities.id_action', $data['data']->id)
 			->get();
-
+		
+		dd($data['activities']);
 		
 		// --------- seo ------------
 		SEOTools::setTitle($data['data']->title_en);
 		// SEOTools::setDescription('This is my page description');
 		// --------------------------
 
-		return view('front.action')
-		->with('data', $data);
+		return view('front.action')->with('data', $data);
 	}
 
 	public function keyword($slug)
@@ -545,8 +547,12 @@ class HomeController extends Controller
 		SEOTools::setTitle('Main Features');
 		// --------------------------
 
-		return view('front.main-features')
-		->with('data', $data);
+		if($slug=="digital-education-program") {
+			return view('front.main-features2')->with('data', $data);
+		} else {
+			return view('front.main-features')->with('data', $data);
+		}
+		
 	}
 
 	public function communityTourism()

@@ -227,26 +227,10 @@
 				<div class="menu-group">
 
 					<div class="row menu-row">
+						
 						<div class="col-md-12 menu-item">
 							<div class="menu-box">
-								<p class="box-text mbr-black mbr-bold mbr-fonts-style display-7">Community Dancing&nbsp;<br></p>
-								<div class="line"></div>
-								<span class="mbr-fonts-style mbr-bold box-price mbr-black display-7">
-									$18</span>
-							</div>
-							<h3 class="item-title mbr-fonts-style display-7">
-								Lorem ipsum dolor sit amet, consectetur
-								adipiscing elit.
-								Ullamcorper eget lectus porta euismod a libero.
-							</h3>
-							<div class="card-wrapper">
-								<img class="img-round" src="https://picsum.photos/seed/chacha/150/150">
-								<img class="img-round" src="https://picsum.photos/seed/chichi/150/150">
-							</div>
-						</div>
-						<div class="col-md-12 menu-item">
-							<div class="menu-box">
-								<p class="box-text mbr-black mbr-bold mbr-fonts-style display-7">Cooking with Locals&nbsp;<br></p>
+								<p class="box-text mbr-black mbr-bold mbr-fonts-style display-7">១ រៀនធ្វើម្ហូបជនជាតិដើមភាគតិចកួយ&nbsp;<br></p>
 								<div class="line"></div>
 								<span class="mbr-fonts-style mbr-bold box-price mbr-black display-7">
 									$15</span>
@@ -257,7 +241,7 @@
 						</div>
 						<div class="col-md-12 menu-item">
 							<div class="menu-box">
-								<p class="box-text mbr-black mbr-bold mbr-fonts-style display-7">Culture Sharing&nbsp;<br></p>
+								<p class="box-text mbr-black mbr-bold mbr-fonts-style display-7">២ ដើទស្សនាព្រៃ និងសន្លុងស្លដែក &nbsp;<br></p>
 								<div class="line"></div>
 								<span class="mbr-fonts-style mbr-bold box-price mbr-black display-7">
 									$36</span>
@@ -268,7 +252,7 @@
 						</div>
 						<div class="col-md-12 menu-item">
 							<div class="menu-box">
-								<p class="box-text mbr-black mbr-bold mbr-fonts-style display-7">Homestay & Living with Locals<br></p>
+								<p class="box-text mbr-black mbr-bold mbr-fonts-style display-7">៣ ស្នាក់នៅក្នុងសហគមន៍<br></p>
 								<div class="line"></div>
 								<span class="mbr-fonts-style mbr-bold box-price mbr-black display-7">
 									$45</span>
@@ -276,6 +260,34 @@
 							<h3 class="item-title mbr-fonts-style display-7">Lorem ipsum dolor sit amet, consectetur
 								adipiscing elit.
 								Ullamcorper eget lectus porta euismod a libero.</h3>
+						</div>
+						<div class="col-md-12 menu-item">
+							<div class="menu-box">
+								<p class="box-text mbr-black mbr-bold mbr-fonts-style display-7">៤ រៀនធ្វើតម្បាញកន្ទេល និងកន្ត្រក<br></p>
+								<div class="line"></div>
+								<span class="mbr-fonts-style mbr-bold box-price mbr-black display-7">
+									$45</span>
+							</div>
+							<h3 class="item-title mbr-fonts-style display-7">Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit.
+								Ullamcorper eget lectus porta euismod a libero.</h3>
+						</div>
+						<div class="col-md-12 menu-item">
+							<div class="menu-box">
+								<p class="box-text mbr-black mbr-bold mbr-fonts-style display-7">៥ ចូលរួមធ្វើចំការវិលជុំជាមួយកសិករជនជាតិដើមភាគតិចកួយ&nbsp;<br></p>
+								<div class="line"></div>
+								<span class="mbr-fonts-style mbr-bold box-price mbr-black display-7">
+									$18</span>
+							</div>
+							<h3 class="item-title mbr-fonts-style display-7">
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit.
+								Ullamcorper eget lectus porta euismod a libero.
+							</h3>
+							<div class="card-wrapper">
+								<img class="img-round" src="{{ asset('img/random1.jpg') }}">
+								<img class="img-round" src="{{ asset('img/random3.jpg') }}">
+							</div>
 						</div>
 					</div>
 				</div>

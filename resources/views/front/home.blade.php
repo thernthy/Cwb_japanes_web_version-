@@ -232,12 +232,14 @@
 				<h2 class="align-left mbr-bold mbr-fonts-style mbr-section-title display-2">សូមក្រឡេកមើល</h2>
 			</div>
 
+
+			@foreach($data['actions'] as $item)
 			<div class="col-lg-4 col-md-6">
 				<div class="card-wrapper">
 					<a href="{{ url('detail/etnic-ceremony') }}">
 					<img src="{{ asset('img/kuy_festival.jpg') }}">
 					<div class="wrapper">
-						<p class="mbr-text align-center mbr-semibold mbr-white mbr-fonts-style display-4">ឈ្មោះប្រភេទ</p>
+						<p class="mbr-text align-center mbr-semibold mbr-white mbr-fonts-style display-4">{{ $item->title_en }}</p>
 						<h3 class="card-title align-center mbr-bold mbr-fonts-style align-left mbr-white display-5">
 							<div>ការពិពណ៌នាអំពីប្រភេទខ្លី និងទិដ្ឋភាពទូទៅនៃអ្វីដែលជាប្រភេទអំពី</div>
 						</h3>
@@ -245,7 +247,9 @@
 					</a>
 				</div>
 			</div>
+			@endforeach
 
+			<!--
 			<div class="col-lg-4 col-md-6">
 				<div class="card-wrapper">
 					<a href="{{ url('detail/etnic-ceremony') }}">
@@ -315,6 +319,7 @@
 					</a>
 				</div>
 			</div>
+		-->
 
 			<!-- <div class="col-lg-4 col-md-4 btn-col pb-4">
 				<div class="align-center mbr-section-btn"><a class="btn btn-md btn-primary display-4"

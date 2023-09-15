@@ -1797,6 +1797,8 @@ pre {
 
 .img-round {
   border-radius: 25px;
+  height: 99px;
+  width: auto;
 }
 
 #header3-1j h1, #header3-1j p {
