@@ -1379,7 +1379,10 @@ pre {
   width: 100%;
   opacity: 1;
   -webkit-transition: .2s opacity ease-in-out;
-  transition: .2s opacity ease-in-out; }
+  transition: .2s opacity ease-in-out; 
+  height: 320px;
+  object-fit: cover;
+}
 
 .mbr-gallery .mbr-gallery-item > div:hover img {
   opacity: 1; }
@@ -1784,4 +1787,10 @@ pre {
   object-fit: cover;
   margin-bottom: 17px;
   border-radius: 20px;
+}
+
+.qrcode-card {
+  height: 75px !important;
+  object-fit: contain !important;
+  width: auto;
 }
