@@ -15,7 +15,6 @@
             </nav>
         </div>
     </div>
-
     <div class="row tm-services-row detail">
         <div class="col-xs-12 col-sm-12 col-md-4 tm-services-col-left">
             <div>
