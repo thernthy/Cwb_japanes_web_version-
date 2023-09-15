@@ -13,15 +13,14 @@
         border-radius: 30px;
         background-color: transparent;
         border: 2px solid #2BFBE8;
-    }
-    .form-group input::placeholder{
-       color: gray;
+        animation: input_form_anime 2s ease;
     }
     .form-group textarea{
         box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.30);
         border-radius: 30px;
         background-color: transparent;
         border: 2px solid #2BFBE8;
+        animation: textarea_up 2s ease-in-out;
     }
     .contact_icon{
         margin: auto auto;
@@ -33,6 +32,26 @@
     }
     .alert-info{
         background-color: red;
+    }
+    @keyframes input_form_anime {
+        from{
+            transform: rotate(-10deg);
+            opacity: 0;
+        }
+        to{
+            transform: rotate(0deg);
+            opacity: 1;
+        }
+    }
+    @keyframes textarea_up{
+        from{
+           transform: translateY(200px);
+           opacity: 0;
+        }
+        to{
+            transform: translateY(0);
+            opacity: 1;
+        }
     }
 </style>
 @section('content')
