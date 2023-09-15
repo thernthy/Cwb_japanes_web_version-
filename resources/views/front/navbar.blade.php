@@ -31,13 +31,22 @@
 						<a class="nav-link link text-black display-4" href="{{ url('/about') }}" aria-expanded="false">អំពី</a>
 					</li> -->
 					<li class="nav-item dropdown"><a class="nav-link link text-black dropdown-toggle display-4"
-							href="#!" aria-expanded="false" data-toggle="dropdown-submenu">ប្រភេទ</a>
+							href="#!" aria-expanded="false" data-toggle="dropdown-submenu">លក្ខណៈពិសេស</a>
 						<div class="dropdown-menu"><a class="text-black dropdown-item display-4"
-								href="boardingdemo.html" aria-expanded="false">Menu One</a><a
-								class="text-black dropdown-item display-4" href="shopdemo.html"
-								aria-expanded="false">Menu Two</a><a
-								class="text-black dropdown-item display-4" href="schooldemo.html"
-								aria-expanded="false">Menu Three</a></div>
+								href="{{ url('main-feature/contribute-kui-bussines') }}" aria-expanded="false">ចូលរួម បង្កើតការងារដល់សហគមន៍</a><a
+								class="text-black dropdown-item display-4" href="{{ url('main-feature/digital-education-program') }}"
+								aria-expanded="false">កម្មវិធីអប់រំឌីជីថល</a><a
+								class="text-black dropdown-item display-4" href="{{ url('community-tourism') }}"
+								aria-expanded="false">ទេសចរណ៍សហគមន៍</a></div>
+					</li>
+					<li class="nav-item dropdown"><a class="nav-link link text-black dropdown-toggle display-4"
+							href="#!" aria-expanded="false" data-toggle="dropdown-submenu">ប្រភេទ</a>
+						<div class="dropdown-menu">
+							<a class="text-black dropdown-item display-4" href="{{ url('products') }}" aria-expanded="false">ផលិតផល</a>
+							<a class="text-black dropdown-item display-4" href="{{ url('cultures-food') }}" aria-expanded="false">វប្បធម៌ និងអាហារ</a>
+							<a class="text-black dropdown-item display-4" href="{{ url('category/forest') }}" aria-expanded="false">ព្រៃ</a>
+							
+						</div>
 					</li>
 					<li class="nav-item dropdown"><a class="nav-link link text-black dropdown-toggle display-4"
 							href="#!" data-toggle="dropdown-submenu" aria-expanded="false">

@@ -18,9 +18,9 @@
 <script src="https://mobirise.com/extensions/petsm4/assets/theme/js/script.js"></script>
 <script src="https://mobirise.com/extensions/petsm4/assets/formoid/formoid.min.js"></script>
 
-    <script src="https://mobirise.com/extensions/petsm4/assets/mobirise-shop/script.js"></script>
-    <script src="https://mobirise.com/extensions/petsm4/assets/gallery/player.min.js"></script>
-    <script src="https://mobirise.com/extensions/petsm4/assets/gallery/script.js"></script>
-    <script src="https://mobirise.com/extensions/petsm4/assets/formoid/formoid.min.js"></script>
+<script src="https://mobirise.com/extensions/petsm4/assets/mobirise-shop/script.js"></script>
+<script src="https://mobirise.com/extensions/petsm4/assets/gallery/player.min.js"></script>
+<script src="https://mobirise.com/extensions/petsm4/assets/gallery/script.js"></script>
+<script src="https://mobirise.com/extensions/petsm4/assets/formoid/formoid.min.js"></script>
 
 @stack('scripts')

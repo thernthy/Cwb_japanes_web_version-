@@ -1379,7 +1379,10 @@ pre {
   width: 100%;
   opacity: 1;
   -webkit-transition: .2s opacity ease-in-out;
-  transition: .2s opacity ease-in-out; }
+  transition: .2s opacity ease-in-out; 
+  height: 320px;
+  object-fit: cover;
+}
 
 .mbr-gallery .mbr-gallery-item > div:hover img {
   opacity: 1; }
@@ -1776,3 +1779,29 @@ pre {
     width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
+
+
+.img-responsive {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 17px;
+  border-radius: 20px;
+}
+
+.qrcode-card {
+  height: 75px !important;
+  object-fit: contain !important;
+  width: auto;
+}
+
+.img-round {
+  border-radius: 25px;
+  height: 99px;
+  width: auto;
+}
+
+#header3-1j h1, #header3-1j p {
+  background: #00000082;
+  padding: 8px;
+}

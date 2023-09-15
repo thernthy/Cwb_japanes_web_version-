@@ -1,17 +1,26 @@
 @extends('front.layout')
 
 @push('styles')
-    <link rel="stylesheet" href="{{ asset('css/home.css') }}">
+	<link rel="stylesheet" href="{{ asset('css/home.css') }}">
 
-    <style>
+	<style>
 
-    </style>
+	</style>
 @endpush
 
 @section('content')
 <section class="cid-rGsOE1E5qe" id="header1-1k">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12 content align-left py-4 col-lg-5 ">
 
+				<h1 class="mbr-section-title align-left mbr-bold pb-3 mbr-fonts-style display-2">
+					សូមស្វាគមន៍មកកាន់គេហទំព័ររបស់យើង។
+				</h1>
+				<p class="mbr-text pb-3 align-left mbr-fonts-style display-7"> Kuipedia
+					ជា​មូលដ្ឋាន​ចំណេះដឹង​របស់​សហគមន៍​គុយ​ក្នុង​ប្រទេស​កម្ពុជា។</p>
 
+<<<<<<< HEAD
 
     <div class="container-fluid">
         <div class="row">
@@ -24,6 +33,9 @@
                     គេហទំព័រនេះបង្កើតក្នុងគោលបំណងថែរក្សារផ្សព្វផ្សាយអំពីវប្បធម៌ប្រពៃណីនិងគេហទំព័របស់បងប្អូនជនជាតិគួយ
                     ​</p>
                 <!-- <div class="align-wrap align-left">
+=======
+				<!-- <div class="align-wrap align-left">
+>>>>>>> 6f11a2fccdab01f4e3055e42b5a099e9277c8efc
 					<div class="icons-wrap">
 						<div class="icon-wrap">
 							<h3 class="icon-title mbr-bold mbr-fonts-style display-7">EAT</h3>
@@ -38,451 +50,387 @@
 					</div>
 				</div> -->
 
+				<div class="align-left mbr-section-btn"><a class="btn btn-md btn-primary display-4"
+						href="{{ url('/about') }}">អំពី​ពួក​យើង</a> <a
+						class="btn btn-md btn-primary-outline display-4"
+						href="{{ url('/contact') }}">ទំនាក់ទំនង</a></div>
 
+			</div>
+			<div class="col-md-12 col-lg-7 img-col">
+				<div class="mbr-figure">
+					<img src="{{ asset('img/kui_header.png') }}" alt="Mobirise">
+				</div>
 
-                <div class="align-left mbr-section-btn"><a class="btn btn-md btn-primary display-4"
-                        href="{{ url('/about') }}">អំពី​ពួក​យើង</a> <a
-                        class="btn btn-md btn-primary-outline display-4"
-                        href="{{ url('/contact') }}">ទំនាក់ទំនង</a></div>
-
-            </div>
-            <div class="col-md-12 col-lg-7 img-col">
-                <div class="mbr-figure">
-                    <img src="{{ asset('img/kui_header.png') }}" alt="Mobirise">
-                </div>
-
-            </div>
-        </div>
-    </div>
+			</div>
+		</div>
+	</div>
 </section>
-
-
 
 <section class="cid-rGsSqYA5s6" id="content2-19">
+	<div class="container-fluid">
+		<div class="row">
 
+			<div class="col-md-12 col-lg-6 img-col">
+				<div class="mbr-figure">
+					<img src="{{ asset('img/about_header.png') }}" alt="About">
+				</div>
+			</div>
 
+			<div class="col-md-12 content py-4 col-lg-6">
 
+				<h1 class="mbr-section-title align-left mbr-bold pb-4 mbr-fonts-style display-2"><a
+						href="#!"><strong>អប់រំឌីជីថលជនជាតិដើមភាគតិច
+						</strong></a>
+					<div>Digindigenous</div>
+				</h1>
 
-    <div class="container-fluid">
-        <div class="row">
+				<h2 class="mbr-section-title align-left mbr-bold mbr-fonts-style display-7">
+					ការអប់រំឌីជីថលសម្រាប់ជនជាតិដើមភាគតិច</h2>
 
-            <div class="col-md-12 col-lg-6 img-col">
-                <div class="mbr-figure">
-                    <img src="{{ asset('img/about_header.png') }}" alt="About">
-                </div>
+				<p class="mbr-text pb-3 align-left mbr-fonts-style display-7">ជនជាតិដើមភាគតិច គឺជាអ្នកទទួលមរតក និងអ្នកអនុវត្តវប្បធម៌ប្លែកៗ និងវិធីទាក់ទងនឹងមនុស្ស និងបរិស្ថាន។ ពួកគេបានរក្សានូវលក្ខណៈសង្គម វប្បធម៌ សេដ្ឋកិច្ច និងនយោបាយ ដែលខុសប្លែកពីសង្គមលេចធ្លោដែលពួកគេរស់នៅ។ ទោះបីជាមានភាពខុសគ្នាខាងវប្បធម៌ក៏ដោយ ជនជាតិដើមភាគតិចមកពីជុំវិញពិភពលោកចែករំលែកបញ្ហាទូទៅទាក់ទងនឹងការការពារសិទ្ធិរបស់ពួកគេជាជនជាតិផ្សេងគ្នា។</p>
+				<ul class="list">
+					<li class="item-wrap">
+						<span class="fa fa-check-circle"></span>
+						<h4 class="display-7">&nbsp; ការលើកទឹកចិត្តដល់ការរស់ឡើងវិញនៃដី</h4>
+					</li>
+					<li class="item-wrap">
+						<span class="fa fa-check-circle"></span>
+						<h4 class="display-7">&nbsp; ការលើកទឹកចិត្តដល់ការរស់ឡើងវិញនៃដី</h4>
+					</li>
 
-            </div>
+					
+				</ul>
+			</div>
 
-
-            <div class="col-md-12 content py-4 col-lg-6">
-
-                <h1 class="mbr-section-title align-left mbr-bold pb-4 mbr-fonts-style display-2"><a
-                        href="#!"><strong>អប់រំឌីជីថលជនជាតិដើមភាគតិច
-                        </strong></a>
-                    <div>Digindigenous</div>
-                </h1>
-
-                <h2 class="mbr-section-title align-left mbr-bold mbr-fonts-style display-7">
-                    ការអប់រំឌីជីថលសម្រាប់ជនជាតិដើមភាគតិច</h2>
-
-                <p class="mbr-text pb-3 align-left mbr-fonts-style display-7"> Lorem ipsum dolor sit amet, consectetur
-                    adipiscing
-                    elit. Vivamus scelerisque est ex, in tempor leo suscipit ut. Etiam quis elit sed dui dignissim
-                    posuere id sit amet ligula. Aenean semper magna a sapien eleifend maximus. Aenean faucibus vehicula
-                    arcu, non tristique risus vulputate et. Nullam lectus ligula, viverra ut urna vitae, efficitur
-                    ultricies purus.</p>
-
-
-
-                <ul class="list">
-
-
-
-
-
-                    <li class="item-wrap">
-                        <span class="mbr-iconfont mbrib-success"
-                            style="color: rgb(118, 118, 118); fill: rgb(118, 118, 118);"></span>
-                        <h4 class="item1 mbr-regular mbr-fonts-style display-7">Sed cursus ex eu justo consectetur, odio
-                            convallis</h4>
-                    </li>
-                    <li class="item-wrap">
-                        <span class="mbr-iconfont mbrib-success"
-                            style="color: rgb(118, 118, 118); fill: rgb(118, 118, 118);"></span>
-                        <h4 class="item1 mbr-regular mbr-fonts-style display-7">Integer ullamcorper elementum felis in
-                            bibendum</h4>
-                    </li>
-                    <li class="item-wrap">
-                        <span class="mbr-iconfont mbrib-success"
-                            style="color: rgb(118, 118, 118); fill: rgb(118, 118, 118);"></span>
-                        <h4 class="item1 mbr-regular mbr-fonts-style display-7">Aenean ultrices tortor at est placerat
-                            interdum</h4>
-                    </li>
-                </ul>
-
-
-
-            </div>
-
-        </div>
-    </div>
+		</div>
+	</div>
 </section>
-
 <section class="cid-rGsSrg8y6k" id="content3-1a">
+	<div class="container">
+		<div class="row justify-content-center">
 
+			<div class="col-12 col-md-12 col-lg-12">
+				<h3 class="col-title1 mbr-bold align-left pb-4 mbr-fonts-style display-7">WHAT WE STAND FOR</h3>
+			</div>
+			<div class="col-12 col-md-6 col-lg-6 md-pb">
+				<p class="mbr-text pb-3 align-left mbr-fonts-style display-7">ជនជាតិដើមភាគតិចបានស្វែងរកការទទួលស្គាល់អត្តសញ្ញាណ របៀបរស់នៅ និងសិទ្ធិរបស់ពួកគេលើទឹកដីប្រពៃណី ទឹកដី និងធនធានធម្មជាតិជាច្រើនឆ្នាំមកហើយ ប៉ុន្តែក្នុងប្រវត្តិសាស្ត្រ សិទ្ធិរបស់ពួកគេតែងតែត្រូវបានរំលោភបំពាន។ ជនជាតិដើមភាគតិចសព្វថ្ងៃនេះ គឺជាក្រុមប្រជាជនដែលងាយរងគ្រោះ និងងាយរងគ្រោះបំផុតនៅលើពិភពលោក។ ឥឡូវនេះសហគមន៍អន្តរជាតិទទួលស្គាល់ថាវិធានការពិសេសគឺត្រូវបានទាមទារដើម្បីការពារសិទ្ធិរបស់ពួកគេ និងរក្សាវប្បធម៌ និងរបៀបរស់នៅដាច់ដោយឡែករបស់ពួកគេ។ ស្វែងរកខាងក្រោមប្រវត្តិខ្លីៗនៃការតស៊ូជនជាតិដើមភាគតិចក្នុងឆាកអន្តរជាតិ។</p>
+			</div>
+			<div class="col-12 col-md-6 col-lg-6 md-pb">
+				<p class="mbr-text pb-3 align-left mbr-fonts-style display-7">ប្រជាជនជាធម្មតាត្រូវបានពិពណ៌នាថាជា "ជនជាតិដើមភាគតិច" នៅពេលដែលពួកគេរក្សាទំនៀមទម្លាប់ ឬទិដ្ឋភាពផ្សេងទៀតនៃវប្បធម៌ដំបូងដែលត្រូវបានផ្សារភ្ជាប់ជាមួយនឹងប្រជាជនដំបូងនៃតំបន់ដែលបានផ្តល់ឱ្យ។ មិនមែនជនជាតិដើមភាគតិចទាំងអស់សុទ្ធតែមានចរិតលក្ខណៈនេះទេ ដោយសារមនុស្សជាច្រើនបានទទួលយកធាតុសំខាន់ៗនៃវប្បធម៌អាណានិគម ដូចជាសម្លៀកបំពាក់ សាសនា ឬភាសា។ ជនជាតិដើមភាគតិចអាចត្រូវបានតាំងទីលំនៅក្នុងតំបន់ជាក់លាក់មួយ (ស្នាក់នៅមិនទៀងទាត់) បង្ហាញការរស់នៅបែបពនេចរនៅទូទាំងទឹកដីធំមួយ ឬត្រូវបានតាំងទីលំនៅថ្មី ប៉ុន្តែជាទូទៅពួកគេជាប់ទាក់ទងប្រវត្តិសាស្ត្រជាមួយទឹកដីជាក់លាក់មួយដែលពួកគេអាស្រ័យ។ សង្គមជនជាតិដើមត្រូវបានរកឃើញនៅគ្រប់តំបន់អាកាសធាតុដែលមានមនុស្សរស់នៅ និងទ្វីបនៃពិភពលោក លើកលែងតែអង់តាក់ទិក។ មានជនជាតិដើមភាគតិចប្រហែលប្រាំពាន់នាក់នៅទូទាំងពិភពលោក។</p>
+				<ul class="list">
+					<li class="item-wrap">
+						<span class="fa fa-check-circle"></span>
+						<h4 class="display-7">&nbsp; ការលើកទឹកចិត្តដល់ការរស់ឡើងវិញនៃដី</h4>
+					</li>
+					<li class="item-wrap">
+						<span class="fa fa-check-circle"></span>
+						<h4 class="display-7">&nbsp; ការលើកទឹកចិត្តដល់ការរស់ឡើងវិញនៃដី</h4>
+					</li>
+					
+				</ul>
 
-
-
-
-    <div class="container">
-        <div class="row justify-content-center">
-
-            <div class="col-12 col-md-12 col-lg-12">
-                <h3 class="col-title1 mbr-bold align-left pb-4 mbr-fonts-style display-7">WHAT WE STAND FOR</h3>
-            </div>
-            <div class="col-12 col-md-6 col-lg-6 md-pb">
-
-
-                <p class="mbr-text pb-3 align-left mbr-fonts-style display-7">Lorem ipsum dolor sit amet, consectetur
-                    adipiscing
-                    elit. Donec ullamcorper neque dapibus ipsum semper, sit amet luctus turpis porttitor. Ut libero
-                    ante, varius quis ligula in, aliquet consectetur tortor. Proin aliquet neque nibh, pretium rutrum
-                    quam mattis a. Morbi vitae sodales metus. Pellentesque vel elit ullamcorper, pellentesque magna nec,
-                    dictum purus. Nullam scelerisque nisi eu lacus elementum, ac sodales nulla congue. Suspendisse eu
-                    lorem vitae odio imperdiet.</p>
-
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-6 md-pb">
-
-
-                <ul class="list">
-
-
-
-
-
-
-
-
-
-                    <li class="item-wrap">
-                        <span class="mbr-iconfont mbrib-success"
-                            style="color: rgb(118, 118, 118); fill: rgb(118, 118, 118);"></span>
-                        <h4 class="item1 mbr-regular mbr-fonts-style display-7">Nulla ut tellus imperdiet, ultrices
-                            nulla eu, porttitor quam</h4>
-                    </li>
-                    <li class="item-wrap">
-                        <span class="mbr-iconfont mbrib-success"
-                            style="color: rgb(118, 118, 118); fill: rgb(118, 118, 118);"></span>
-                        <h4 class="item1 mbr-regular mbr-fonts-style display-7">Donec condimentum volutpat eget sodales
-                            velit faucibus</h4>
-                    </li>
-                    <li class="item-wrap">
-                        <span class="mbr-iconfont mbrib-success"
-                            style="color: rgb(118, 118, 118); fill: rgb(118, 118, 118);"></span>
-                        <h4 class="item1 mbr-regular mbr-fonts-style display-7">Mauris non neque sollicitudin porttitor
-                            pulvinar ipsum</h4>
-                    </li>
-                    <li class="item-wrap">
-                        <span class="mbr-iconfont mbrib-success"
-                            style="color: rgb(118, 118, 118); fill: rgb(118, 118, 118);"></span>
-                        <h4 class="item1 mbr-regular mbr-fonts-style display-7">Quisque mattis consequat odio suscipit
-                            vulputate</h4>
-                    </li>
-                    <li class="item-wrap">
-                        <span class="mbr-iconfont mbrib-success"
-                            style="color: rgb(118, 118, 118); fill: rgb(118, 118, 118);"></span>
-                        <h4 class="item1 mbr-regular mbr-fonts-style display-7">Morbi a tortor sodales, malesuada lectus
-                            sed mauris</h4>
-                    </li>
-                </ul>
-
-            </div>
-
-
-
-
-
-        </div>
-    </div>
+			</div>
+		</div>
+	</div>
 </section>
 
 <section class="features1 cid-rGtBqmc2gI" id="features6-33">
-    <div class="container">
-        <div class="row">
+	<div class="container">
+		<div class="row">
 
-            <div class="card col-12 col-md-6 col-lg-4">
-                <div class="card-wrapper align-left card1 ">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="269.19780227841716" height="147.43955898849208"
-                        style="">
-                        <rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="transparent"
-                            stroke="none" class="" style="" fill-opacity="1"></rect>
-                        <g class="currentLayer" style="">
-                            <title>Layer 1</title>
-                            <path fill="white" fill-opacity="1" stroke="none" stroke-width="2" stroke-dasharray="none"
-                                stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero"
-                                opacity="1" marker-start="" marker-mid="" marker-end=""
-                                d="M-110.40659359291077,50.950556279754636 C-110.40659359291077,-2.4372237202453633 -10.614843592910766,-81.94505372024535 88.16483640708924,-81.94505372024535 C186.94450640708922,-81.94505372024535 266.9560464070892,-38.70095372024536 266.9560464070892,14.686816279754638 C266.9560464070892,68.07458627975464 186.94450640708922,111.31868627975464 88.16483640708924,111.31868627975464 C-10.614843592910766,111.31868627975464 -110.40659359291077,104.33832627975464 -110.40659359291077,50.950556279754636 z"
-                                id="svg_1" class=""
-                                transform="rotate(-4.22603702545166 78.27473449707026,14.686810493469203) "></path>
-                        </g>
-                    </svg>
-                    <div class="card-img">
-                        <span class="fa fa-book fa-4x"></span>
-                    </div>
-                    <div class="card-box">
-                        <h4 class="card-title pb-2 mbr-bold mbr-fonts-style display-5">ចូលរួម បង្កើតការងារដល់សហគមន៍</h4>
-                        <p class="mbr-text pb-4 mbr-fonts-style display-4">Pellentesque habitant felis morbi tristique
-                            senectus et
-                            netus et malesuada fames ac turpis netus egestas.</p>
-                        <h5 class="link mbr-semibold mbr-fonts-style display-4"><a href="{{ url('main-feature/tes') }}" class="text-black">
-                                មើល​ច្រើន​ទៀត <span class="fa fa-arrow-right"></span></a></h5>
-                    </div>
-                </div>
-            </div>
-            <div class="card col-12 col-md-6 col-lg-4">
-                <div class="card-wrapper  align-left card2 ">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="269.19780227841716" height="147.43955898849208"
-                        style="">
-                        <rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="transparent"
-                            stroke="none" class="" style="" fill-opacity="1"></rect>
-                        <g class="currentLayer" style="">
-                            <title>Layer 1</title>
-                            <path fill="white" fill-opacity="1" stroke="none" stroke-width="2" stroke-dasharray="none"
-                                stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero"
-                                opacity="1" marker-start="" marker-mid="" marker-end=""
-                                d="M-110.40659359291077,50.950556279754636 C-110.40659359291077,-2.4372237202453633 -10.614843592910766,-81.94505372024535 88.16483640708924,-81.94505372024535 C186.94450640708922,-81.94505372024535 266.9560464070892,-38.70095372024536 266.9560464070892,14.686816279754638 C266.9560464070892,68.07458627975464 186.94450640708922,111.31868627975464 88.16483640708924,111.31868627975464 C-10.614843592910766,111.31868627975464 -110.40659359291077,104.33832627975464 -110.40659359291077,50.950556279754636 z"
-                                id="svg_1" class=""
-                                transform="rotate(-4.22603702545166 78.27473449707026,14.686810493469203) "></path>
-                        </g>
-                    </svg>
-                    <div class="card-img">
-                        <span class="fa fa-folder fa-4x"></span>
-                    </div>
-                    <div class="card-box">
-                        <h4 class="card-title pb-2 mbr-bold mbr-fonts-style display-5">
-                            កម្មវិធីអប់រំឌីជីថល</h4>
-                        <p class="mbr-text pb-4 mbr-fonts-style display-4">
-                            Pellentesque habitant felis morbi tristique senectus et netus et malesuada fames ac turpis
-                            netus egestas. </p>
-                        <h5 class="link mbr-semibold mbr-fonts-style display-4"><a href="#" class="text-black">
-                                មើល​ច្រើន​ទៀត <span class="fa fa-arrow-right"></span></a></h5>
-                    </div>
-                </div>
-            </div>
-            <div class="card col-12 col-md-6 col-lg-4">
-                <div class="card-wrapper  align-left card3 ">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="269.19780227841716" height="147.43955898849208"
-                        style="">
-                        <rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="transparent"
-                            stroke="none" class="" style="" fill-opacity="1"></rect>
-                        <g class="currentLayer" style="">
-                            <title>Layer 1</title>
-                            <path fill="white" fill-opacity="1" stroke="none" stroke-width="2" stroke-dasharray="none"
-                                stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero"
-                                opacity="1" marker-start="" marker-mid="" marker-end=""
-                                d="M-110.40659359291077,50.950556279754636 C-110.40659359291077,-2.4372237202453633 -10.614843592910766,-81.94505372024535 88.16483640708924,-81.94505372024535 C186.94450640708922,-81.94505372024535 266.9560464070892,-38.70095372024536 266.9560464070892,14.686816279754638 C266.9560464070892,68.07458627975464 186.94450640708922,111.31868627975464 88.16483640708924,111.31868627975464 C-10.614843592910766,111.31868627975464 -110.40659359291077,104.33832627975464 -110.40659359291077,50.950556279754636 z"
-                                id="svg_1" class=""
-                                transform="rotate(-4.22603702545166 78.27473449707026,14.686810493469203) "></path>
-                        </g>
-                    </svg>
-                    <div class="card-img">
-                        <span class="fa fa-globe fa-4x"></span>
-                    </div>
-                    <div class="card-box">
-                        <h4 class="card-title pb-2 mbr-bold mbr-fonts-style display-5">
-                            ទេសចរណ៍សហគមន៍</h4>
-                        <p class="mbr-text pb-4 mbr-fonts-style display-4">
-                            Pellentesque habitant felis morbi tristique senectus et netus et malesuada fames ac turpis
-                            netus egestas. </p>
-                        <h5 class="link mbr-semibold mbr-fonts-style display-4"><a href="{{ url('community-tourism') }}" class="text-black">
-                                មើល​ច្រើន​ទៀត <span class="fa fa-arrow-right"></span></a></h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+			<div class="card col-12 col-md-6 col-lg-4">
+				<div class="card-wrapper align-left card1 ">
+					<svg xmlns="http://www.w3.org/2000/svg" width="269.19780227841716" height="147.43955898849208"
+						style="">
+						<rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="transparent"
+							stroke="none" class="" style="" fill-opacity="1"></rect>
+						<g class="currentLayer" style="">
+							<title>Layer 1</title>
+							<path fill="white" fill-opacity="1" stroke="none" stroke-width="2" stroke-dasharray="none"
+								stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero"
+								opacity="1" marker-start="" marker-mid="" marker-end=""
+								d="M-110.40659359291077,50.950556279754636 C-110.40659359291077,-2.4372237202453633 -10.614843592910766,-81.94505372024535 88.16483640708924,-81.94505372024535 C186.94450640708922,-81.94505372024535 266.9560464070892,-38.70095372024536 266.9560464070892,14.686816279754638 C266.9560464070892,68.07458627975464 186.94450640708922,111.31868627975464 88.16483640708924,111.31868627975464 C-10.614843592910766,111.31868627975464 -110.40659359291077,104.33832627975464 -110.40659359291077,50.950556279754636 z"
+								id="svg_1" class=""
+								transform="rotate(-4.22603702545166 78.27473449707026,14.686810493469203) "></path>
+						</g>
+					</svg>
+					<div class="card-img">
+						<span class="fa fa-book fa-4x"></span>
+					</div>
+					<div class="card-box">
+						<img class="img-responsive" src="{{ asset('img/vegetables2.jpg') }}">
+						<h4 class="card-title pb-2 mbr-bold mbr-fonts-style display-5">ចូលរួម បង្កើតការងារដល់សហគមន៍</h4>
+						<p class="mbr-text pb-4 mbr-fonts-style display-4">Pellentesque habitant felis morbi tristique
+							senectus et
+							netus et malesuada fames ac turpis netus egestas.</p>
+						<h5 class="link mbr-semibold mbr-fonts-style display-4"><a href="{{ url('main-feature/contribute-kui-bussines') }}" class="text-black">
+								មើល​ច្រើន​ទៀត <span class="fa fa-arrow-right"></span></a></h5>
+					</div>
+				</div>
+			</div>
+			<div class="card col-12 col-md-6 col-lg-4">
+				<div class="card-wrapper  align-left card2 ">
+					<svg xmlns="http://www.w3.org/2000/svg" width="269.19780227841716" height="147.43955898849208"
+						style="">
+						<rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="transparent"
+							stroke="none" class="" style="" fill-opacity="1"></rect>
+						<g class="currentLayer" style="">
+							<title>Layer 1</title>
+							<path fill="white" fill-opacity="1" stroke="none" stroke-width="2" stroke-dasharray="none"
+								stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero"
+								opacity="1" marker-start="" marker-mid="" marker-end=""
+								d="M-110.40659359291077,50.950556279754636 C-110.40659359291077,-2.4372237202453633 -10.614843592910766,-81.94505372024535 88.16483640708924,-81.94505372024535 C186.94450640708922,-81.94505372024535 266.9560464070892,-38.70095372024536 266.9560464070892,14.686816279754638 C266.9560464070892,68.07458627975464 186.94450640708922,111.31868627975464 88.16483640708924,111.31868627975464 C-10.614843592910766,111.31868627975464 -110.40659359291077,104.33832627975464 -110.40659359291077,50.950556279754636 z"
+								id="svg_1" class=""
+								transform="rotate(-4.22603702545166 78.27473449707026,14.686810493469203) "></path>
+						</g>
+					</svg>
+					<div class="card-img">
+						<span class="fa fa-folder fa-4x"></span>
+					</div>
+					<div class="card-box">
+						<img class="img-responsive" src="{{ asset('img/digital_program.jpg') }}">
+						<h4 class="card-title pb-2 mbr-bold mbr-fonts-style display-5">កម្មវិធីអប់រំឌីជីថល</h4>
+							
+						<p class="mbr-text pb-4 mbr-fonts-style display-4">
+							Pellentesque habitant felis morbi tristique senectus et netus et malesuada fames ac turpis
+							netus egestas. </p>
+						<h5 class="link mbr-semibold mbr-fonts-style display-4">
+							<a href="{{ url('main-feature/digital-education-program') }}" class="text-black">
+								មើល​ច្រើន​ទៀត <span class="fa fa-arrow-right"></span></a></h5>
+					</div>
+				</div>
+			</div>
+			<div class="card col-12 col-md-6 col-lg-4">
+				<div class="card-wrapper  align-left card3 ">
+					<svg xmlns="http://www.w3.org/2000/svg" width="269.19780227841716" height="147.43955898849208"
+						style="">
+						<rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="transparent"
+							stroke="none" class="" style="" fill-opacity="1"></rect>
+						<g class="currentLayer" style="">
+							<title>Layer 1</title>
+							<path fill="white" fill-opacity="1" stroke="none" stroke-width="2" stroke-dasharray="none"
+								stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero"
+								opacity="1" marker-start="" marker-mid="" marker-end=""
+								d="M-110.40659359291077,50.950556279754636 C-110.40659359291077,-2.4372237202453633 -10.614843592910766,-81.94505372024535 88.16483640708924,-81.94505372024535 C186.94450640708922,-81.94505372024535 266.9560464070892,-38.70095372024536 266.9560464070892,14.686816279754638 C266.9560464070892,68.07458627975464 186.94450640708922,111.31868627975464 88.16483640708924,111.31868627975464 C-10.614843592910766,111.31868627975464 -110.40659359291077,104.33832627975464 -110.40659359291077,50.950556279754636 z"
+								id="svg_1" class=""
+								transform="rotate(-4.22603702545166 78.27473449707026,14.686810493469203) "></path>
+						</g>
+					</svg>
+					<div class="card-img">
+						<span class="fa fa-globe fa-4x"></span>
+					</div>
+					<div class="card-box">
+						<img class="img-responsive" src="{{ asset('img/girl_dancing.jpg') }}">
+						<h4 class="card-title pb-2 mbr-bold mbr-fonts-style display-5">
+							ទេសចរណ៍សហគមន៍</h4>
+						
+						<p class="mbr-text pb-4 mbr-fonts-style display-4">
+							Pellentesque habitant felis morbi tristique senectus et netus et malesuada fames ac turpis
+							netus egestas. </p>
+						<h5 class="link mbr-semibold mbr-fonts-style display-4">
+							<a href="{{ url('community-tourism') }}" class="text-black">
+								មើល​ច្រើន​ទៀត <span class="fa fa-arrow-right"></span></a></h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 </section>
 
 <section class="features6 popup-btn-cards cid-rGsSo9FI9p" id="features4-10">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-12 col-md-12 pb-4">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-12 col-md-12 pb-4">
 				<h4 class="align-left mbr-bold mbr-fonts-style display-7">សកម្មភាពពិសេស</h4>
 
 				<h2 class="align-left mbr-bold mbr-fonts-style mbr-section-title display-2">សូមក្រឡេកមើល</h2>
 			</div>
 
-            <div class="col-lg-4 col-md-6">
-                <div class="card-wrapper">
-                    <a href="#!">
-                    <img src="https://picsum.photos/seed/chacha/600/600">
-                    <div class="wrapper">
-                        <p class="mbr-text align-center mbr-semibold mbr-white mbr-fonts-style display-4">ACTIVITIES</p>
-                        <h3 class="card-title align-center mbr-bold mbr-fonts-style align-left mbr-white display-5">
-                            <div>Toys Playtime</div>
-                        </h3>
-                    </div>
-                    </a>
-                </div>
-            </div>
 
-            <div class="col-lg-4 col-md-6">
-                <div class="card-wrapper">
-                    <img src="https://picsum.photos/seed/putri/600/600">
-                    <div class="wrapper">
-                        <p class="mbr-text align-center mbr-semibold mbr-white mbr-fonts-style display-4">
-                            ACTIVITIES</p>
-                        <h3 class="card-title align-center mbr-bold mbr-fonts-style align-left mbr-white display-5">
-                            Active Rest</h3>
-                    </div>
-                </div>
-            </div>
+			@foreach($data['actions'] as $item)
+			<div class="col-lg-4 col-md-6">
+				<div class="card-wrapper">
+					<a href="{{ url('detail/etnic-ceremony') }}">
+					<img src="{{ asset('img/kuy_festival.jpg') }}">
+					<div class="wrapper">
+						<p class="mbr-text align-center mbr-semibold mbr-white mbr-fonts-style display-4">{{ $item->title_en }}</p>
+						<h3 class="card-title align-center mbr-bold mbr-fonts-style align-left mbr-white display-5">
+							<div>ការពិពណ៌នាអំពីប្រភេទខ្លី និងទិដ្ឋភាពទូទៅនៃអ្វីដែលជាប្រភេទអំពី</div>
+						</h3>
+					</div>
+					</a>
+				</div>
+			</div>
+			@endforeach
 
-            <div class="col-lg-4 col-md-6">
-                <div class="card-wrapper">
-                    <img src="https://picsum.photos/seed/neneng/600/600" alt="" title="">
-                    <div class="wrapper">
-                        <p class="mbr-text align-center mbr-semibold mbr-white mbr-fonts-style display-4">ACTIVITIES</p>
-                        <h3 class="card-title align-center mbr-bold mbr-fonts-style align-left mbr-white display-5">Game
-                            Walks
-                        </h3>
-                    </div>
-                </div>
-            </div>
+			<!--
+			<div class="col-lg-4 col-md-6">
+				<div class="card-wrapper">
+					<a href="{{ url('detail/etnic-ceremony') }}">
+					<img src="{{ asset('img/dancing_girls2.jpg') }}">
+					<div class="wrapper">
+						<p class="mbr-text align-center mbr-semibold mbr-white mbr-fonts-style display-4">ឈ្មោះប្រភេទ</p>
+						<h3 class="card-title align-center mbr-bold mbr-fonts-style align-left mbr-white display-5">
+							<div>ការពិពណ៌នាអំពីប្រភេទខ្លី និងទិដ្ឋភាពទូទៅនៃអ្វីដែលជាប្រភេទអំពី</div>
+						</h3>
+					</div>
+					</a>
+				</div>
+			</div>
 
-            <div class="col-lg-4 col-md-6">
-                <div class="card-wrapper">
-                    <img src="https://picsum.photos/seed/yujin/600/600">
-                    <div class="wrapper">
-                        <p class="mbr-text align-center mbr-semibold mbr-white mbr-fonts-style display-4">ACTIVITIES</p>
-                        <h3 class="card-title align-center mbr-bold mbr-fonts-style align-left mbr-white display-5">
-                            <div>Toys Playtime</div>
-                        </h3>
-                    </div>
-                </div>
-            </div>
+			<div class="col-lg-4 col-md-6">
+				<div class="card-wrapper">
+					<a href="{{ url('detail/etnic-ceremony') }}">
+					<img src="{{ asset('img/random2.jpg') }}">
+					<div class="wrapper">
+						<p class="mbr-text align-center mbr-semibold mbr-white mbr-fonts-style display-4">ឈ្មោះប្រភេទ</p>
+						<h3 class="card-title align-center mbr-bold mbr-fonts-style align-left mbr-white display-5">
+							<div>ការពិពណ៌នាអំពីប្រភេទខ្លី និងទិដ្ឋភាពទូទៅនៃអ្វីដែលជាប្រភេទអំពី</div>
+						</h3>
+					</div>
+					</a>
+				</div>
+			</div>
 
-            <div class="col-lg-4 col-md-6">
-                <div class="card-wrapper">
-                    <img src="https://picsum.photos/seed/menikah/600/600">
-                    <div class="wrapper">
-                        <p class="mbr-text align-center mbr-semibold mbr-white mbr-fonts-style display-4">
-                            ACTIVITIES</p>
-                        <h3 class="card-title align-center mbr-bold mbr-fonts-style align-left mbr-white display-5">
-                            Active Rest</h3>
-                    </div>
-                </div>
-            </div>
+			<div class="col-lg-4 col-md-6">
+				<div class="card-wrapper">
+					<a href="{{ url('detail/etnic-ceremony') }}">
+					<img src="{{ asset('img/random3.jpg') }}">
+					<div class="wrapper">
+						<p class="mbr-text align-center mbr-semibold mbr-white mbr-fonts-style display-4">ឈ្មោះប្រភេទ</p>
+						<h3 class="card-title align-center mbr-bold mbr-fonts-style align-left mbr-white display-5">
+							<div>ការពិពណ៌នាអំពីប្រភេទខ្លី និងទិដ្ឋភាពទូទៅនៃអ្វីដែលជាប្រភេទអំពី</div>
+						</h3>
+					</div>
+					</a>
+				</div>
+			</div>
 
-            <div class="col-lg-4 col-md-6">
-                <div class="card-wrapper">
-                    <img src="https://picsum.photos/seed/cinta/600/600" alt="" title="">
-                    <div class="wrapper">
-                        <p class="mbr-text align-center mbr-semibold mbr-white mbr-fonts-style display-4">ACTIVITIES</p>
-                        <h3 class="card-title align-center mbr-bold mbr-fonts-style align-left mbr-white display-5">Game
-                            Walks
-                        </h3>
-                    </div>
-                </div>
-            </div>
+			<div class="col-lg-4 col-md-6">
+				<div class="card-wrapper">
+					<a href="{{ url('detail/etnic-ceremony') }}">
+					<img src="{{ asset('img/random4.jpg') }}">
+					<div class="wrapper">
+						<p class="mbr-text align-center mbr-semibold mbr-white mbr-fonts-style display-4">ឈ្មោះប្រភេទ</p>
+						<h3 class="card-title align-center mbr-bold mbr-fonts-style align-left mbr-white display-5">
+							<div>ការពិពណ៌នាអំពីប្រភេទខ្លី និងទិដ្ឋភាពទូទៅនៃអ្វីដែលជាប្រភេទអំពី</div>
+						</h3>
+					</div>
+					</a>
+				</div>
+			</div>
 
-            <!-- <div class="col-lg-4 col-md-4 btn-col pb-4">
-                <div class="align-center mbr-section-btn"><a class="btn btn-md btn-primary display-4"
-                        href="#!">មើលទាំងអស់។<br></a></div>
-            </div> -->
+			<div class="col-lg-4 col-md-6">
+				<div class="card-wrapper">
+					<a href="{{ url('detail/etnic-ceremony') }}">
+					<img src="{{ asset('img/girl_alone.jpg') }}">
+					<div class="wrapper">
+						<p class="mbr-text align-center mbr-semibold mbr-white mbr-fonts-style display-4">ឈ្មោះប្រភេទ</p>
+						<h3 class="card-title align-center mbr-bold mbr-fonts-style align-left mbr-white display-5">
+							<div>ការពិពណ៌នាអំពីប្រភេទខ្លី និងទិដ្ឋភាពទូទៅនៃអ្វីដែលជាប្រភេទអំពី</div>
+						</h3>
+					</div>
+					</a>
+				</div>
+			</div>
+		-->
 
-        </div>
-    </div>
+			<!-- <div class="col-lg-4 col-md-4 btn-col pb-4">
+				<div class="align-center mbr-section-btn"><a class="btn btn-md btn-primary display-4"
+						href="#!">មើលទាំងអស់។<br></a></div>
+			</div> -->
+
+		</div>
+	</div>
 </section>
 
 <section class="features1 cid-rGsSnQK7nI" id="features3-z">
 
-    <div class="container">
+	<div class="container">
 		<h2 class="mbr-section-title pb-5 align-center mbr-fonts-style display-2"><strong>ប្រភេទ</strong></h2>
 
-        <div class="row">
-            <div class="col-12">
+		<div class="row">
+			<div class="col-12">
 
-                <div class="content flip">
+				<div class="content flip">
 					
+					<a class="card" href="{{ url('products') }}">
+						<div class="front" style="background-image: url({{ asset('img/vegetables.jpg') }})">
+							<p>ព្រៃ</p>
+						</div>
+						<div class="back">
+							<div>
+								<p><b>ព្រៃ</b></p>
+								<p>ការពិពណ៌នាអំពីប្រភេទខ្លី និងទិដ្ឋភាពទូទៅនៃអ្វីដែលជាប្រភេទអំពី</p>
+								<button class="button">មើលទាំងអស់។</button>
+							</div>
+						</div>
+					</a>
 					<a class="card" href="{{ url('category/test') }}">
-                        <div class="front" style="background-image: url(//source.unsplash.com/300x401)">
-                            <p>កម្មវិធីអប់រំឌីជីថល</p>
-                        </div>
-                        <div class="back">
-                            <div>
-                                <p>Consectetur adipisicing elit. Possimus, praesentium?</p>
-                                <p>Provident consectetur natus voluptatem quis tenetur sed beatae eius sint.</p>
-                                <button class="button">មើលទាំងអស់។</button>
-                            </div>
-                        </div>
-                    </a>
-                    <a class="card" href="{{ url('category/test') }}">
-                        <div class="front" style="background-image: url(//source.unsplash.com/300x402)">
-                            <p>សកម្មភាព និងកម្មវិធី សហគម</p>
-                        </div>
-                        <div class="back">
-                            <div>
-                                <p>Consectetur adipisicing elit. Possimus, praesentium?</p>
-                                <p>Provident consectetur natus voluptatem quis tenetur sed beatae eius sint.</p>
-                                <button class="button">មើលទាំងអស់។</button>
-                            </div>
-                        </div>
-                    </a>
-                    <a class="card" href="{{ url('products') }}">
-                        <div class="front" style="background-image: url(//source.unsplash.com/300x403)">
-                            <p>ផលិតផល</p>
-                        </div>
-                        <div class="back">
-                            <div>
-                                <p>Consectetur adipisicing elit. Possimus, praesentium?</p>
-                                <p>Provident consectetur natus voluptatem quis tenetur sed beatae eius sint.</p>
-                            </div>
-                        </div>
-                    </a><a class="card" href="{{ url('tourism-community') }}">
-                        <div class="front" style="background-image: url(//source.unsplash.com/300x404)">
-                            <p>ទេសចរណ៍ និង ផ្ទះស្នាក់</p>
-                        </div>
-                        <div class="back">
-                            <div>
-                                <p>Consectetur adipisicing elit. Possimus, praesentium?</p>
-                                <p>Provident consectetur natus voluptatem quis tenetur sed beatae eius sint.</p>
-                                <button class="button">Click Here</button>
-                            </div>
-                        </div>
-                    </a><a class="card" href="#!">
-                        <div class="front" style="background-image: url(//source.unsplash.com/300x405)">
-                            <p>វប្បធម៌ និងអាហារ</p>
-                        </div>
-                        <div class="back">
-                            <div>
-                                <p>Consectetur adipisicing elit. Possimus, praesentium?</p>
-                                <p>Provident consectetur natus voluptatem quis tenetur sed beatae eius sint.</p>
-                                <button class="button">Click Here</button>
-                            </div>
-                        </div>
-                    </a><a class="card" href="#!">
-                        <div class="front" style="background-image: url(//source.unsplash.com/300x406)">
-                            <p>សារមន្ទីរដែក</p>
-                        </div>
-                        <div class="back">
-                            <div>
-                                <p>Consectetur adipisicing elit. Possimus, praesentium?</p>
-                                <p>Provident consectetur natus voluptatem quis tenetur sed beatae eius sint.</p>
-                                <button class="button">Click Here</button>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+						<div class="front" style="background-image: url({{ asset('img/people_discuss.jpg') }})">
+							<p>សកម្មភាព និងកម្មវិធី សហគម</p>
+						</div>
+						<div class="back">
+							<div>
+								<p><b>សកម្មភាព និងកម្មវិធី សហគម</b></p>
+								<p>ការពិពណ៌នាអំពីប្រភេទខ្លី និងទិដ្ឋភាពទូទៅនៃអ្វីដែលជាប្រភេទអំពី</p>
+								<button class="button">មើលទាំងអស់។</button>
+							</div>
+						</div>
+					</a>
+					<a class="card" href="{{ url('products') }}">
+						<div class="front" style="background-image: url({{ asset('img/products.jpg') }})">
+							<p>ផលិតផល</p>
+						</div>
+						<div class="back">
+							<div>
+								<p><b>ផលិតផល</b></p>
+								<p>ការពិពណ៌នាអំពីប្រភេទខ្លី និងទិដ្ឋភាពទូទៅនៃអ្វីដែលជាប្រភេទអំពី</p>
+								<button class="button">មើលទាំងអស់។</button>
+							</div>
+						</div>
+					</a><a class="card" href="{{ url('community-tourism') }}">
+						<div class="front" style="background-image: url({{ asset('img/dancing_girls.jpg') }})">
+							<p>ទេសចរណ៍ និង ផ្ទះស្នាក់</p>
+						</div>
+						<div class="back">
+							<div>
+								<p><b>ទេសចរណ៍ និង ផ្ទះស្នាក់</b></p>
+								<p>Provident consectetur natus voluptatem quis tenetur sed beatae eius sint.</p>
+								<button class="button">មើលទាំងអស់។</button>
+							</div>
+						</div>
+					</a><a class="card" href="{{ url('products') }}">
+						<div class="front" style="background-image: url({{ asset('img/cultures.jpg') }})">
+							<p>វប្បធម៌ និងអាហារ</p>
+						</div>
+						<div class="back">
+							<div>
+								<p><b>វប្បធម៌ និងអាហារ</b></p>
+								<p>Provident consectetur natus voluptatem quis tenetur sed beatae eius sint.</p>
+								<button class="button">មើលទាំងអស់។</button>
+							</div>
+						</div>
+					</a><a class="card" href="#!">
+						<div class="front" style="background-image: url({{ asset('img/random1.jpg') }})">
+							<p>សារមន្ទីរដែក</p>
+						</div>
+						<div class="back">
+							<div>
+								<p><b>សារមន្ទីរដែក</b></p>
+								<p>Provident consectetur natus voluptatem quis tenetur sed beatae eius sint.</p>
+								<button class="button">មើលទាំងអស់។</button>
+							</div>
+						</div>
+					</a>
+				</div>
 
-            </div>
-            <!-- col-12 -->
+			</div>
+			<!-- col-12 -->
 
-        </div>
-    </div>
+		</div>
+	</div>
 </section>
 
 <!-- 
@@ -664,7 +612,7 @@
 @endsection
 
 @push('scripts')
-    <script type="text/javascript">
+	<script type="text/javascript">
 
-    </script>
+	</script>
 @endpush

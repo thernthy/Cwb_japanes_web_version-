@@ -26,6 +26,8 @@ Route::get('/main-feature/{slug}', 'HomeController@mainFeatures');
 Route::get('/community-tourism', 'HomeController@communityTourism');
 Route::get('/category/{slug}', 'HomeController@category');
 Route::get('/products', 'HomeController@products');
+Route::get('contact', 'HomeController@contact');
+Route::get('/detail/{slug}', 'HomeController@detail');
 
 // ------------------------------
 Route::get('/trust-member', 'HomeController@trustMember');

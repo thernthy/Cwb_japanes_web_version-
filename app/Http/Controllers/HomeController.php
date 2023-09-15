@@ -47,6 +47,8 @@ class HomeController extends Controller
 			->orderBy('id', 'asc')
 			->get();
 
+		// dd($data);
+
 		$data['gallery'] = DB::table('galleries')
 			->leftJoin(
 				'activities',
@@ -126,15 +128,15 @@ class HomeController extends Controller
 			->where('activities.status', 1)
 			->where('action_activities.id_action', $data['data']->id)
 			->get();
-
+		
+		dd($data['activities']);
 		
 		// --------- seo ------------
 		SEOTools::setTitle($data['data']->title_en);
 		// SEOTools::setDescription('This is my page description');
 		// --------------------------
 
-		return view('front.action')
-		->with('data', $data);
+		return view('front.action')->with('data', $data);
 	}
 
 	public function keyword($slug)
@@ -299,6 +301,36 @@ class HomeController extends Controller
 		// --------------------------
 
 		return view('front.category')
+		->with('data', $data);
+	}
+
+	public function detail($slug)
+	{
+		$data['test'] = 'test';
+		// $data['nav_footer'] = $this->navbar;
+
+		// $data['footer_menu'] = DB::table('packages')
+		// 	->select('id', 'slug', 'title', 'price')
+		// 	->limit(6)
+		// 	->orderBy('id', 'asc')
+		// 	->get();
+			
+		// $data['data'] = DB::table('posts')
+		// 	->join(
+		// 		'categories',
+		// 		'posts.cat_id',
+		// 		'=',
+		// 		'categories.id'
+		// 	)
+		// 	->select('posts.title', 'posts.id', 'slug', 'img', 'created_at', 'categories.title as cat')
+		// 	->orderBy('id', 'desc')
+		// 	->get();
+		
+		// --------- seo ------------
+		// SEOTools::setTitle('Blog');
+		// --------------------------
+
+		return view('front.detail')
 		->with('data', $data);
 	}
 
@@ -515,8 +547,12 @@ class HomeController extends Controller
 		SEOTools::setTitle('Main Features');
 		// --------------------------
 
-		return view('front.main-features')
-		->with('data', $data);
+		if($slug=="digital-education-program") {
+			return view('front.main-features2')->with('data', $data);
+		} else {
+			return view('front.main-features')->with('data', $data);
+		}
+		
 	}
 
 	public function communityTourism()
