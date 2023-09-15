@@ -5,60 +5,61 @@
 @endpush
 
 @section('content')
-
-<div class="row">
-    <div class="col-xs-12">
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="{{ url('/') }}">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Contact us</li>
-            </ol>
-        </nav>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-xs-12 text-tengah">
-        <h1 class="text-xs-center">
-            <span>
-            Contact us
-            </span>
-        </h1>
-    </div>
-    <div class="offset-md-3 col-md-6 mb-4">
-        <div class="alert alert-success" role="alert">
-            <h4 class="alert-heading">Submit Form</h4>
-            <p>This form is used to register/applicate/contact regarding our activities and information on this website.</p>
-            <!-- <hr>
-            <p class="mb-0">CWB Community is not </p> -->
+<div class="col pl-4 pr-4">
+   <!-- <div class="row mt-5">
+        <div class="col-xs-12">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="{{ url('/') }}">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Contact us</li>
+                </ol>
+            </nav>
         </div>
-        <form action=''>
-            <div class="form-group">
-                <label for="inputAddress">Name</label>
-                <input type="text" class="form-control" name="name" id="name" placeholder="Your Name">
+    </div>-->
+    <div class="row mt-5 pt-5">
+        <div class="col-xs-12 text-tengah">
+            <h1 class="text-xs-center">
+                <span>
+                Contact us
+                </span>
+            </h1>
+        </div>
+        <div class="offset-md-3 col-md-6 mb-4">
+            <div class="alert alert-success" role="alert">
+                <h4 class="alert-heading">Submit Form</h4>
+                <p>This form is used to register/applicate/contact regarding our activities and information on this website.</p>
+                <!-- <hr>
+                <p class="mb-0">CWB Community is not </p> -->
             </div>
-            <div class="form-group">
-                <label for="inputAddress">Address/Origin</label>
-                <input type="text" class="form-control" name="address" id="address" placeholder="Your Address/Origin">
-            </div>
-            <div class="form-group">
-                <label for="inputAddress2">e-mail</label>
-                <input type="email" class="form-control" name="email" id="email"
-                    placeholder="your@emailaddress">
-            </div>
-            <div class="form-group">
-                <label for="inputAddress2">Message</label>
-                <textarea class="form-control" name="" id="" rows="3"></textarea>
-            </div>
-            <div class="alert alert-info" role="alert">
-                *Note: Make sure you check all the fields before submitting all data!
-            </div>
+            <form action=''>
+                <div class="form-group">
+                    <label for="inputAddress">Name</label>
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="inputAddress">Address/Origin</label>
+                    <input type="text" class="form-control" name="address" id="address" placeholder="Your Address/Origin">
+                </div>
+                <div class="form-group">
+                    <label for="inputAddress2">e-mail</label>
+                    <input type="email" class="form-control" name="email" id="email"
+                        placeholder="your@emailaddress">
+                </div>
+                <div class="form-group">
+                    <label for="inputAddress2">Message</label>
+                    <textarea class="form-control" name="" id="" rows="3"></textarea>
+                </div>
+                <div class="alert alert-info" role="alert">
+                    *Note: Make sure you check all the fields before submitting all data!
+                </div>
 
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
     </div>
+    <!-- .row .tm-services-row -->
 </div>
-<!-- .row .tm-services-row -->
+
 
 @endsection
 
