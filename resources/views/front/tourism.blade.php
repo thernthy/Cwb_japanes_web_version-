@@ -52,7 +52,7 @@
 
 			<div class="col-md-12 col-lg-7 img-col">
 				<div class="mbr-figure">
-					<img src="https://mobirise.com/extensions/petsm4/assets/images/02.png" alt="Mobirise">
+					<img src="{{ asset('img/about_header.png') }}" alt="Mobirise">
 				</div>
 			</div>
 			<div class="col-md-12 content align-left py-4 col-lg-5">

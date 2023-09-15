@@ -111,7 +111,7 @@
 											<p>(ការពិពណ៌នា)</p>
 										</div>
 										<div class="img_wraper">
-											<img src="https://mobirise.com/extensions/petsm4/assets/images/mbr-1920x1280-800x533.jpg" alt="" title="">
+											<img src="{{ asset('img/girls_on_stage.jpg') }}" alt="" title="">
 										</div>
 										<span class="onsale mbr-fonts-style display-7" data-onsale="false" style="display: none;">
 											-50%
