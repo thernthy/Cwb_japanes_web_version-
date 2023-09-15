@@ -8807,7 +8807,7 @@ section.lazy-placeholder:after {
 .cid-rGsOyzHk89 {
   padding-top: 120px;
   padding-bottom: 120px;
-  background-image: url("../../img/kuy_big.jpg");
+  background-image: url("../../img/tourism.jpg");
 }
 .cid-rGsOyzHk89 .row {
   overflow: hidden;
@@ -8830,8 +8830,8 @@ section.lazy-placeholder:after {
 }
 @media (min-width: 767px) {
   .cid-rGsOyzHk89 .content {
-    padding: 10rem 2rem;
-    padding-bottom: 12rem;
+    padding: 0rem 2rem;
+    padding-bottom: 30rem;
   }
 }
 .cid-rGsOyzHk89 .container {

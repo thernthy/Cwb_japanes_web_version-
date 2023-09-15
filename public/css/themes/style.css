@@ -1794,3 +1794,12 @@ pre {
   object-fit: contain !important;
   width: auto;
 }
+
+.img-round {
+  border-radius: 25px;
+}
+
+#header3-1j h1, #header3-1j p {
+  background: #00000082;
+  padding: 8px;
+}
