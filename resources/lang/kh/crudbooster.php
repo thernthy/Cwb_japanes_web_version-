@@ -263,8 +263,8 @@ return [
     'table_detail' => 'តារាងលំអិត',
     'your_file_size_is_too_big' => 'ឯកសាររបស់អ្នកធំពេកហើយ!',
     'save_changes' => 'រក្សារទុក',
-    'please_complete_the_form' => 'Please complete the form !',
-    'this_field_is_required' => 'This field is required',
-    'text_form' => 'Form',
-    "your_file_extension_is_not_allowed " => "Your file extension is not allowed !",
+    'please_complete_the_form' => 'សូមបំពេញទម្រង់បែបបទទាំអស់នេះ !',
+    'this_field_is_required' => 'ត្រូវតែបំពេញក្រលោនមួយនេះ',
+    'text_form' => 'ទម្រង់',
+    "your_file_extension_is_not_allowed " => "ប្រភេទឯកសាររបស់អ្នកមិនត្រូវបានអនុញ្ញាតទេ!",
 ];
