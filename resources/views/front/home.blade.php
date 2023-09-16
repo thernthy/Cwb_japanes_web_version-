@@ -10,18 +10,6 @@
 
 @section('content')
 <section class="cid-rGsOE1E5qe" id="header1-1k">
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-12 content align-left py-4 col-lg-5 ">
-
-				<h1 class="mbr-section-title align-left mbr-bold pb-3 mbr-fonts-style display-2">
-					សូមស្វាគមន៍មកកាន់គេហទំព័ររបស់យើង។
-				</h1>
-				<p class="mbr-text pb-3 align-left mbr-fonts-style display-7"> Kuipedia
-					ជា​មូលដ្ឋាន​ចំណេះដឹង​របស់​សហគមន៍​គុយ​ក្នុង​ប្រទេស​កម្ពុជា។</p>
-
-<<<<<<< HEAD
-
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12 content align-left py-4 col-lg-5 ">
@@ -29,13 +17,10 @@
                     សូមស្វាគមន៍មកកាន់គេហទំព័ររបស់យើង
                 </h1>
                 <p class="mbr-text pb-3 align-left mbr-fonts-style display-7"> Kuipedia
-                    ជា​មូលដ្ឋាន​ចំណេះដឹង​របស់​សហគមន៍បងប្អុនជនជាតិគួយ​ក្នុង​ប្រទេស​កម្ពុជា 
-                    គេហទំព័រនេះបង្កើតក្នុងគោលបំណងថែរក្សារផ្សព្វផ្សាយអំពីវប្បធម៌ប្រពៃណីនិងគេហទំព័របស់បងប្អូនជនជាតិគួយ
+                    ជា​មូលដ្ឋាន​ចំណេះដឹង​របស់​សហគមន៍បងប្អុនជនជាតិដើម​ក្នុង​ប្រទេស​កម្ពុជា 
+                    គេហទំព័រនេះបង្កើតក្នុងគោលបំណងថែរក្សារផ្សព្វផ្សាយអំពីវប្បធម៌ប្រពៃណីនិងរបស់បងប្អូនជនជាតិដើម
                     ​</p>
                 <!-- <div class="align-wrap align-left">
-=======
-				<!-- <div class="align-wrap align-left">
->>>>>>> 6f11a2fccdab01f4e3055e42b5a099e9277c8efc
 					<div class="icons-wrap">
 						<div class="icon-wrap">
 							<h3 class="icon-title mbr-bold mbr-fonts-style display-7">EAT</h3>
