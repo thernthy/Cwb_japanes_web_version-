@@ -4,11 +4,92 @@
 	<link rel="stylesheet" href="{{ asset('css/home.css') }}">
 
 	<style>
-
+		.search-header {
+			border-radius: 40px;
+			padding: 25px;
+		}
 	</style>
 @endpush
 
 @section('content')
+<section class="cid-rGsOyzHk89" id="header3-1j" style="background-image: url({{ asset('img/digital_program.jpg') }})">
+	<div class="mbr-overlay" style="opacity: 0; background-color: rgb(24, 24, 24);"></div>
+	<svg xmlns="http://www.w3.org/2000/svg" xmlns:se="http://svg-edit.googlecode.com"
+		xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/"
+		xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="100%" height="100%"
+		preserveAspectRatio="none" viewBox="0 0 858 235" style="">
+		<title>Image</title>
+		<!-- Created with Vector Paint - http://www.vectorpaint.yaks.com/ https://chrome.google.com/webstore/detail/hnbpdiengicdefcjecjbnjnoifekhgdo -->
+		<rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="transparent" stroke="none" class=""
+			style="">
+		</rect>
+		<g class="currentLayer" style="">
+			<title>Layer 1</title>
+			<path fill="#4a90d6" fill-opacity="1" stroke="none" stroke-width="2" stroke-dasharray="none"
+				stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1"
+				marker-start="" marker-mid="" marker-end=""
+				d="M13.91718,157.55035C128.42169,209.00593 174.16977,66.43387 406.36266,148.04844C638.55554,229.66302 649.93992,110.39426 837.69295,145.53147C1025.44597,180.66868 893.71138,356.73312 396.9054,368.57034C-99.90058,380.40757 -100.58733,106.09477 13.91718,157.55035z"
+				id="svg_1" class=""></path>
+		</g>
+	</svg>
+	<div class="container">
+
+		<div class="row">
+			<div class="col-md-6 content align-left col-lg-6">
+
+
+				<h1 class="mbr-section-title align-left mbr-white mbr-bold pb-3 mbr-fonts-style display-3">សូមស្វាគមន៍មកកាន់គេហទំព័ររបស់យើង</h1>
+				<p class="mbr-text pb-3 mbr-white mbr-semibold align-left mbr-fonts-style display-7"> ជា​មូលដ្ឋាន​ចំណេះដឹង​របស់​សហគមន៍បងប្អុនជនជាតិគួយ​ក្នុង​ប្រទេស​កម្ពុជា គេហទំព័រនេះបង្កើតក្នុងគោលបំណងថែរក្សារផ្សព្វផ្សាយអំពីវប្បធម៌ប្រពៃណីនិងគេហទំព័របស់បងប្អូនជនជាតិគួយ</p>
+
+				<div class="col-md-12 col-sm-12 form-group" data-for="nameFirst">
+					<input type="text" name="search" placeholder="ស្វែងរកនៅទីនេះ" data-form-field="nameFirst" class="search-header form-control display-7" value="" id="nameFirst-form1-3l">
+				</div>
+
+				<div class="align-left mbr-section-btn"><a class="btn btn-md btn-primary display-4"
+						href="{{ url('/') }}">ស្វែងរក</a> <a
+						class="btn btn-md btn-primary-outline display-4"
+						href="{{ url('/category/all') }}">ប្រភេទ​ទាំងអស់</a></div>
+				
+
+			</div>
+
+		</div>
+	</div>
+</section>
+
+<!-- 
+<section class="cid-rGtDjFvn9J" id="testimonials2-3o">
+	<div class="container-fluid">
+		<div class="row">
+
+			
+
+
+			<div class="col-md-12 content align-left py-4 col-lg-6">
+				<div class="icon-wrap">
+					<span class="mbr-iconfont mbrib-quote-right"></span>
+				</div>
+				<p class="mbr-text pb-4 align-left mbr-fonts-style display-5"> ជា​មូលដ្ឋាន​ចំណេះដឹង​របស់​សហគមន៍បងប្អុនជនជាតិគួយ​ក្នុង​ប្រទេស​កម្ពុជា គេហទំព័រនេះបង្កើតក្នុងគោលបំណងថែរក្សារផ្សព្វផ្សាយអំពីវប្បធម៌ប្រពៃណីនិងគេហទំព័របស់បងប្អូនជនជាតិគួយ</p>
+
+				<div class="align-left mbr-section-btn"><a class="btn btn-md btn-primary display-4"
+						href="{{ url('/about') }}">អំពី​ពួក​យើង</a> <a
+						class="btn btn-md btn-primary-outline display-4"
+						href="{{ url('/contact') }}">ទំនាក់ទំនង</a></div>
+
+			</div>
+			<div class="col-md-12 col-lg-6 img-col">
+				<div class="mbr-figure">
+					<img src="{{ asset('img/girls_on_stage.jpg') }}" alt="kuipedia">
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+</section> -->
+
+<!-- 
 <section class="cid-rGsOE1E5qe" id="header1-1k">
     <div class="container-fluid">
         <div class="row">
@@ -20,7 +101,7 @@
                     ជា​មូលដ្ឋាន​ចំណេះដឹង​របស់​សហគមន៍បងប្អុនជនជាតិគួយ​ក្នុង​ប្រទេស​កម្ពុជា 
                     គេហទំព័រនេះបង្កើតក្នុងគោលបំណងថែរក្សារផ្សព្វផ្សាយអំពីវប្បធម៌ប្រពៃណីនិងគេហទំព័របស់បងប្អូនជនជាតិគួយ
                     ​</p>
-                <!-- <div class="align-wrap align-left">
+                 <div class="align-wrap align-left">
 					<div class="icons-wrap">
 						<div class="icon-wrap">
 							<h3 class="icon-title mbr-bold mbr-fonts-style display-7">EAT</h3>
@@ -33,7 +114,7 @@
 						</div>
 
 					</div>
-				</div> -->
+				</div>
 
 				<div class="align-left mbr-section-btn"><a class="btn btn-md btn-primary display-4"
 						href="{{ url('/about') }}">អំពី​ពួក​យើង</a> <a
@@ -49,7 +130,7 @@
 			</div>
 		</div>
 	</div>
-</section>
+</section> -->
 
 <section class="cid-rGsSqYA5s6" id="content2-19">
 	<div class="container-fluid">
@@ -216,7 +297,6 @@
             </div>
 		</div>
 	</div>
-
 </section>
 
 <section class="features6 popup-btn-cards cid-rGsSo9FI9p" id="features4-10">
@@ -322,10 +402,67 @@
 	</div>
 </section>
 
+<section class="progress-bars2 counters cid-rGtBgCg3f6 visible full-visible" id="counters1-31">
+    <div class="container">
+        <h2 class="mbr-section-title mbr-bold pb-5 align-center mbr-fonts-style display-2">
+            <div><span style="color: inherit; font-size: 3.6rem;">ប្រភេទ</span><br></div></h2>
+
+        <div class="row justify-content-center">
+            <div class="card col-6 col-md-6 col-lg-3">
+                <div class="card-ico">
+                    <h4 class="mbr-content-title mbr-semibold mbr-fonts-style display-4">វប្បធម៌</h4>
+                    <span class="mbr-iconfont mbrib-home"></span>
+                </div>
+                <div class="card-text">
+                    <h3 class="count mbr-semibold mbr-fonts-style display-2">2</h3>
+
+                </div>
+            </div>
+
+
+            <div class="card col-6 col-md-6 col-lg-3">
+                <div class="card-ico">
+                    <h4 class="mbr-content-title mbr-semibold mbr-fonts-style display-4">អាហារ</h4>
+                    <span class="mbr-iconfont mbrib-github"></span>
+                </div>
+                <div class="card-text">
+                    <h3 class="count mbr-semibold mbr-fonts-style display-2">5</h3>
+
+                </div>
+            </div>
+
+            <div class="card col-6 col-md-6 col-lg-3">
+                <div class="card-ico">
+                    <h4 class="mbr-content-title mbr-semibold mbr-fonts-style display-4">សៀវភៅ</h4>
+                    <span class="mbr-iconfont mbrib-globe-2"></span>
+                </div>
+                <div class="card-text">
+                    <h3 class="count mbr-semibold mbr-fonts-style display-2">22</h3>
+
+                </div>
+            </div>
+
+            <div class="card col-6 col-md-6 col-lg-3">
+                <div class="card-ico">
+                    <h4 class="mbr-content-title mbr-semibold mbr-fonts-style display-4">ផលិតផល</h4>
+                    <span class="mbr-iconfont mbrib-cloud"></span>
+                </div>
+                <div class="card-text">
+                    <h3 class="count mbr-semibold mbr-fonts-style display-2">10</h3>
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</section>
+
 <section class="features1 cid-rGsSnQK7nI" id="features3-z">
 
 	<div class="container">
-		<h2 class="mbr-section-title pb-5 align-center mbr-fonts-style display-2"><strong>ប្រភេទ</strong></h2>
+		<!-- <h2 class="mbr-section-title pb-5 align-center mbr-fonts-style display-2"><strong>ប្រភេទ</strong></h2> -->
 
 		<div class="row">
 			<div class="col-12">
