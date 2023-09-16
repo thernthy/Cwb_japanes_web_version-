@@ -18,8 +18,8 @@
             </div>
             <div class="col-md-12 content align-left py-4 col-lg-5">
 
-                <h1 class="mbr-section-title align-left mbr-bold pb-3 mbr-fonts-style display-2">About <a href="#"><strong>Kui Digital Project</strong></a></h1>
-                <p class="mbr-text pb-3 align-left mbr-fonts-style display-7"> Digital Literacy Education for Kui IP project aims to see young Kui indigenous people and their community are able to use digital skills with security for their daily work to improve their access to information, improve their livelihood, and conserve their cultural identity. It intends and promotes their community activities, products, and services to develop their own community.</p>
+                <h1 class="mbr-section-title align-left mbr-bold pb-3 mbr-fonts-style display-2">អំពី <a href="#"><strong>គម្រោង​ឌីជីថល Kui</strong></a></h1>
+                <p class="mbr-text pb-3 align-left mbr-fonts-style display-7"> ការអប់រំផ្នែកអក្សរសាស្រ្តឌីជីថលសម្រាប់គម្រោង Kui IP មានគោលបំណងចង់ឃើញយុវជនជនជាតិដើមភាគតិច Kui និងសហគមន៍របស់ពួកគេអាចប្រើប្រាស់ជំនាញឌីជីថលប្រកបដោយសុវត្ថិភាពសម្រាប់ការងារប្រចាំថ្ងៃរបស់ពួកគេ ដើម្បីបង្កើនលទ្ធភាពទទួលបានព័ត៌មាន លើកកម្ពស់ជីវភាពរស់នៅ និងអភិរក្សអត្តសញ្ញាណវប្បធម៌របស់ពួកគេ។ វាមានបំណង និងលើកកម្ពស់សកម្មភាពសហគមន៍ ផលិតផល និងសេវាកម្មរបស់ពួកគេ ដើម្បីអភិវឌ្ឍសហគមន៍របស់ពួកគេផ្ទាល់។</p>
 
             </div>
 
@@ -32,9 +32,9 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12 content py-4 col-lg-5 ">
-                <h1 class="mbr-section-title align-left mbr-bold pb-2 mbr-fonts-style display-2"><a href="#"><strong>Marianne</strong></a><br>Lawrence</h1>
+                <!-- <h1 class="mbr-section-title align-left mbr-bold pb-2 mbr-fonts-style display-2"><a href="#"><strong>Marianne</strong></a><br>Lawrence</h1> -->
                 <p class="align-left mbr-regular pb-3 mbr-fonts-style display-7">
-                In order to address the issues faced by young rural students fro the indigenous community that lack opportunity in access to basic skills of digital literacy, this project is to create opportunities for young Kui indigenous people, the rural student in Kampong Thom province to strengthen their capacity for soft skill training, and community performance program to maintain their traditional dancing and concept of entrepreneurship.</p>
+                ដើម្បីដោះស្រាយបញ្ហាប្រឈមរបស់សិស្សានុសិស្សជនបទមកពីសហគមន៍ជនជាតិដើមភាគតិច ដែលខ្វះខាតឱកាសក្នុងលទ្ធភាពទទួលបានជំនាញមូលដ្ឋាននៃអក្ខរកម្មឌីជីថល គម្រោងនេះគឺដើម្បីបង្កើតឱកាសដល់យុវជនជនជាតិដើមភាគតិចកួយ ដែលជាសិស្សជនបទក្នុងខេត្តកំពង់ធំ ដើម្បីពង្រឹងសមត្ថភាពរបស់ពួកគេ។ សម្រាប់ការបណ្តុះបណ្តាលជំនាញទន់ និងកម្មវិធីអនុវត្តសហគមន៍ ដើម្បីរក្សារបាំប្រពៃណី និងគំនិតនៃភាពជាសហគ្រិន។</p>
 
             </div>
             <div class="col-md-12 col-lg-7 img-col">

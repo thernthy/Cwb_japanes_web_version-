@@ -30,72 +30,13 @@
     </div>
 </section>
 
-<section class="cid-rGsSLKUZce" id="team3-1n">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12 content py-4 col-lg-5 ">
-                <h1 class="mbr-section-title align-left mbr-bold pb-2 mbr-fonts-style display-2"><a href="#"><strong>Marianne</strong></a><br>Lawrence</h1>
-                <p class="align-left mbr-regular pb-3 mbr-fonts-style display-7">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac feugiat neque. Nulla gravida sodales
-                    enim at interdum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-                    turpis egestas.</p>
-
-
-
-                <div class="icons-wrap row">
-                    <div class="icon-wrap align-left col-md-4">
-                        <span class="mbr-iconfont mbrib-github"></span>
-                        <div class="text-wrap">
-                            <h3 class="icon-title align-left mbr-bold mbr-fonts-style display-7">CAT CARE</h3>
-                            <p class="mbr-text mbr-regular align-left mbr-fonts-style display-4"> Lorem
-                                ipsum dolor amet, consectetur adipiscing elit.</p>
-                        </div>
-                    </div>
-
-
-                    <div class="icon-wrap align-left col-md-4">
-                        <span class="mbr-iconfont mbrib-apple"></span>
-                        <div class="text-wrap">
-                            <h3 class="icon-title align-left mbr-bold mbr-fonts-style display-7">NUTRITION</h3>
-                            <p class="mbr-text mbr-regular align-left mbr-fonts-style display-4"> Lorem ipsum
-                                dolor amet, consectetur adipiscing elit.</p>
-                        </div>
-                    </div>
-
-
-                    <div class="icon-wrap align-left col-md-4">
-                        <span class="mbr-iconfont mbrib-hearth"></span>
-                        <div class="text-wrap">
-                            <h3 class="icon-title align-left mbr-bold mbr-fonts-style display-7">FIRST AID</h3>
-                            <p class="mbr-text mbr-regular align-left mbr-fonts-style display-4"> Lorem ipsum
-                                dolor amet, consectetur adipiscing elit.</p>
-                        </div>
-                    </div>
-
-                </div>
-
-
-
-
-            </div>
-            <div class="col-md-12 col-lg-7 img-col">
-                <div class="mbr-figure">
-                    <img src="https://mobirise.com/extensions/petsm4/assets/images/06.png" alt="Mobirise">
-                </div>
-
-            </div>
-        </div>
-    </div>
-</section>
-
-
 <section class="features6 popup-btn-cards cid-rGsSo9FI9p" id="features4-10">
     <div class="container">
         <div class="row justify-content-center">
 
             <div class="col-lg-4 col-md-6">
                 <div class="card-wrapper">
-                    <img src="https://picsum.photos/seed/chacha/600/600">
+                    <img src="{{ asset('img/chicken3.jpg') }}">
                     <div class="wrapper">
                         <p class="mbr-text align-center mbr-semibold mbr-white mbr-fonts-style display-4">ACTIVITIES</p>
                         <h3 class="card-title align-center mbr-bold mbr-fonts-style align-left mbr-white display-5">
@@ -107,7 +48,7 @@
 
             <div class="col-lg-4 col-md-6">
                 <div class="card-wrapper">
-                    <img src="https://picsum.photos/seed/putri/600/600">
+                    <img src="{{ asset('img/chicken.jpg') }}">
                     <div class="wrapper">
                         <p class="mbr-text align-center mbr-semibold mbr-white mbr-fonts-style display-4">
                             ACTIVITIES</p>
@@ -119,7 +60,7 @@
 
             <div class="col-lg-4 col-md-6">
                 <div class="card-wrapper">
-                    <img src="https://picsum.photos/seed/neneng/600/600" alt="" title="">
+                    <img src="{{ asset('img/chicken2.jpg') }}" alt="" title="">
                     <div class="wrapper">
                         <p class="mbr-text align-center mbr-semibold mbr-white mbr-fonts-style display-4">ACTIVITIES</p>
                         <h3 class="card-title align-center mbr-bold mbr-fonts-style align-left mbr-white display-5">Game
