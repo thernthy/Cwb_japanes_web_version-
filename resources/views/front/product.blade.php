@@ -12,7 +12,7 @@
 		<div class="row">
 			<div class="col-md-12 content py-4 col-lg-5 ">
 				<h1 class="mbr-section-title align-left mbr-bold pb-2 mbr-fonts-style display-2"><a
-						href="#"><strong>ជនជាតិដើមភាគតិច</strong></a><br>ផលិតផល</h1>
+						href="#"><strong>ផលិតផល </strong></a><br>ជនជាតិដើមភាគតិច</h1>
 				<p class="align-left mbr-regular pb-3 mbr-fonts-style display-7">
 				លើកកម្ពស់ការយល់ដឹងអំពីវប្បធម៍ជនជាតិដើមភាគតិច ដោយរួមបញ្ចូលនូវផលិតផលសិប្បកម្មផលិតដោយជនជាតិដើមភាគតិច រចនា និងបំផុសគំនិតជនជាតិដើមភាគតិចរបស់យើង។.</p>
 

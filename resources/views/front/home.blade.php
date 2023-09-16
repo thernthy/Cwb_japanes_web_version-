@@ -40,7 +40,7 @@
 
 
 				<h1 class="mbr-section-title align-left mbr-white mbr-bold pb-3 mbr-fonts-style display-3">សូមស្វាគមន៍មកកាន់គេហទំព័ររបស់យើង</h1>
-				<p class="mbr-text pb-3 mbr-white mbr-semibold align-left mbr-fonts-style display-7"> ជា​មូលដ្ឋាន​ចំណេះដឹង​របស់​សហគមន៍បងប្អុនជនជាតិគួយ​ក្នុង​ប្រទេស​កម្ពុជា គេហទំព័រនេះបង្កើតក្នុងគោលបំណងថែរក្សារផ្សព្វផ្សាយអំពីវប្បធម៌ប្រពៃណីនិងគេហទំព័របស់បងប្អូនជនជាតិគួយ</p>
+				<p class="mbr-text pb-3 mbr-white mbr-semibold align-left mbr-fonts-style display-7"> ជា​គេហទំព័រមូលដ្ឋាន​ចំណេះដឹង​របស់​សហគមន៍បងប្អុនជនជាតិគួយ​ក្នុង​ប្រទេស​កម្ពុជា គេហទំព័រនេះបង្កើតក្នុងគោលបំណងថែរក្សារផ្សព្វផ្សាយអំពីវប្បធម៌ប្រពៃណីនិងគេហទំព័របស់បងប្អូនជនជាតិគួយ</p>
 
 				<div class="col-md-12 col-sm-12 form-group" data-for="nameFirst">
 					<input type="text" name="search" placeholder="ស្វែងរកនៅទីនេះ" data-form-field="nameFirst" class="search-header form-control display-7" value="" id="nameFirst-form1-3l">
