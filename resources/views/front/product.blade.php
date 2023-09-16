@@ -89,7 +89,7 @@
 								<!-- Filter -->
 								<div class="mbr-gallery-filter mbr-shop-filter container gallery-filter-active">
 									<ul buttons="0">
-										<li class="mbr-gallery-filter-all active display-7">ទាំងអស់។</li>
+										<li class="mbr-gallery-filter-all active display-7">ទាំងអស់</li>
 									</ul>
 								</div>
 							</div>

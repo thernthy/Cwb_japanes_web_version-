@@ -16,12 +16,13 @@
                     <img src="https://mobirise.com/extensions/petsm4/assets/images/02.png" alt="Mobirise">
                 </div>
             </div>
-            <div class="col-md-12 content align-left py-4 col-lg-5">
-
-                <h1 class="mbr-section-title align-left mbr-bold pb-3 mbr-fonts-style display-2">We can keep <a href="#"><strong>them happy</strong></a></h1>
-                <p class="mbr-text pb-3 align-left mbr-fonts-style display-7"> Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit. Sed ac feugiat neque. Nulla gravida sodales enim at interdum. Pellentesque habitant
-                    morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            <div class="col-md-12 content align-left py-4 col-lg-5 pt-5 mt-5">
+                <h1 class="mbr-section-title align-left mbr-bold pb-3 mbr-fonts-style display-2">ការចាប់ផ្ដើម<a href="#"><strong>អាជីវកម្ម</strong></a></h1>
+                <p class="mbr-text pb-3 align-left mbr-fonts-style display-7"> យើងបានចាប់ផ្តើមអាជីវកម្មរបស់យើងនៅពេលដែលយើងទទួលស្គាល់តម្រូវការសាច់មាន់ដែលចិញ្ចឹមដោយធម្មជាតិ 
+                    និងសរីរាង្គ ហើយបំណងប្រាថ្នារបស់យើងក្នុងការធានានូវការអនុវត្តអាជីវកម្មកាន់តែប្រសើរឡើងដើម្បីរក្សាបរិស្ថានរបស់យើង 
+                    ខណៈពេលដែលការចិញ្ចឹមមាន់មានសុខភាពល្អ និងរស់ជាតិឆ្ងាញ់។
+                     ការផ្តោតអារម្មណ៍របស់សហគមន៍របស់យើងគឺមានសារៈសំខាន់សម្រាប់អាជីវកម្មរបស់យើង 
+                    ដោយជួយកសិករឱ្យបង្កើនប្រាក់ចំណូលរបស់ពួកគេ ខណៈពេលដែលការផ្លាស់ប្តូរការអនុវត្តការចិញ្ចឹមមាន់របស់ពួកគេ។</p>
 
             </div>
 
@@ -30,10 +31,6 @@
 </section>
 
 <section class="cid-rGsSLKUZce" id="team3-1n">
-    
-
-    
-
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12 content py-4 col-lg-5 ">

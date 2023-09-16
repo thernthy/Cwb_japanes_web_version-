@@ -14,14 +14,14 @@
         box-shadow: inset 2px 2px 10px rgba(0, 0, 0, 0.20);
         border-radius: 30px;
         background-color: transparent;
-        border: 2px solid #2BFBE8;
+        border: 2px solid #22a7ac !important;
         animation: input_form_anime 2s ease;
     }
     .form-group textarea{
         box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.30);
         border-radius: 30px;
         background-color: transparent;
-        border: 2px solid #2BFBE8;
+        border: 2px solid #22a7ac !important;
         animation: textarea_up 2s ease-in-out;
     }
     .contact_icon{
@@ -30,7 +30,7 @@
         display: flex;
         justify-content: flex-end;
         padding: 10px 0;
-        color: #2BFBE8;
+        color: #22a7ac !important;
     }
     .alert-info{
         background-color: red;
@@ -42,7 +42,7 @@
         justify-content: center;
     }
     .contact_option h2{
-        border-bottom: 2px solid #2BFBE8;
+        border-bottom: 2px solid #22a7ac !important;
         padding-bottom: 5px;
         margin-bottom: 20px;
     }
@@ -59,7 +59,7 @@
     }
     .contact_option ul li i{
         font-size: 2.5rem;
-        color: #2BFBE8;
+        color: #22a7ac !important;
         box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.20);
         padding: 10px;
         border-radius: 10px;
