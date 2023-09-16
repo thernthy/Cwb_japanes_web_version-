@@ -30,14 +30,21 @@
 <link rel="stylesheet" href="{{ asset('css/themes/styles.css') }}">
 <link rel="preload" as="style" href="{{ asset('css/themes/mbr-additional.css') }}">
 <link rel="stylesheet" href="{{ asset('css/themes/mbr-additional.css') }}" type="text/css">
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Battambang&display=swap" rel="stylesheet">
 </head>
 
 <link rel="stylesheet" href="{{ asset('vendor/font-awesome-4.5.0/css/font-awesome.min.css') }}">
 
 <!-- custom css -->
 <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
+ <style>
+    body{
+			font-family: 'Battambang', cursive !important;
+	}
 
+ </style>
 @stack('styles')
 </head>
 <body>

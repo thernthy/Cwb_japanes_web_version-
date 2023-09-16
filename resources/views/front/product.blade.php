@@ -1,14 +1,7 @@
 @extends('front.layout')
 @push('styles')
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Battambang&display=swap" rel="stylesheet">
 	<!-- <link rel="stylesheet" href="{{ asset('css/home.css') }}"> -->
 	<style>
-		.mbr-fonts-style{
-			font-family: 'Battambang', cursive;
-		}
-		
 	</style>
 @endpush
 
@@ -16,7 +9,7 @@
 <section class="cid-rGsSLKUZce" id="team3-1n">
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-md-12 content py-4 col-lg-5 ">
+			<div class="col-md-12 content py-4 col-lg-5 mt-5 pt-4">
 				<h1 class="mbr-section-title align-left mbr-bold pb-2 mbr-fonts-style display-2"><a
 						href="#"><strong>ផលិតផល </strong></a><br>ជនជាតិដើមភាគតិច</h1>
 				<p class="align-left mbr-regular pb-3 mbr-fonts-style display-7">
