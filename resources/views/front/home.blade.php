@@ -90,40 +90,12 @@
 		</div>
 	</div>
 </section>
-<section class="cid-rGsSrg8y6k" id="content3-1a">
-	<div class="container">
-		<div class="row justify-content-center">
-
-			<div class="col-12 col-md-12 col-lg-12">
-				<h3 class="col-title1 mbr-bold align-left pb-4 mbr-fonts-style display-7">WHAT WE STAND FOR</h3>
-			</div>
-			<div class="col-12 col-md-6 col-lg-6 md-pb">
-				<p class="mbr-text pb-3 align-left mbr-fonts-style display-7">ជនជាតិដើមភាគតិចបានស្វែងរកការទទួលស្គាល់អត្តសញ្ញាណ របៀបរស់នៅ និងសិទ្ធិរបស់ពួកគេលើទឹកដីប្រពៃណី ទឹកដី និងធនធានធម្មជាតិជាច្រើនឆ្នាំមកហើយ ប៉ុន្តែក្នុងប្រវត្តិសាស្ត្រ សិទ្ធិរបស់ពួកគេតែងតែត្រូវបានរំលោភបំពាន។ ជនជាតិដើមភាគតិចសព្វថ្ងៃនេះ គឺជាក្រុមប្រជាជនដែលងាយរងគ្រោះ និងងាយរងគ្រោះបំផុតនៅលើពិភពលោក។ ឥឡូវនេះសហគមន៍អន្តរជាតិទទួលស្គាល់ថាវិធានការពិសេសគឺត្រូវបានទាមទារដើម្បីការពារសិទ្ធិរបស់ពួកគេ និងរក្សាវប្បធម៌ និងរបៀបរស់នៅដាច់ដោយឡែករបស់ពួកគេ។ ស្វែងរកខាងក្រោមប្រវត្តិខ្លីៗនៃការតស៊ូជនជាតិដើមភាគតិចក្នុងឆាកអន្តរជាតិ។</p>
-			</div>
-			<div class="col-12 col-md-6 col-lg-6 md-pb">
-				<p class="mbr-text pb-3 align-left mbr-fonts-style display-7">ប្រជាជនជាធម្មតាត្រូវបានពិពណ៌នាថាជា "ជនជាតិដើមភាគតិច" នៅពេលដែលពួកគេរក្សាទំនៀមទម្លាប់ ឬទិដ្ឋភាពផ្សេងទៀតនៃវប្បធម៌ដំបូងដែលត្រូវបានផ្សារភ្ជាប់ជាមួយនឹងប្រជាជនដំបូងនៃតំបន់ដែលបានផ្តល់ឱ្យ។ មិនមែនជនជាតិដើមភាគតិចទាំងអស់សុទ្ធតែមានចរិតលក្ខណៈនេះទេ ដោយសារមនុស្សជាច្រើនបានទទួលយកធាតុសំខាន់ៗនៃវប្បធម៌អាណានិគម ដូចជាសម្លៀកបំពាក់ សាសនា ឬភាសា។ ជនជាតិដើមភាគតិចអាចត្រូវបានតាំងទីលំនៅក្នុងតំបន់ជាក់លាក់មួយ (ស្នាក់នៅមិនទៀងទាត់) បង្ហាញការរស់នៅបែបពនេចរនៅទូទាំងទឹកដីធំមួយ ឬត្រូវបានតាំងទីលំនៅថ្មី ប៉ុន្តែជាទូទៅពួកគេជាប់ទាក់ទងប្រវត្តិសាស្ត្រជាមួយទឹកដីជាក់លាក់មួយដែលពួកគេអាស្រ័យ។ សង្គមជនជាតិដើមត្រូវបានរកឃើញនៅគ្រប់តំបន់អាកាសធាតុដែលមានមនុស្សរស់នៅ និងទ្វីបនៃពិភពលោក លើកលែងតែអង់តាក់ទិក។ មានជនជាតិដើមភាគតិចប្រហែលប្រាំពាន់នាក់នៅទូទាំងពិភពលោក។</p>
-				<ul class="list">
-					<li class="item-wrap">
-						<span class="fa fa-check-circle"></span>
-						<h4 class="display-7">&nbsp; ការលើកទឹកចិត្តដល់ការរស់ឡើងវិញនៃដី</h4>
-					</li>
-					<li class="item-wrap">
-						<span class="fa fa-check-circle"></span>
-						<h4 class="display-7">&nbsp; ការលើកទឹកចិត្តដល់ការរស់ឡើងវិញនៃដី</h4>
-					</li>
-					
-				</ul>
-
-			</div>
-		</div>
-	</div>
-</section>
 
 <section class="features1 cid-rGtBqmc2gI" id="features6-33">
 	<div class="container">
 		<div class="row">
 
-			<div class="card col-12 col-md-6 col-lg-4">
+			<div class="card col-12 col-md-6 col-lg-3">
 				<div class="card-wrapper align-left card1 ">
 					<svg xmlns="http://www.w3.org/2000/svg" width="269.19780227841716" height="147.43955898849208"
 						style="">
@@ -153,7 +125,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="card col-12 col-md-6 col-lg-4">
+			<div class="card col-12 col-md-6 col-lg-3">
 				<div class="card-wrapper  align-left card2 ">
 					<svg xmlns="http://www.w3.org/2000/svg" width="269.19780227841716" height="147.43955898849208"
 						style="">
@@ -185,7 +157,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="card col-12 col-md-6 col-lg-4">
+			<div class="card col-12 col-md-6 col-lg-3">
 				<div class="card-wrapper  align-left card3 ">
 					<svg xmlns="http://www.w3.org/2000/svg" width="269.19780227841716" height="147.43955898849208"
 						style="">
@@ -218,6 +190,30 @@
 					</div>
 				</div>
 			</div>
+			<div class="card col-12 col-md-6 col-lg-3">
+                <div class="card-wrapper  align-left card4 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="269.19780227841716" height="147.43955898849208" style="">
+                        <rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="transparent" stroke="none" class="" style="" fill-opacity="1"></rect>
+                        <g class="currentLayer" style="">
+                            <title>Layer 1</title>
+                            <path fill="white" fill-opacity="1" stroke="none" stroke-width="2" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M-110.40659359291077,50.950556279754636 C-110.40659359291077,-2.4372237202453633 -10.614843592910766,-81.94505372024535 88.16483640708924,-81.94505372024535 C186.94450640708922,-81.94505372024535 266.9560464070892,-38.70095372024536 266.9560464070892,14.686816279754638 C266.9560464070892,68.07458627975464 186.94450640708922,111.31868627975464 88.16483640708924,111.31868627975464 C-10.614843592910766,111.31868627975464 -110.40659359291077,104.33832627975464 -110.40659359291077,50.950556279754636 z" id="svg_1" class="" transform="rotate(-4.22603702545166 78.27473449707026,14.686810493469203) "></path>
+                        </g>
+                    </svg>
+                    <div class="card-img">
+                        <span class="fa fa-users fa-4x"></span>
+                    </div>
+                    <div class="card-box">
+						<img class="img-responsive" src="{{ asset('img/cultures.jpg') }}">
+                        <h4 class="card-title pb-2 mbr-bold mbr-fonts-style display-5">វប្បធម៌ និងអាហារ</h4>
+                        <p class="mbr-text pb-4 mbr-fonts-style display-4">
+                            Pellentesque habitant felis morbi tristique senectus et netus et malesuada fames ac turpis
+                            netus egestas. </p>
+                        <h5 class="link mbr-semibold mbr-fonts-style display-4"><a href="{{ url('products') }}" class="text-black">
+						មើល​ច្រើន​ទៀត</a></h5>
+                    </div>
+                </div>
+
+            </div>
 		</div>
 	</div>
 
@@ -232,14 +228,12 @@
 				<h2 class="align-left mbr-bold mbr-fonts-style mbr-section-title display-2">សូមក្រឡេកមើល</h2>
 			</div>
 
-
-			@foreach($data['actions'] as $item)
 			<div class="col-lg-4 col-md-6">
 				<div class="card-wrapper">
 					<a href="{{ url('detail/etnic-ceremony') }}">
 					<img src="{{ asset('img/kuy_festival.jpg') }}">
 					<div class="wrapper">
-						<p class="mbr-text align-center mbr-semibold mbr-white mbr-fonts-style display-4">{{ $item->title_en }}</p>
+						<p class="mbr-text align-center mbr-semibold mbr-white mbr-fonts-style display-4">Category Name</p>
 						<h3 class="card-title align-center mbr-bold mbr-fonts-style align-left mbr-white display-5">
 							<div>ការពិពណ៌នាអំពីប្រភេទខ្លី និងទិដ្ឋភាពទូទៅនៃអ្វីដែលជាប្រភេទអំពី</div>
 						</h3>
@@ -247,9 +241,8 @@
 					</a>
 				</div>
 			</div>
-			@endforeach
 
-			<!--
+			
 			<div class="col-lg-4 col-md-6">
 				<div class="card-wrapper">
 					<a href="{{ url('detail/etnic-ceremony') }}">
@@ -319,7 +312,6 @@
 					</a>
 				</div>
 			</div>
-		-->
 
 			<!-- <div class="col-lg-4 col-md-4 btn-col pb-4">
 				<div class="align-center mbr-section-btn"><a class="btn btn-md btn-primary display-4"
@@ -386,18 +378,8 @@
 								<button class="button">មើលទាំងអស់។</button>
 							</div>
 						</div>
-					</a><a class="card" href="{{ url('products') }}">
-						<div class="front" style="background-image: url({{ asset('img/cultures.jpg') }})">
-							<p>វប្បធម៌ និងអាហារ</p>
-						</div>
-						<div class="back">
-							<div>
-								<p><b>វប្បធម៌ និងអាហារ</b></p>
-								<p>Provident consectetur natus voluptatem quis tenetur sed beatae eius sint.</p>
-								<button class="button">មើលទាំងអស់។</button>
-							</div>
-						</div>
-					</a><a class="card" href="#!">
+					</a>
+					<a class="card" href="#!">
 						<div class="front" style="background-image: url({{ asset('img/random1.jpg') }})">
 							<p>សារមន្ទីរដែក</p>
 						</div>
