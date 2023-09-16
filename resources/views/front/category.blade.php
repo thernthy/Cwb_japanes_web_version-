@@ -12,7 +12,7 @@
         <div class="row">
 
             <div class="col-12 col-md-12 col-lg-12">
-                <h2 class="align-center pb-5 mbr-bold mbr-fonts-style display-2">[Categories]</h2>
+                <h2 class="align-center pb-5 mbr-bold mbr-fonts-style display-2">ឈ្មោះប្រភេទ</h2>
             </div>
 
             <div class="card col-12 col-md-6 col-lg-4">
@@ -25,7 +25,7 @@
                             Boarding</h4>
                         <p class="mbr-text pb-2 mbr-fonts-style display-4">Pellentesque habitant felis morbi tristique
                             senectus et netus et malesuada fames ac turpis netus egestas.</p>
-                        <div class="align-left mbr-section-btn"><a class="btn btn-md btn-primary display-4" href="https://mobirise.co/">READ MORE<br></a></div>
+                        <div class="align-left mbr-section-btn"><a class="btn btn-md btn-primary display-4" href="#!">READ MORE<br></a></div>
                     </div>
                 </div>
             </div>
@@ -40,7 +40,7 @@
                         <p class="mbr-text pb-2 mbr-fonts-style display-4">
                             Pellentesque habitant felis morbi tristique senectus et netus et malesuada fames ac turpis
                             netus egestas. </p>
-                        <div class="align-left mbr-section-btn"><a class="btn btn-md btn-primary display-4" href="https://mobirise.co/">READ MORE<br></a></div>
+                        <div class="align-left mbr-section-btn"><a class="btn btn-md btn-primary display-4" href="#!">READ MORE<br></a></div>
                     </div>
                 </div>
             </div>
@@ -55,7 +55,7 @@
                         <p class="mbr-text pb-2 mbr-fonts-style display-4">
                             Pellentesque habitant felis morbi tristique senectus et netus et malesuada fames ac turpis
                             netus egestas. </p>
-                        <div class="align-left mbr-section-btn"><a class="btn btn-md btn-primary display-4" href="https://mobirise.co/">READ MORE<br></a></div>
+                        <div class="align-left mbr-section-btn"><a class="btn btn-md btn-primary display-4" href="#!">READ MORE<br></a></div>
                     </div>
                 </div>
             </div>
@@ -70,7 +70,7 @@
                             Boarding</h4>
                         <p class="mbr-text pb-2 mbr-fonts-style display-4">Pellentesque habitant felis morbi tristique
                             senectus et netus et malesuada fames ac turpis netus egestas.</p>
-                        <div class="align-left mbr-section-btn"><a class="btn btn-md btn-primary display-4" href="https://mobirise.co/">READ MORE<br></a></div>
+                        <div class="align-left mbr-section-btn"><a class="btn btn-md btn-primary display-4" href="#!">READ MORE<br></a></div>
                     </div>
                 </div>
             </div>
@@ -85,7 +85,7 @@
                         <p class="mbr-text pb-2 mbr-fonts-style display-4">
                             Pellentesque habitant felis morbi tristique senectus et netus et malesuada fames ac turpis
                             netus egestas. </p>
-                        <div class="align-left mbr-section-btn"><a class="btn btn-md btn-primary display-4" href="https://mobirise.co/">READ MORE<br></a></div>
+                        <div class="align-left mbr-section-btn"><a class="btn btn-md btn-primary display-4" href="#!">READ MORE<br></a></div>
                     </div>
                 </div>
             </div>
@@ -100,7 +100,7 @@
                         <p class="mbr-text pb-2 mbr-fonts-style display-4">
                             Pellentesque habitant felis morbi tristique senectus et netus et malesuada fames ac turpis
                             netus egestas. </p>
-                        <div class="align-left mbr-section-btn"><a class="btn btn-md btn-primary display-4" href="https://mobirise.co/">READ MORE<br></a></div>
+                        <div class="align-left mbr-section-btn"><a class="btn btn-md btn-primary display-4" href="#!">READ MORE<br></a></div>
                     </div>
                 </div>
             </div>
