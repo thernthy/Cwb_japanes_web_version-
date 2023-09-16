@@ -1,8 +1,14 @@
 @extends('front.layout')
 @push('styles')
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Battambang&display=swap" rel="stylesheet">
 	<!-- <link rel="stylesheet" href="{{ asset('css/home.css') }}"> -->
 	<style>
-
+		.mbr-fonts-style{
+			font-family: 'Battambang', cursive;
+		}
+		
 	</style>
 @endpush
 
@@ -15,7 +21,6 @@
 						href="#"><strong>ផលិតផល </strong></a><br>ជនជាតិដើមភាគតិច</h1>
 				<p class="align-left mbr-regular pb-3 mbr-fonts-style display-7">
 				លើកកម្ពស់ការយល់ដឹងអំពីវប្បធម៍ជនជាតិដើមភាគតិច ដោយរួមបញ្ចូលនូវផលិតផលសិប្បកម្មផលិតដោយជនជាតិដើមភាគតិច រចនា និងបំផុសគំនិតជនជាតិដើមភាគតិចរបស់យើង។.</p>
-
 				<div class="icons-wrap row">
 					<div class="icon-wrap align-left col-md-4">
 						<span class="mbr-iconfont mbrib-github"></span>
