@@ -28,6 +28,7 @@ Route::get('/category/{slug}', 'HomeController@category');
 Route::get('/products', 'HomeController@products');
 Route::get('contact', 'HomeController@contact');
 Route::get('/detail/{slug}', 'HomeController@detail');
+Route::get('/cantact', 'HomeController@contact');
 
 // ------------------------------
 Route::get('/trust-member', 'HomeController@trustMember');

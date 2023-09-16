@@ -590,7 +590,6 @@ class HomeController extends Controller
 		SEOTools::setTitle('Contact Us');
 		// --------------------------
 
-		return view('front.contact')
-		->with('data', $data);
+		return view('front.contact')->with('data', $data);
 	}
 }
