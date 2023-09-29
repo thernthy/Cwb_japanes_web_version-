@@ -175,7 +175,7 @@
 <section class="features1 cid-rGtBqmc2gI" id="features6-33">
 	<div class="container">
 		<div class="row">
-
+			@foreach($data['main'] as $item)
 			<div class="card col-12 col-md-6 col-lg-3">
 				<div class="card-wrapper align-left card1 ">
 					<svg xmlns="http://www.w3.org/2000/svg" width="269.19780227841716" height="147.43955898849208"
@@ -196,8 +196,8 @@
 						<span class="fa fa-book fa-4x"></span>
 					</div>
 					<div class="card-box">
-						<img class="img-responsive" src="{{ asset('img/vegetables2.jpg') }}">
-						<h4 class="card-title pb-2 mbr-bold mbr-fonts-style display-5">ចូលរួម បង្កើតការងារដល់សហគមន៍</h4>
+						<img class="img-responsive" src="{{ asset($item->img_cover) }}">
+						<h4 class="card-title pb-2 mbr-bold mbr-fonts-style display-5">{{$item->title}}</h4>
 						<p class="mbr-text pb-4 mbr-fonts-style display-4">Pellentesque habitant felis morbi tristique
 							senectus et
 							netus et malesuada fames ac turpis netus egestas.</p>
@@ -206,7 +206,8 @@
 					</div>
 				</div>
 			</div>
-			<div class="card col-12 col-md-6 col-lg-3">
+			@endforeach
+			<!--<div class="card col-12 col-md-6 col-lg-3">
 				<div class="card-wrapper  align-left card2 ">
 					<svg xmlns="http://www.w3.org/2000/svg" width="269.19780227841716" height="147.43955898849208"
 						style="">
@@ -292,7 +293,7 @@
                         <h5 class="link mbr-semibold mbr-fonts-style display-4"><a href="{{ url('products') }}" class="text-black">
 						មើល​ច្រើន​ទៀត</a></h5>
                     </div>
-                </div>
+                </div>-->
 
             </div>
 		</div>
@@ -307,13 +308,13 @@
 
 				<h2 class="align-left mbr-bold mbr-fonts-style mbr-section-title display-2">សូមក្រឡេកមើល</h2>
 			</div>
-
+        @foreach($data['activities'] as $activitys_list)
 			<div class="col-lg-4 col-md-6">
 				<div class="card-wrapper">
 					<a href="{{ url('detail/etnic-ceremony') }}">
 					<img src="{{ asset('img/kuy_festival.jpg') }}">
 					<div class="wrapper">
-						<p class="mbr-text align-center mbr-semibold mbr-white mbr-fonts-style display-4">Category Name</p>
+						<p class="mbr-text align-center mbr-semibold mbr-white mbr-fonts-style display-4">{{$activitys_list->title_en}}</p>
 						<h3 class="card-title align-center mbr-bold mbr-fonts-style align-left mbr-white display-5">
 							<div>ការពិពណ៌នាអំពីប្រភេទខ្លី និងទិដ្ឋភាពទូទៅនៃអ្វីដែលជាប្រភេទអំពី</div>
 						</h3>
@@ -321,7 +322,7 @@
 					</a>
 				</div>
 			</div>
-
+		@endforeach
 			
 			<div class="col-lg-4 col-md-6">
 				<div class="card-wrapper">

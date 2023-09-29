@@ -34,7 +34,6 @@ class HomeController extends Controller
 		SEOTools::setCanonical('https://cwb-team.net');
 		// SEOTools::opengraph()->addProperty('type', 'articles');
 		// --------------------------
-
 		$data['keywords'] = DB::table('keywords')
 			->select('title_en', 'title_jp', 'slug')
 			// ->limit(4)
@@ -46,21 +45,13 @@ class HomeController extends Controller
 			// ->limit(4)
 			->orderBy('id', 'asc')
 			->get();
-
 		// dd($data);
-
 		$data['gallery'] = DB::table('galleries')
 			->leftJoin(
 				'activities',
 				'galleries.act_id',
 				'=',
 				'activities.id'
-			)
-			->join(
-				'countries',
-				'galleries.country_id',
-				'=',
-				'countries.id'
 			)
             ->select('galleries.img', 'galleries.title', 'activities.slug')
 			->where('galleries.status', 1)
@@ -69,27 +60,30 @@ class HomeController extends Controller
             ->orderBy('galleries.id', 'desc')
             ->get();
 
-		$data['story'] = DB::table('stories')
-			->join(
-				'countries',
-				'stories.country_id',
-				'=',
-				'countries.id'
-			)
+		$data['main'] = DB::table('main_features')
 			->select(
-				'stories.title', 
-				'stories.id', 
-				'stories.slug', 
+				'main_features.title', 
+				'main_features.id', 
+				'img_cover',
+				'main_features.slug', 
 				'img_header', 
-				'caption_desc', 
-				'stories.created_at', 
-				'countries.title as country_title',
-				'countries.slug as country_slug'
+				'main_features.created_at', 
 			)
-			->where('stories.status', 1)
-			->limit(3)
-			->orderBy('id', 'desc')
+			->where('main_features.status', 1)
+			->limit(4)
+			->orderBy('created_at', 'desc')
 			->get();
+
+			$data['activities'] = DB::table('activities')
+			->select(
+				'activities.title_en',
+				'activities.desc_en',
+				'activities.photo_cover',
+				'activities.slug',
+			)
+			->where('status', 1)
+			->get();
+		//dd($data['activities']);
 
 		return view('front.home')
 		->with('data', $data);
@@ -148,7 +142,6 @@ class HomeController extends Controller
 			->select('*')
 			->where('slug', $slug)
 			->first();
-
 		$data['activities'] = DB::table('activities')
 			->join(
 				'actions',

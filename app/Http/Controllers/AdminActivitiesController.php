@@ -32,40 +32,37 @@
 
 			# START COLUMNS DO NOT REMOVE THIS LINE
 			$this->col = [];
-			$this->col[] = ["label"=>"Title EN","name"=>"title_en"];
-			$this->col[] = ["label"=>"Title JP","name"=>"title_jp"];
+			$this->col[] = ["label"=>"ចំណងជើង ជាភាសារខ្មែរ","name"=>"title_en"];
+			$this->col[] = ["label"=>"ចំណងជើង ជាភាសារអងគ្លេស","name"=>"title_jp"];
 			$this->col[] = ["label"=>"Country","name"=>"id_country","join"=>"countries,title"];
 			$this->col[] = ["label"=>"Status","name"=>"status","callback_php"=>'($row->status == 1? "<span class=\"label label-success\">Show</span>" : "<span class=\"label label-danger\">Hide</span>")'];
 			# END COLUMNS DO NOT REMOVE THIS LINE
 
 			# START FORM DO NOT REMOVE THIS LINE
 			$this->form = [];
-			$this->form[] = ['label'=>'Country','name'=>'id_country','type'=>'select2','validation'=>'required|integer','width'=>'col-sm-10','datatable'=>'countries,title'];
-			$this->form[] = ['label'=>'Action','name'=>'id_action','type'=>'select2','width'=>'col-sm-10','datatable'=>'actions,title_jp'];
-			$this->form[] = ['label'=>'Title EN','name'=>'title_en','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Title JP','name'=>'title_jp','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Desc EN','name'=>'desc_en','type'=>'textarea','validation'=>'required|string|min:5|max:5000','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Desc JP','name'=>'desc_jp','type'=>'textarea','validation'=>'required|string|min:5|max:5000','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Youtube','name'=>'youtube','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10','help'=>'Please add only the Youtube ID EX: https://www.youtube.com/watch?v=BswtqHoRmPk -> The ID is BswtqHoRmPk'];
+			$this->form[] = ['label'=>'Country','name'=>'id_country','validation'=>'required','width'=>'col-sm-9'];
 			$this->form[] = ['label'=>'Photo Cover','name'=>'photo_cover','type'=>'upload','validation'=>'image','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Title En','name'=>'title_en','type'=>'text','validation'=>'min:1|max:255','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Title Jp','name'=>'title_jp','type'=>'text','validation'=>'remin:1|max:255','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Desc En','name'=>'desc_en','type'=>'textarea','validation'=>'string|min:5|max:5000','width'=>'col-sm-10','help'=>'Please add only the Youtube ID EX: https://www.youtube.com/watch?v=BswtqHoRmPk -> The ID is BswtqHoRmPk'];
+			$this->form[] = ['label'=>'Desc Jp','name'=>'desc_jp','type'=>'textarea','validation'=>'string|min:5|max:5000','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Youtube','name'=>'youtube','type'=>'text','validation'=>'min:1|max:255','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Photo1','name'=>'photo1','type'=>'upload','validation'=>'image','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Photo2','name'=>'photo2','type'=>'upload','validation'=>'image','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Photo3','name'=>'photo3','type'=>'upload','validation'=>'image','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Photo4','name'=>'photo4','type'=>'upload','validation'=>'image','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Keywords','name'=>'id_keyword','type'=>'select2','width'=>'col-sm-10','datatable'=>'keywords,title_en'];
-			$this->form[] = ['label'=>'Actions','name'=>'id_actions','type'=>'select2','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Status','name'=>'status','type'=>'radio','validation'=>'required','width'=>'col-sm-10','dataenum'=>'1|Show;0|Hide'];
+			$this->form[] = ['label'=>'Photo4','name'=>'photo4','type'=>'upload','validation'=>'image','width'=>'col-sm-10','datatable'=>'keywords,title_en'];
+			$this->form[] = ['label'=>'Keywords','name'=>'id_keyword','type'=>'select2','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Actions','name'=>'id_actions','type'=>'select2','width'=>'col-sm-10','dataenum'=>'1|Show;0|Hide'];
+			$this->form[] = ['label'=>'Status','name'=>'status','type'=>'radio','validation'=>'required','width'=>'col-sm-10'];
 			# END FORM DO NOT REMOVE THIS LINE
 
 			# OLD START FORM
 			//$this->form = [];
-			//$this->form[] = ['label'=>'Country','name'=>'id_country','type'=>'select2','validation'=>'required|integer','width'=>'col-sm-10','datatable'=>'countries,title'];
-			//$this->form[] = ['label'=>'Action','name'=>'id_action','type'=>'select2','width'=>'col-sm-10','datatable'=>'actions,title_jp'];
-			//$this->form[] = ['label'=>'Title EN','name'=>'title_en','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
-			//$this->form[] = ['label'=>'Title JP','name'=>'title_jp','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
-			//$this->form[] = ['label'=>'Desc EN','name'=>'desc_en','type'=>'textarea','validation'=>'required|string|min:5|max:5000','width'=>'col-sm-10'];
-			//$this->form[] = ['label'=>'Desc JP','name'=>'desc_jp','type'=>'textarea','validation'=>'required|string|min:5|max:5000','width'=>'col-sm-10'];
-			//$this->form[] = ['label'=>'Youtube','name'=>'youtube','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10','help'=>'Please add only the Youtube ID EX: https://www.youtube.com/watch?v=BswtqHoRmPk -> The ID is BswtqHoRmPk'];
+			//$this->form[] = ['label'=>'Title En','name'=>'title_en','type'=>'text','validation'=>'min:1|max:255','width'=>'col-sm-10'];
+			//$this->form[] = ['label'=>'Title Jp','name'=>'title_jp','type'=>'text','validation'=>'remin:1|max:255','width'=>'col-sm-10'];
+			//$this->form[] = ['label'=>'Desc En','name'=>'desc_en','type'=>'textarea','validation'=>'string|min:5|max:5000','width'=>'col-sm-10'];
+			//$this->form[] = ['label'=>'Desc Jp','name'=>'desc_jp','type'=>'textarea','validation'=>'string|min:5|max:5000','width'=>'col-sm-10'];
+			//$this->form[] = ['label'=>'Youtube','name'=>'youtube','type'=>'text','validation'=>'min:1|max:255','width'=>'col-sm-10','help'=>'Please add only the Youtube ID EX: https://www.youtube.com/watch?v=BswtqHoRmPk -> The ID is BswtqHoRmPk'];
 			//$this->form[] = ['label'=>'Photo Cover','name'=>'photo_cover','type'=>'upload','validation'=>'image','width'=>'col-sm-10'];
 			//$this->form[] = ['label'=>'Photo1','name'=>'photo1','type'=>'upload','validation'=>'image','width'=>'col-sm-10'];
 			//$this->form[] = ['label'=>'Photo2','name'=>'photo2','type'=>'upload','validation'=>'image','width'=>'col-sm-10'];
