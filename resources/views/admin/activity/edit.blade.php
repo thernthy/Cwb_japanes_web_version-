@@ -33,18 +33,18 @@
         <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
         <div class="panel-body">
-            {{ form_input("Title EN", "title_en", "text", 10, "", "required value='$row->title_en'") }}
-            {{ form_input("Title JP", "title_jp", "text", 10, "", "required value='$row->title_jp'") }}
+            {{ form_input("ចំណងជើងជាភាសារខ្មែរ", "title_en", "text", 10, "", "required value='$row->title_en'") }}
+            {{ form_input("ចំណងជើងជាភាសារអង្លេស", "title_jp", "text", 10, "", "required value='$row->title_jp'") }}
 
-            {{ form_textarea("Desc EN", "desc_en", "textarea", "required", $row->desc_en) }}
-            {{ form_textarea("Desc JP", "desc_jp", "textarea", "required", $row->desc_jp) }}
+            {{ form_textarea("ការពិពណ៌នាជាភាសរខ្មែរ", "desc_en", "textarea", "required", $row->desc_en) }}
+            {{ form_textarea("ការពិពណ៌នាជាភាសរអងគ្លេស", "desc_jp", "textarea", "required", $row->desc_jp) }}
 
-            {{ form_input("Youtube URL", "youtube", "text", 10, "", "value='$row->youtube'", "", "Please add only the Youtube ID Ex: https://www.youtube.com/watch?v=BswtqHoRmPk -> The ID is BswtqHoRmPk") }}
+            {{ form_input("វីឌីអូ Youtube URL", "youtube", "text", 10, "", "value='$row->youtube'", "", "Please add only the Youtube ID Ex: https://www.youtube.com/watch?v=BswtqHoRmPk -> The ID is BswtqHoRmPk") }}
 
             <hr>
         
             @if(CRUDBooster::me()->id_cms_privileges!=3)
-                {{ form_start_combobox("Country", "id_country", 6, "", "required", "select2") }}
+                {{ form_start_combobox("ជ្រើរើក្រុមដែលបង្ហោះ", "posting_team", 6, "", "required", "select2") }}
                     @foreach ($countries as $item)
                     <option value="{!! $item->id !!}" @if($row->id_country==$item->id) {{ "selected='selected'" }} @endif>{!! $item->val !!}</option>
                     @endforeach
@@ -60,7 +60,7 @@
 
             
 
-            {{ form_start_combobox("Actions", "id_actions[]", 6, "", "required multiple='multiple'", "select2", false) }}
+            {{ form_start_combobox("ជ្រើរើសសកម្មភាព", "id_actions[]", 6, "", "required multiple='multiple'", "select2", false) }}
                 @php $actionnya = unserialize($row->id_actions) @endphp
                 @if(!empty($actionnya))
                     @foreach ($actions as $key => $item)
@@ -102,7 +102,7 @@
             <hr>
             @if($row->photo1!=null)
                 <div class="form-group header-group-0" id="form-group-file" style="">
-                    <label class="col-sm-2 control-label">Photo 1</label>
+                    <label class="col-sm-2 control-label">រូបភាពទី 1</label>
                     <div class="col-sm-10">
                         <p><a data-lightbox="roadtrip" href="{{ URL::to('/').'/'.$row->photo1 }}">
                             <img style="max-width:160px" title="Image" src="{{ URL::to('/').'/'.$row->photo1 }}">
@@ -120,7 +120,7 @@
 
             @if($row->photo2!=null)
                 <div class="form-group header-group-0" id="form-group-file" style="">
-                    <label class="col-sm-2 control-label">Photo 2</label>
+                    <label class="col-sm-2 control-label">រូបភាពទី 2</label>
                     <div class="col-sm-10">
                         <p><a data-lightbox="roadtrip" href="{{ URL::to('/').'/'.$row->photo2 }}">
                             <img style="max-width:160px" title="Image" src="{{ URL::to('/').'/'.$row->photo2 }}">
@@ -138,7 +138,7 @@
 
             @if($row->photo3!=null)
                 <div class="form-group header-group-0" id="form-group-file" style="">
-                    <label class="col-sm-2 control-label">Photo 3</label>
+                    <label class="col-sm-2 control-label">រូបភាពទី 3</label>
                     <div class="col-sm-10">
                         <p><a data-lightbox="roadtrip" href="{{ URL::to('/').'/'.$row->photo3 }}">
                             <img style="max-width:160px" title="Image" src="{{ URL::to('/').'/'.$row->photo3 }}">
@@ -156,7 +156,7 @@
 
             @if($row->photo4!=null)
                 <div class="form-group header-group-0" id="form-group-file" style="">
-                    <label class="col-sm-2 control-label">Photo 4</label>
+                    <label class="col-sm-2 control-label">រូបភាពទី 4</label>
                     <div class="col-sm-10">
                         <p><a data-lightbox="roadtrip" href="{{ URL::to('/').'/'.$row->photo4 }}">
                             <img style="max-width:160px" title="Image" src="{{ URL::to('/').'/'.$row->photo4 }}">
@@ -177,7 +177,7 @@
 
             @if($row->photo_cover!=null)
                 <div class="form-group header-group-0" id="form-group-file" style="">
-                    <label class="col-sm-2 control-label">Photo Cover</label>
+                    <label class="col-sm-2 control-label">រូបភាព(cover)</label>
                     <div class="col-sm-10">
                         <p><a data-lightbox="roadtrip" href="{{ URL::to('/').'/'.$row->photo_cover }}">
                             <img style="max-width:160px" title="Image" src="{{ URL::to('/').'/'.$row->photo_cover }}">
@@ -193,7 +193,7 @@
                 {{ form_mediapicker("Photo Cover", "photo_cover", 10, "", '') }}
             @endif
 
-            {{ form_radio("Status", "status", $row->status) }}
+            {{ form_radio("ស្ថានភាព", "status", $row->status) }}
 
 
         </div>

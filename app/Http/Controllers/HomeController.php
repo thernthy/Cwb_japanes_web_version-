@@ -102,7 +102,7 @@ class HomeController extends Controller
 		$data['activities'] = DB::table('activities')
 			->join(
 				'countries',
-				'activities.id_country',
+				'activities.posting_team',
 				'=',
 				'countries.id'
 			)
@@ -151,7 +151,7 @@ class HomeController extends Controller
 			)
 			->join(
 				'countries',
-				'activities.id_country',
+				'activities.posting_team',
 				'=',
 				'countries.id'
 			)
@@ -195,7 +195,7 @@ class HomeController extends Controller
 			)
 			->join(
 				'countries',
-				'activities.id_country',
+				'activities.posting_team',
 				'=',
 				'countries.id'
 			)
@@ -413,13 +413,13 @@ class HomeController extends Controller
 		$data['activity'] = DB::table('activities')
 			->join(
 				'countries',
-				'activities.id_country',
+				'activities.posting_team',
 				'=',
 				'countries.id'
 			)
 			->select('activities.*', 'countries.title as country')
 			->where('activities.status', 1)
-			->where('activities.id_country', $data['data']->id)
+			->where('activities.posting_team', $data['data']->id)
 			->get();
 
 		$data['sns'] = DB::table('sns')
