@@ -13,7 +13,7 @@ class HomeController extends Controller
 
 	public function __construct()
 	{
-		$this->navbar['nav_country'] = DB::table('countries')
+		$this->navbar['nav_country'] = DB::table('creator_teams')
 			->select('slug', 'title', 'logo')
 			->get();
 		
@@ -46,18 +46,18 @@ class HomeController extends Controller
 			->orderBy('id', 'asc')
 			->get();
 		// dd($data);
-		$data['gallery'] = DB::table('galleries')
+		$data['category'] = DB::table('category')
 			->leftJoin(
 				'activities',
-				'galleries.act_id',
+				'category.act_id',
 				'=',
 				'activities.id'
 			)
-            ->select('galleries.img', 'galleries.title', 'activities.slug')
-			->where('galleries.status', 1)
+            ->select('category.img', 'category.title', 'activities.slug')
+			->where('category.status', 1)
             ->limit(20)
 			->inRandomOrder()
-            ->orderBy('galleries.id', 'desc')
+            ->orderBy('category.id', 'desc')
             ->get();
 
 		$data['main'] = DB::table('main_features')
@@ -76,12 +76,13 @@ class HomeController extends Controller
 
 			$data['activities'] = DB::table('activities')
 			->select(
+				'activities.title_kh',
 				'activities.title_en',
-				'activities.desc_en',
 				'activities.photo_cover',
 				'activities.slug',
 			)
 			->where('status', 1)
+			->limit(6)
 			->get();
 		//dd($data['activities']);
 
@@ -101,10 +102,10 @@ class HomeController extends Controller
 
 		$data['activities'] = DB::table('activities')
 			->join(
-				'countries',
+				'creator_teams',
 				'activities.posting_team',
 				'=',
-				'countries.id'
+				'creator_teams.id'
 			)
 			->join(
 				'action_activities',
@@ -117,7 +118,7 @@ class HomeController extends Controller
 				'activities.desc_en',
 				'activities.photo_cover',
 				'activities.slug',
-				'countries.logo'
+				'creator_teams.logo'
 			)
 			->where('activities.status', 1)
 			->where('action_activities.id_action', $data['data']->id)
@@ -150,10 +151,10 @@ class HomeController extends Controller
 				'actions.id'
 			)
 			->join(
-				'countries',
+				'creator_teams',
 				'activities.posting_team',
 				'=',
-				'countries.id'
+				'creator_teams.id'
 			)
 			->join(
 				'keyword_activities',
@@ -161,7 +162,7 @@ class HomeController extends Controller
 				'=',
 				'keyword_activities.id_activity'
 			)
-			->select('activities.*', 'actions.title_en as actionnya', 'actions.slug as action_slug', 'countries.title as country')
+			->select('activities.*', 'actions.title_en as actionnya', 'actions.slug as action_slug', 'creator_teams.title as country')
 			->where('keyword_activities.id_keyword', $data['data']->id)
 			->get();
 
@@ -194,10 +195,10 @@ class HomeController extends Controller
 				'keywords.id'
 			)
 			->join(
-				'countries',
+				'creator_teams',
 				'activities.posting_team',
 				'=',
-				'countries.id'
+				'creator_teams.id'
 			)
 			->join(
 				'action_activities',
@@ -215,8 +216,8 @@ class HomeController extends Controller
 				'activities.*', 
 				'actions.slug as action_slug',
 				'actions.title_en as action_en',
-				'countries.title as country_title',
-				'countries.slug as country_slug'
+				'creator_teams.title as country_title',
+				'creator_teams.slug as country_slug'
 			)
 			->where('activities.status', 1)
 			->where('activities.slug', $slug)
@@ -364,10 +365,10 @@ class HomeController extends Controller
 		
 		$data['data'] = DB::table('stories')
 			->join(
-				'countries',
+				'creator_teams',
 				'stories.country_id',
 				'=',
-				'countries.id'
+				'creator_teams.id'
 			)
 			->join(
 				'cms_users',
@@ -375,7 +376,7 @@ class HomeController extends Controller
 				'=',
 				'cms_users.id'
 			)
-			->select('stories.*', 'countries.title as country_title', 'countries.slug as country_slug', 'cms_users.name')
+			->select('stories.*', 'creator_teams.title as country_title', 'creator_teams.slug as country_slug', 'cms_users.name')
 			->where('stories.slug', $slug)
 			->first();
 
@@ -386,7 +387,7 @@ class HomeController extends Controller
 			->inRandomOrder()
 			->get();
 
-		$data['countries'] = DB::table('countries')
+		$data['creator_teams'] = DB::table('creator_teams')
 			->select('title', 'id')
 			->limit(6)
 			->orderBy('id', 'asc')
@@ -405,19 +406,19 @@ class HomeController extends Controller
 		$data['test'] = 'test';
 		$data['nav_footer'] = $this->navbar;
 
-		$data['data'] = DB::table('countries')
+		$data['data'] = DB::table('creator_teams')
 			->select('*')
 			->where('slug', $slug)
 			->first();
 
 		$data['activity'] = DB::table('activities')
 			->join(
-				'countries',
+				'creator_teams',
 				'activities.posting_team',
 				'=',
-				'countries.id'
+				'creator_teams.id'
 			)
-			->select('activities.*', 'countries.title as country')
+			->select('activities.*', 'creator_teams.title as country')
 			->where('activities.status', 1)
 			->where('activities.posting_team', $data['data']->id)
 			->get();
@@ -438,10 +439,10 @@ class HomeController extends Controller
 
 		$data['story'] = DB::table('stories')
 			->join(
-				'countries',
+				'creator_teams',
 				'stories.country_id',
 				'=',
-				'countries.id'
+				'creator_teams.id'
 			)
 			->join(
 				'cms_users',
@@ -456,7 +457,7 @@ class HomeController extends Controller
 				'img_header', 
 				'caption_desc', 
 				'stories.created_at', 
-				'countries.title as country_title',
+				'creator_teams.title as country_title',
 				'cms_users.name'
 			)
 			->limit(3)
@@ -473,10 +474,10 @@ class HomeController extends Controller
 				'activities.id'
 			)
 			->join(
-				'countries',
+				'creator_teams',
 				'galleries.country_id',
 				'=',
-				'countries.id'
+				'creator_teams.id'
 			)
 			->select('galleries.img', 'galleries.title', 'activities.slug')
 			->limit(13)
@@ -492,7 +493,7 @@ class HomeController extends Controller
 		// SEOTools::setTitle($data['data']->title);
 		// --------------------------
 
-		return view('front.countries')
+		return view('front.creator_teams')
 		->with('data', $data);
 	}
 
@@ -518,7 +519,7 @@ class HomeController extends Controller
 		// ->groupBy('pedagangs.nama')
 		// ->get();
 
-		$countries = DB::table('countries')
+		$countries = DB::table('creator_teams')
 		->get();
 
 		$data['list'] = $countries;

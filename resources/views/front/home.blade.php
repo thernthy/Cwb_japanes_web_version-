@@ -312,11 +312,11 @@
 			<div class="col-lg-4 col-md-6">
 				<div class="card-wrapper">
 					<a href="{{ url('detail/etnic-ceremony') }}">
-					<img src="{{ asset('img/kuy_festival.jpg') }}">
+					<img src="{{ asset($activitys_list->photo_cover) }}">
 					<div class="wrapper">
-						<p class="mbr-text align-center mbr-semibold mbr-white mbr-fonts-style display-4">{{$activitys_list->title_en}}</p>
+						<p class="mbr-text align-center mbr-semibold mbr-white mbr-fonts-style display-4">{{$activitys_list->title_kh}}</p>
 						<h3 class="card-title align-center mbr-bold mbr-fonts-style align-left mbr-white display-5">
-							<div>ការពិពណ៌នាអំពីប្រភេទខ្លី និងទិដ្ឋភាពទូទៅនៃអ្វីដែលជាប្រភេទអំពី</div>
+							<div>{{$activitys_list->desc_kh}}</div>
 						</h3>
 					</div>
 					</a>
@@ -324,7 +324,7 @@
 			</div>
 		@endforeach
 			
-			<div class="col-lg-4 col-md-6">
+			<!--<div class="col-lg-4 col-md-6">
 				<div class="card-wrapper">
 					<a href="{{ url('detail/etnic-ceremony') }}">
 					<img src="{{ asset('img/dancing_girls2.jpg') }}">
@@ -394,7 +394,7 @@
 				</div>
 			</div>
 
-			<!-- <div class="col-lg-4 col-md-4 btn-col pb-4">
+			 <div class="col-lg-4 col-md-4 btn-col pb-4">
 				<div class="align-center mbr-section-btn"><a class="btn btn-md btn-primary display-4"
 						href="#!">មើលទាំងអស់។<br></a></div>
 			</div> -->
