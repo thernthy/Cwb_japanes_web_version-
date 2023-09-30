@@ -45,13 +45,13 @@
         
             @if(CRUDBooster::me()->id_cms_privileges!=3)
                 {{ form_start_combobox("ជ្រើរើក្រុមដែលបង្ហោះ", "posting_team", 6, "", "required", "select2") }}
-                    @foreach ($countries as $item)
+                    @foreach ($creator_teams as $item)
                     <option value="{!! $item->id !!}" @if($row->id_country==$item->id) {{ "selected='selected'" }} @endif>{!! $item->val !!}</option>
                     @endforeach
                 {{ form_end_combobox() }}
             @else
                 {{ form_start_combobox("Country", "id_country", 6, "", "readonly disabled", "select2") }}
-                    @foreach ($countries as $item)
+                    @foreach ($creator_teams as $item)
                     <option value="{!! $item->id !!}" @if(CRUDBooster::me()->country_id==$item->id) {{ "selected='selected'" }} @endif>{!! $item->val !!}</option>
                     @endforeach
                 {{ form_end_combobox() }}

@@ -4,11 +4,8 @@
 	use Request;
 	use DB;
 	use CRUDBooster;
-
 	use Illuminate\Support\Str;
-
 	class AdminActivitiesController extends \crocodicstudio\crudbooster\controllers\CBController {
-
 	    public function cbInit() {
 
 			# START CONFIGURATION DO NOT REMOVE THIS LINE
@@ -34,7 +31,7 @@
 			$this->col = [];
 			$this->col[] = ["label"=>"ចំណងជើង ជាភាសារខ្មែរ","name"=>"title_kh"];
 			$this->col[] = ["label"=>"ចំណងជើង ជាភាសារអងគ្លេស","name"=>"title_en"];
-			$this->col[] = ["label"=>"ប្រទេស","name"=>"id_country","join"=>"countries,title"];
+			$this->col[] = ["label"=>"ឈ្មោះក្រុមដែលបង្ហោះ","name"=>"posting_team","join"=>"creator_teams,title"];
 			$this->col[] = ["label"=>"ស្ថានភាព","name"=>"status","callback_php"=>'($row->status == 1? "<span class=\"label label-success\">Show</span>" : "<span class=\"label label-danger\">Hide</span>")'];
 			# END COLUMNS DO NOT REMOVE THIS LINE
 
@@ -87,8 +84,6 @@
 	        | 
 	        */
 	        $this->sub_module = array();
-
-
 	        /* 
 	        | ---------------------------------------------------------------------- 
 	        | Add More Action Button / Menu
@@ -101,8 +96,6 @@
 	        | 
 	        */
 	        $this->addaction = array();
-
-
 	        /* 
 	        | ---------------------------------------------------------------------- 
 	        | Add More Button Selected
@@ -113,9 +106,7 @@
 	        | Then about the action, you should code at actionButtonSelected method 
 	        | 
 	        */
-	        $this->button_selected = array();
-
-	                
+	        $this->button_selected = array();     
 	        /* 
 	        | ---------------------------------------------------------------------- 
 	        | Add alert message to this module at overheader
@@ -125,9 +116,6 @@
 	        | 
 	        */
 	        $this->alert        = array();
-	                
-
-	        
 	        /* 
 	        | ---------------------------------------------------------------------- 
 	        | Add more button to header button 
@@ -138,9 +126,6 @@
 	        | 
 	        */
 	        $this->index_button = array();
-
-
-
 	        /* 
 	        | ---------------------------------------------------------------------- 
 	        | Customize Table Row Color
@@ -150,8 +135,6 @@
 	        | 
 	        */
 	        $this->table_row_color = array();     	          
-
-	        
 	        /*
 	        | ---------------------------------------------------------------------- 
 	        | You may use this bellow array to add statistic at dashboard 
@@ -670,7 +653,7 @@
 			$data['page_title'] = "Activity";
 
 			// populate dropdown
-			$data['countries'] = DB::table('countries')
+			$data['creator_teams'] = DB::table('creator_teams')
 				->select('title as val', 'id')
             	->get();
             
@@ -702,7 +685,7 @@
 				->first();
 			
 			// populate dropdown
-			$data['countries'] = DB::table('countries')
+			$data['creator_teams'] = DB::table('creator_teams')
 				->select('title as val', 'id')
             	->get();
             
