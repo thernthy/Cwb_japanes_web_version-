@@ -469,20 +469,21 @@
 			<div class="col-12">
 
 				<div class="content flip">
-					
+					@foreach($data['category'] as $catagory_item)
 					<a class="card" href="{{ url('products') }}">
-						<div class="front" style="background-image: url({{ asset('img/vegetables.jpg') }})">
-							<p>ព្រៃ</p>
+						<div class="front" style="background-image: url({{ asset($catagory_item->img) }})">
+							<p>{{$catagory_item->title}}</p>
 						</div>
 						<div class="back">
 							<div>
-								<p><b>ព្រៃ</b></p>
-								<p>ការពិពណ៌នាអំពីប្រភេទខ្លី និងទិដ្ឋភាពទូទៅនៃអ្វីដែលជាប្រភេទអំពី</p>
+								<p><b>{{$catagory_item->title}}</b></p>
+								<p>{{$catagory_item->desc}}</p>
 								<button class="button">មើលទាំងអស់។</button>
 							</div>
 						</div>
 					</a>
-					<a class="card" href="{{ url('category/test') }}">
+					@endforeach
+					<!--<a class="card" href="{{ url('category/test') }}">
 						<div class="front" style="background-image: url({{ asset('img/people_discuss.jpg') }})">
 							<p>សកម្មភាព និងកម្មវិធី សហគម</p>
 						</div>
@@ -528,7 +529,7 @@
 								<button class="button">មើលទាំងអស់។</button>
 							</div>
 						</div>
-					</a>
+					</a>-->
 				</div>
 
 			</div>

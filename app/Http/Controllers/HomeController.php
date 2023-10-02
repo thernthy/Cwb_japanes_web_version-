@@ -47,19 +47,12 @@ class HomeController extends Controller
 			->get();
 		// dd($data);
 		$data['category'] = DB::table('category')
-			->leftJoin(
-				'activities',
-				'category.act_id',
-				'=',
-				'activities.id'
-			)
-            ->select('category.img', 'category.title', 'activities.slug')
+            ->select('category.img', 'category.title')
 			->where('category.status', 1)
-            ->limit(20)
+            ->limit(6)
 			->inRandomOrder()
             ->orderBy('category.id', 'desc')
             ->get();
-
 		$data['main'] = DB::table('main_features')
 			->select(
 				'main_features.title', 
