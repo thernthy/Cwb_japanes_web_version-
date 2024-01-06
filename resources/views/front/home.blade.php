@@ -1,723 +1,156 @@
 @extends('front.layout')
 
 @push('styles')
-	<link rel="stylesheet" href="{{ asset('css/home.css') }}">
-
-	<style>
-		.search-header {
-			border-radius: 40px;
-			padding: 25px;
-		}
-	</style>
 @endpush
 
 @section('content')
-<section class="cid-rGsOyzHk89" id="header3-1j" style="background-image: url({{ asset('img/digital_program.jpg') }})">
-	<div class="mbr-overlay" style="opacity: 0; background-color: rgb(24, 24, 24);"></div>
-	<svg xmlns="http://www.w3.org/2000/svg" xmlns:se="http://svg-edit.googlecode.com"
-		xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/"
-		xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-		xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="100%" height="100%"
-		preserveAspectRatio="none" viewBox="0 0 858 235" style="">
-		<title>Image</title>
-		<!-- Created with Vector Paint - http://www.vectorpaint.yaks.com/ https://chrome.google.com/webstore/detail/hnbpdiengicdefcjecjbnjnoifekhgdo -->
-		<rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="transparent" stroke="none" class=""
-			style="">
-		</rect>
-		<g class="currentLayer" style="">
-			<title>Layer 1</title>
-			<path fill="#4a90d6" fill-opacity="1" stroke="none" stroke-width="2" stroke-dasharray="none"
-				stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1"
-				marker-start="" marker-mid="" marker-end=""
-				d="M13.91718,157.55035C128.42169,209.00593 174.16977,66.43387 406.36266,148.04844C638.55554,229.66302 649.93992,110.39426 837.69295,145.53147C1025.44597,180.66868 893.71138,356.73312 396.9054,368.57034C-99.90058,380.40757 -100.58733,106.09477 13.91718,157.55035z"
-				id="svg_1" class=""></path>
-		</g>
-	</svg>
-	<div class="container">
-
-		<div class="row">
-			<div class="col-md-6 content align-left col-lg-6">
-
-
-				<h1 class="mbr-section-title align-left mbr-white mbr-bold pb-3 mbr-fonts-style display-3">សូមស្វាគមន៍មកកាន់គេហទំព័ររបស់យើង</h1>
-				<p class="mbr-text pb-3 mbr-white mbr-semibold align-left mbr-fonts-style display-7"> ជា​គេហទំព័រមូលដ្ឋាន​ចំណេះដឹង​របស់​សហគមន៍បងប្អុនជនជាតិគួយ​ក្នុង​ប្រទេស​កម្ពុជា គេហទំព័រនេះបង្កើតក្នុងគោលបំណងថែរក្សារផ្សព្វផ្សាយអំពីវប្បធម៌ប្រពៃណីនិងគេហទំព័របស់បងប្អូនជនជាតិគួយ</p>
-
-				<div class="col-md-12 col-sm-12 form-group" data-for="nameFirst">
-					<input type="text" name="search" placeholder="ស្វែងរកនៅទីនេះ" data-form-field="nameFirst" class="search-header form-control display-7" value="" id="nameFirst-form1-3l">
-				</div>
-
-				<div class="align-left mbr-section-btn"><a class="btn btn-md btn-primary display-4"
-						href="{{ url('/') }}">ស្វែងរក</a> <a
-						class="btn btn-md btn-primary-outline display-4"
-						href="{{ url('/category/all') }}">ប្រភេទ​ទាំងអស់</a></div>
-				
-
-			</div>
-
-		</div>
-	</div>
-</section>
-
-<!-- 
-<section class="cid-rGtDjFvn9J" id="testimonials2-3o">
-	<div class="container-fluid">
-		<div class="row">
-
-			
-
-
-			<div class="col-md-12 content align-left py-4 col-lg-6">
-				<div class="icon-wrap">
-					<span class="mbr-iconfont mbrib-quote-right"></span>
-				</div>
-				<p class="mbr-text pb-4 align-left mbr-fonts-style display-5"> ជា​មូលដ្ឋាន​ចំណេះដឹង​របស់​សហគមន៍បងប្អុនជនជាតិគួយ​ក្នុង​ប្រទេស​កម្ពុជា គេហទំព័រនេះបង្កើតក្នុងគោលបំណងថែរក្សារផ្សព្វផ្សាយអំពីវប្បធម៌ប្រពៃណីនិងគេហទំព័របស់បងប្អូនជនជាតិគួយ</p>
-
-				<div class="align-left mbr-section-btn"><a class="btn btn-md btn-primary display-4"
-						href="{{ url('/about') }}">អំពី​ពួក​យើង</a> <a
-						class="btn btn-md btn-primary-outline display-4"
-						href="{{ url('/contact') }}">ទំនាក់ទំនង</a></div>
-
-			</div>
-			<div class="col-md-12 col-lg-6 img-col">
-				<div class="mbr-figure">
-					<img src="{{ asset('img/girls_on_stage.jpg') }}" alt="kuipedia">
-				</div>
-
-			</div>
-
-		</div>
-	</div>
-</section> -->
-
-<!-- 
-<section class="cid-rGsOE1E5qe" id="header1-1k">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12 content align-left py-4 col-lg-5 ">
-                <h1 class="mbr-section-title align-left mbr-bold pb-3 mbr-fonts-style display-2">
-                    សូមស្វាគមន៍មកកាន់គេហទំព័ររបស់យើង
-                </h1>
-                <p class="mbr-text pb-3 align-left mbr-fonts-style display-7"> Kuipedia
-                    ជា​មូលដ្ឋាន​ចំណេះដឹង​របស់​សហគមន៍បងប្អុនជនជាតិគួយ​ក្នុង​ប្រទេស​កម្ពុជា 
-                    គេហទំព័រនេះបង្កើតក្នុងគោលបំណងថែរក្សារផ្សព្វផ្សាយអំពីវប្បធម៌ប្រពៃណីនិងគេហទំព័របស់បងប្អូនជនជាតិគួយ
-                    ​</p>
-                 <div class="align-wrap align-left">
-					<div class="icons-wrap">
-						<div class="icon-wrap">
-							<h3 class="icon-title mbr-bold mbr-fonts-style display-7">EAT</h3>
-						</div>
-						<div class="icon-wrap">
-							<h3 class="icon-title mbr-bold mbr-fonts-style display-7">PLAY</h3>
-						</div>
-						<div class="icon-wrap">
-							<h3 class="icon-title mbr-bold mbr-fonts-style display-7">BRUSH</h3>
-						</div>
-
-					</div>
-				</div>
-
-				<div class="align-left mbr-section-btn"><a class="btn btn-md btn-primary display-4"
-						href="{{ url('/about') }}">អំពី​ពួក​យើង</a> <a
-						class="btn btn-md btn-primary-outline display-4"
-						href="{{ url('/contact') }}">ទំនាក់ទំនង</a></div>
-
-			</div>
-			<div class="col-md-12 col-lg-7 img-col">
-				<div class="mbr-figure">
-					<img src="{{ asset('img/kui_header.png') }}" alt="Mobirise">
-				</div>
-
-			</div>
-		</div>
-	</div>
-</section> -->
-
-<section class="cid-rGsSqYA5s6" id="content2-19">
-	<div class="container-fluid">
-		<div class="row">
-
-			<div class="col-md-12 col-lg-6 img-col">
-				<div class="mbr-figure">
-					<img src="{{ asset('img/about_header.png') }}" alt="About">
-				</div>
-			</div>
-
-			<div class="col-md-12 content py-4 col-lg-6">
-
-				<h1 class="mbr-section-title align-left mbr-bold pb-4 mbr-fonts-style display-2"><a
-						href="#!"><strong>អប់រំឌីជីថលជនជាតិដើមភាគតិច
-						</strong></a>
-					<div>Digindigenous</div>
-				</h1>
-
-				<h2 class="mbr-section-title align-left mbr-bold mbr-fonts-style display-7">
-					ការអប់រំឌីជីថលសម្រាប់ជនជាតិដើមភាគតិច</h2>
-
-				<p class="mbr-text pb-3 align-left mbr-fonts-style display-7">ជនជាតិដើមភាគតិច គឺជាអ្នកទទួលមរតក និងអ្នកអនុវត្តវប្បធម៌ប្លែកៗ និងវិធីទាក់ទងនឹងមនុស្ស និងបរិស្ថាន។ ពួកគេបានរក្សានូវលក្ខណៈសង្គម វប្បធម៌ សេដ្ឋកិច្ច និងនយោបាយ ដែលខុសប្លែកពីសង្គមលេចធ្លោដែលពួកគេរស់នៅ។ ទោះបីជាមានភាពខុសគ្នាខាងវប្បធម៌ក៏ដោយ ជនជាតិដើមភាគតិចមកពីជុំវិញពិភពលោកចែករំលែកបញ្ហាទូទៅទាក់ទងនឹងការការពារសិទ្ធិរបស់ពួកគេជាជនជាតិផ្សេងគ្នា។</p>
-				<ul class="list">
-					<li class="item-wrap">
-						<span class="fa fa-check-circle"></span>
-						<h4 class="display-7">&nbsp; ការលើកទឹកចិត្តដល់ការរស់ឡើងវិញនៃដី</h4>
-					</li>
-					<li class="item-wrap">
-						<span class="fa fa-check-circle"></span>
-						<h4 class="display-7">&nbsp; ការលើកទឹកចិត្តដល់ការរស់ឡើងវិញនៃដី</h4>
-					</li>
-
-					
-				</ul>
-			</div>
-
-		</div>
-	</div>
-</section>
-
-<section class="features1 cid-rGtBqmc2gI" id="features6-33">
-	<div class="container">
-		<div class="row">
-			@foreach($data['main'] as $item)
-			<div class="card col-12 col-md-6 col-lg-3">
-				<div class="card-wrapper align-left card1 ">
-					<svg xmlns="http://www.w3.org/2000/svg" width="269.19780227841716" height="147.43955898849208"
-						style="">
-						<rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="transparent"
-							stroke="none" class="" style="" fill-opacity="1"></rect>
-						<g class="currentLayer" style="">
-							<title>Layer 1</title>
-							<path fill="white" fill-opacity="1" stroke="none" stroke-width="2" stroke-dasharray="none"
-								stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero"
-								opacity="1" marker-start="" marker-mid="" marker-end=""
-								d="M-110.40659359291077,50.950556279754636 C-110.40659359291077,-2.4372237202453633 -10.614843592910766,-81.94505372024535 88.16483640708924,-81.94505372024535 C186.94450640708922,-81.94505372024535 266.9560464070892,-38.70095372024536 266.9560464070892,14.686816279754638 C266.9560464070892,68.07458627975464 186.94450640708922,111.31868627975464 88.16483640708924,111.31868627975464 C-10.614843592910766,111.31868627975464 -110.40659359291077,104.33832627975464 -110.40659359291077,50.950556279754636 z"
-								id="svg_1" class=""
-								transform="rotate(-4.22603702545166 78.27473449707026,14.686810493469203) "></path>
-						</g>
-					</svg>
-					<div class="card-img">
-						<span class="fa fa-book fa-4x"></span>
-					</div>
-					<div class="card-box">
-						<img class="img-responsive" src="{{ asset($item->img_cover) }}">
-						<h4 class="card-title pb-2 mbr-bold mbr-fonts-style display-5">{{$item->title}}</h4>
-						<p class="mbr-text pb-4 mbr-fonts-style display-4">Pellentesque habitant felis morbi tristique
-							senectus et
-							netus et malesuada fames ac turpis netus egestas.</p>
-						<h5 class="link mbr-semibold mbr-fonts-style display-4"><a href="{{ url('main-feature/contribute-kui-bussines') }}" class="text-black">
-								មើល​ច្រើន​ទៀត <span class="fa fa-arrow-right"></span></a></h5>
-					</div>
-				</div>
-			</div>
-			@endforeach
-			<!--<div class="card col-12 col-md-6 col-lg-3">
-				<div class="card-wrapper  align-left card2 ">
-					<svg xmlns="http://www.w3.org/2000/svg" width="269.19780227841716" height="147.43955898849208"
-						style="">
-						<rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="transparent"
-							stroke="none" class="" style="" fill-opacity="1"></rect>
-						<g class="currentLayer" style="">
-							<title>Layer 1</title>
-							<path fill="white" fill-opacity="1" stroke="none" stroke-width="2" stroke-dasharray="none"
-								stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero"
-								opacity="1" marker-start="" marker-mid="" marker-end=""
-								d="M-110.40659359291077,50.950556279754636 C-110.40659359291077,-2.4372237202453633 -10.614843592910766,-81.94505372024535 88.16483640708924,-81.94505372024535 C186.94450640708922,-81.94505372024535 266.9560464070892,-38.70095372024536 266.9560464070892,14.686816279754638 C266.9560464070892,68.07458627975464 186.94450640708922,111.31868627975464 88.16483640708924,111.31868627975464 C-10.614843592910766,111.31868627975464 -110.40659359291077,104.33832627975464 -110.40659359291077,50.950556279754636 z"
-								id="svg_1" class=""
-								transform="rotate(-4.22603702545166 78.27473449707026,14.686810493469203) "></path>
-						</g>
-					</svg>
-					<div class="card-img">
-						<span class="fa fa-folder fa-4x"></span>
-					</div>
-					<div class="card-box">
-						<img class="img-responsive" src="{{ asset('img/digital_program.jpg') }}">
-						<h4 class="card-title pb-2 mbr-bold mbr-fonts-style display-5">កម្មវិធីអប់រំឌីជីថល</h4>
-							
-						<p class="mbr-text pb-4 mbr-fonts-style display-4">
-							Pellentesque habitant felis morbi tristique senectus et netus et malesuada fames ac turpis
-							netus egestas. </p>
-						<h5 class="link mbr-semibold mbr-fonts-style display-4">
-							<a href="{{ url('main-feature/digital-education-program') }}" class="text-black">
-								មើល​ច្រើន​ទៀត <span class="fa fa-arrow-right"></span></a></h5>
-					</div>
-				</div>
-			</div>
-			<div class="card col-12 col-md-6 col-lg-3">
-				<div class="card-wrapper  align-left card3 ">
-					<svg xmlns="http://www.w3.org/2000/svg" width="269.19780227841716" height="147.43955898849208"
-						style="">
-						<rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="transparent"
-							stroke="none" class="" style="" fill-opacity="1"></rect>
-						<g class="currentLayer" style="">
-							<title>Layer 1</title>
-							<path fill="white" fill-opacity="1" stroke="none" stroke-width="2" stroke-dasharray="none"
-								stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero"
-								opacity="1" marker-start="" marker-mid="" marker-end=""
-								d="M-110.40659359291077,50.950556279754636 C-110.40659359291077,-2.4372237202453633 -10.614843592910766,-81.94505372024535 88.16483640708924,-81.94505372024535 C186.94450640708922,-81.94505372024535 266.9560464070892,-38.70095372024536 266.9560464070892,14.686816279754638 C266.9560464070892,68.07458627975464 186.94450640708922,111.31868627975464 88.16483640708924,111.31868627975464 C-10.614843592910766,111.31868627975464 -110.40659359291077,104.33832627975464 -110.40659359291077,50.950556279754636 z"
-								id="svg_1" class=""
-								transform="rotate(-4.22603702545166 78.27473449707026,14.686810493469203) "></path>
-						</g>
-					</svg>
-					<div class="card-img">
-						<span class="fa fa-globe fa-4x"></span>
-					</div>
-					<div class="card-box">
-						<img class="img-responsive" src="{{ asset('img/girl_dancing.jpg') }}">
-						<h4 class="card-title pb-2 mbr-bold mbr-fonts-style display-5">
-							ទេសចរណ៍សហគមន៍</h4>
-						
-						<p class="mbr-text pb-4 mbr-fonts-style display-4">
-							Pellentesque habitant felis morbi tristique senectus et netus et malesuada fames ac turpis
-							netus egestas. </p>
-						<h5 class="link mbr-semibold mbr-fonts-style display-4">
-							<a href="{{ url('community-tourism') }}" class="text-black">
-								មើល​ច្រើន​ទៀត <span class="fa fa-arrow-right"></span></a></h5>
-					</div>
-				</div>
-			</div>
-			<div class="card col-12 col-md-6 col-lg-3">
-                <div class="card-wrapper  align-left card4 ">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="269.19780227841716" height="147.43955898849208" style="">
-                        <rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="transparent" stroke="none" class="" style="" fill-opacity="1"></rect>
-                        <g class="currentLayer" style="">
-                            <title>Layer 1</title>
-                            <path fill="white" fill-opacity="1" stroke="none" stroke-width="2" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M-110.40659359291077,50.950556279754636 C-110.40659359291077,-2.4372237202453633 -10.614843592910766,-81.94505372024535 88.16483640708924,-81.94505372024535 C186.94450640708922,-81.94505372024535 266.9560464070892,-38.70095372024536 266.9560464070892,14.686816279754638 C266.9560464070892,68.07458627975464 186.94450640708922,111.31868627975464 88.16483640708924,111.31868627975464 C-10.614843592910766,111.31868627975464 -110.40659359291077,104.33832627975464 -110.40659359291077,50.950556279754636 z" id="svg_1" class="" transform="rotate(-4.22603702545166 78.27473449707026,14.686810493469203) "></path>
-                        </g>
-                    </svg>
-                    <div class="card-img">
-                        <span class="fa fa-users fa-4x"></span>
-                    </div>
-                    <div class="card-box">
-						<img class="img-responsive" src="{{ asset('img/cultures.jpg') }}">
-                        <h4 class="card-title pb-2 mbr-bold mbr-fonts-style display-5">វប្បធម៌ និងអាហារ</h4>
-                        <p class="mbr-text pb-4 mbr-fonts-style display-4">
-                            Pellentesque habitant felis morbi tristique senectus et netus et malesuada fames ac turpis
-                            netus egestas. </p>
-                        <h5 class="link mbr-semibold mbr-fonts-style display-4"><a href="{{ url('products') }}" class="text-black">
-						មើល​ច្រើន​ទៀត</a></h5>
-                    </div>
-                </div>-->
-
-            </div>
-		</div>
-	</div>
-</section>
-
-<section class="features6 popup-btn-cards cid-rGsSo9FI9p" id="features4-10">
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-lg-12 col-md-12 pb-4">
-				<h4 class="align-left mbr-bold mbr-fonts-style display-7">សកម្មភាពពិសេស</h4>
-
-				<h2 class="align-left mbr-bold mbr-fonts-style mbr-section-title display-2">សូមក្រឡេកមើល</h2>
-			</div>
-        @foreach($data['activities'] as $activitys_list)
-			<div class="col-lg-4 col-md-6">
-				<div class="card-wrapper">
-					<a href="{{ url('detail/etnic-ceremony') }}">
-					<img src="{{ asset($activitys_list->photo_cover) }}">
-					<div class="wrapper">
-						<p class="mbr-text align-center mbr-semibold mbr-white mbr-fonts-style display-4">{{$activitys_list->title_kh}}</p>
-						<h3 class="card-title align-center mbr-bold mbr-fonts-style align-left mbr-white display-5">
-							<div>{{$activitys_list->desc_kh}}</div>
-						</h3>
-					</div>
-					</a>
-				</div>
-			</div>
-		@endforeach
-			
-			<!--<div class="col-lg-4 col-md-6">
-				<div class="card-wrapper">
-					<a href="{{ url('detail/etnic-ceremony') }}">
-					<img src="{{ asset('img/dancing_girls2.jpg') }}">
-					<div class="wrapper">
-						<p class="mbr-text align-center mbr-semibold mbr-white mbr-fonts-style display-4">ឈ្មោះប្រភេទ</p>
-						<h3 class="card-title align-center mbr-bold mbr-fonts-style align-left mbr-white display-5">
-							<div>ការពិពណ៌នាអំពីប្រភេទខ្លី និងទិដ្ឋភាពទូទៅនៃអ្វីដែលជាប្រភេទអំពី</div>
-						</h3>
-					</div>
-					</a>
-				</div>
-			</div>
-
-			<div class="col-lg-4 col-md-6">
-				<div class="card-wrapper">
-					<a href="{{ url('detail/etnic-ceremony') }}">
-					<img src="{{ asset('img/random2.jpg') }}">
-					<div class="wrapper">
-						<p class="mbr-text align-center mbr-semibold mbr-white mbr-fonts-style display-4">ឈ្មោះប្រភេទ</p>
-						<h3 class="card-title align-center mbr-bold mbr-fonts-style align-left mbr-white display-5">
-							<div>ការពិពណ៌នាអំពីប្រភេទខ្លី និងទិដ្ឋភាពទូទៅនៃអ្វីដែលជាប្រភេទអំពី</div>
-						</h3>
-					</div>
-					</a>
-				</div>
-			</div>
-
-			<div class="col-lg-4 col-md-6">
-				<div class="card-wrapper">
-					<a href="{{ url('detail/etnic-ceremony') }}">
-					<img src="{{ asset('img/random3.jpg') }}">
-					<div class="wrapper">
-						<p class="mbr-text align-center mbr-semibold mbr-white mbr-fonts-style display-4">ឈ្មោះប្រភេទ</p>
-						<h3 class="card-title align-center mbr-bold mbr-fonts-style align-left mbr-white display-5">
-							<div>ការពិពណ៌នាអំពីប្រភេទខ្លី និងទិដ្ឋភាពទូទៅនៃអ្វីដែលជាប្រភេទអំពី</div>
-						</h3>
-					</div>
-					</a>
-				</div>
-			</div>
-
-			<div class="col-lg-4 col-md-6">
-				<div class="card-wrapper">
-					<a href="{{ url('detail/etnic-ceremony') }}">
-					<img src="{{ asset('img/random4.jpg') }}">
-					<div class="wrapper">
-						<p class="mbr-text align-center mbr-semibold mbr-white mbr-fonts-style display-4">ឈ្មោះប្រភេទ</p>
-						<h3 class="card-title align-center mbr-bold mbr-fonts-style align-left mbr-white display-5">
-							<div>ការពិពណ៌នាអំពីប្រភេទខ្លី និងទិដ្ឋភាពទូទៅនៃអ្វីដែលជាប្រភេទអំពី</div>
-						</h3>
-					</div>
-					</a>
-				</div>
-			</div>
-
-			<div class="col-lg-4 col-md-6">
-				<div class="card-wrapper">
-					<a href="{{ url('detail/etnic-ceremony') }}">
-					<img src="{{ asset('img/girl_alone.jpg') }}">
-					<div class="wrapper">
-						<p class="mbr-text align-center mbr-semibold mbr-white mbr-fonts-style display-4">ឈ្មោះប្រភេទ</p>
-						<h3 class="card-title align-center mbr-bold mbr-fonts-style align-left mbr-white display-5">
-							<div>ការពិពណ៌នាអំពីប្រភេទខ្លី និងទិដ្ឋភាពទូទៅនៃអ្វីដែលជាប្រភេទអំពី</div>
-						</h3>
-					</div>
-					</a>
-				</div>
-			</div>
-
-			 <div class="col-lg-4 col-md-4 btn-col pb-4">
-				<div class="align-center mbr-section-btn"><a class="btn btn-md btn-primary display-4"
-						href="#!">មើលទាំងអស់។<br></a></div>
-			</div> -->
-
-		</div>
-	</div>
-</section>
-
-<section class="progress-bars2 counters cid-rGtBgCg3f6 visible full-visible" id="counters1-31">
+    <video playsinline="playsinline" autoplay="autoplay" id="myVideo" muted="muted" loop="loop" style="width: 100%;">
+		<source src="https://youtu.be/CjC0fVRiVeE?si=9hSVLbvgDvnAWj1F" type="video/mp4">
+    </video>
+	<h2 class="text-center mb-5 mt-5">
+        アクティビティギャラリー
+    </h2>
     <div class="container">
-        <h2 class="mbr-section-title mbr-bold pb-5 align-center mbr-fonts-style display-2">
-            <div><span style="color: inherit; font-size: 3.6rem;">ប្រភេទ</span><br></div></h2>
-
-        <div class="row justify-content-center">
-            <div class="card col-6 col-md-6 col-lg-3">
-                <div class="card-ico">
-                    <h4 class="mbr-content-title mbr-semibold mbr-fonts-style display-4">វប្បធម៌</h4>
-                    <span class="mbr-iconfont mbrib-home"></span>
+        <div class="row">
+            <div class="col-4 left_side_galery mt-5 pt-2">
+				<a href="{{ url('/', 'testing-article') }}">
+					<div class="img_block" style="background-image: url(img/650c1db596b082.23624320.jpg);">
+					
+					</div>
+				</a>
+				<a href="">
+					<div class="img_block" style="background-image: url(img/dance.png);">
+						
+					</div>
+				</a>
+				<a href="">
+					<div class="img_block" style="background-image: url(img/dace2.jpg);">
+						
+					</div>
+				</a>
+				<a href="">
+					<div class="img_block" style="background-image: url(img/dace3.jpg);">
+						
+					</div>
+				</a>
+            </div>
+            <div class="col-4">
+				<a href="">
+					<div class="img_block" style="background-image: url(img/dace4.jpg);">
+						
+					</div>
+				</a>
+				<a href="">
+					<div class="img_block" style="background-image: url(img/dace6.jpg);">
+						
+					</div>
+				</a>
+				<a href="">
+					<div class="img_block">
+						
+					</div>
+				</a>
+				<a href="">
+					<div class="img_block">
+						
+					</div>
+				</a>
+				<a href="">
+					<div class="img_block">
+						
+					</div>
+				</a>
+				<a href="">
+					<div class="img_block">
+						
+					</div>
+				</a>
+				<a href="">
+					<div class="img_block">
+						
+					</div>
+				</a>
+            </div>
+            <div class="col-4 mt-5 pt-4">
+                <div class="img_block">
+                    
                 </div>
-                <div class="card-text">
-                    <h3 class="count mbr-semibold mbr-fonts-style display-2">2</h3>
-
+                <div class="img_block">
+                    
+                </div>
+                <div class="img_block">
+                    
+                </div>
+                <div class="img_block">
+                    
+                </div>
+                <div class="img_block">
+                    
+                </div>
+                <div class="img_block">
+                    
                 </div>
             </div>
-
-
-            <div class="card col-6 col-md-6 col-lg-3">
-                <div class="card-ico">
-                    <h4 class="mbr-content-title mbr-semibold mbr-fonts-style display-4">អាហារ</h4>
-                    <span class="mbr-iconfont mbrib-github"></span>
-                </div>
-                <div class="card-text">
-                    <h3 class="count mbr-semibold mbr-fonts-style display-2">5</h3>
-
-                </div>
+        </div>
+        <h2 class="text-center mb-5 mt-5">
+            ビデオフィード
+        </h2>
+        <div class="row mt-5 mb-5 video_feed_block">
+            <div class="d-md-flex  align-content-lg-center mb-4">
+                <a href="{{ url('/watch', 'ウグイのビデオ') }}">
+                    <div class="feed__item" style="background-image: url('img/dace3.jpg');">
+                        
+                    </div>
+                </a>
+                <div class="bili-video-card__info __scale-disable pt-4 mb-4">
+                    <div class="bili-video-card__info--right p-3">
+                      <h3 class="bili-video-card__info--tit" title="《凡人修仙传》第77集，开播24小时，播放量狂飙，五破纪录！"><a href="{{ url('/watch', 'ウグイのビデオ') }}"  data-mod="tianma.1-1-1" data-target-url="https://www.bilibili.com/video/BV1xQ4y1t78k">《凡人修仙传》第77集，开播24小时，播放量狂飙，五破纪录！</a></h3>
+                      <div class="bili-video-card__info--bottom">
+                        <a class="bili-video-card__info--owner" href="//space.bilibili.com/456490533" target="_blank" data-mod="tianma.1-1-1"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" width="24" height="24" fill="currentColor" class="bili-video-card__info--owner__up">
+        
+                            <path d="M6.15 8.24805C6.5642 8.24805 6.9 8.58383 6.9 8.99805L6.9 12.7741C6.9 13.5881 7.55988 14.248 8.3739 14.248C9.18791 14.248 9.8478 13.5881 9.8478 12.7741L9.8478 8.99805C9.8478 8.58383 10.1836 8.24805 10.5978 8.24805C11.012 8.24805 11.3478 8.58383 11.3478 8.99805L11.3478 12.7741C11.3478 14.41655 10.01635 15.748 8.3739 15.748C6.73146 15.748 5.4 14.41655 5.4 12.7741L5.4 8.99805C5.4 8.58383 5.73578 8.24805 6.15 8.24805z" fill="currentColor"></path>
+                            <path d="M12.6522 8.99805C12.6522 8.58383 12.98795 8.24805 13.4022 8.24805L15.725 8.24805C17.31285 8.24805 18.6 9.53522 18.6 11.123C18.6 12.71085 17.31285 13.998 15.725 13.998L14.1522 13.998L14.1522 14.998C14.1522 15.4122 13.8164 15.748 13.4022 15.748C12.98795 15.748 12.6522 15.4122 12.6522 14.998L12.6522 8.99805zM14.1522 12.498L15.725 12.498C16.4844 12.498 17.1 11.8824 17.1 11.123C17.1 10.36365 16.4844 9.74804 15.725 9.74804L14.1522 9.74804L14.1522 12.498z" fill="currentColor"></path>
+                            <path d="M12 4.99805C9.48178 4.99805 7.283 5.12616 5.73089 5.25202C4.65221 5.33949 3.81611 6.16352 3.72 7.23254C3.60607 8.4998 3.5 10.171 3.5 11.998C3.5 13.8251 3.60607 15.4963 3.72 16.76355C3.81611 17.83255 4.65221 18.6566 5.73089 18.7441C7.283 18.8699 9.48178 18.998 12 18.998C14.5185 18.998 16.7174 18.8699 18.2696 18.74405C19.3481 18.65655 20.184 17.8328 20.2801 16.76405C20.394 15.4973 20.5 13.82645 20.5 11.998C20.5 10.16965 20.394 8.49877 20.2801 7.23205C20.184 6.1633 19.3481 5.33952 18.2696 5.25205C16.7174 5.12618 14.5185 4.99805 12 4.99805zM5.60965 3.75693C7.19232 3.62859 9.43258 3.49805 12 3.49805C14.5677 3.49805 16.8081 3.62861 18.3908 3.75696C20.1881 3.90272 21.6118 5.29278 21.7741 7.09773C21.8909 8.3969 22 10.11405 22 11.998C22 13.88205 21.8909 15.5992 21.7741 16.8984C21.6118 18.7033 20.1881 20.09335 18.3908 20.23915C16.8081 20.3675 14.5677 20.498 12 20.498C9.43258 20.498 7.19232 20.3675 5.60965 20.2392C3.81206 20.0934 2.38831 18.70295 2.22603 16.8979C2.10918 15.5982 2 13.8808 2 11.998C2 10.1153 2.10918 8.39787 2.22603 7.09823C2.38831 5.29312 3.81206 3.90269 5.60965 3.75693z" fill="currentColor"></path>
+        
+                          </svg>
+                          <span class="bili-video-card__info--author" title="凡人修仙传数据分析">凡人修仙传数据分析</span>
+                          <span class="bili-video-card__info--date">· 16小时前</span></a>
+                      </div>
+                      <p class="mt-3">100k 視聴者 1 ひと月前</p>
+                    </div>
+                  </div>
             </div>
-
-            <div class="card col-6 col-md-6 col-lg-3">
-                <div class="card-ico">
-                    <h4 class="mbr-content-title mbr-semibold mbr-fonts-style display-4">សៀវភៅ</h4>
-                    <span class="mbr-iconfont mbrib-globe-2"></span>
-                </div>
-                <div class="card-text">
-                    <h3 class="count mbr-semibold mbr-fonts-style display-2">22</h3>
-
-                </div>
+            <div class="d-md-flex  align-content-lg-center">
+                <a href="https://www.youtube.com/watch?v=JXl4QgYUi9c&t=1s">
+                    <div class="feed__item" style="background-image: url('img/dace3.jpg');">
+                        
+                    </div>
+                </a>
+                <div class="bili-video-card__info __scale-disable pt-4">
+                    <div class="bili-video-card__info--right p-3">
+                      <h3 class="bili-video-card__info--tit" title="《凡人修仙传》第77集，开播24小时，播放量狂飙，五破纪录！"><a href="https://www.bilibili.com/video/BV1xQ4y1t78k" target="_blank" data-mod="tianma.1-1-1" data-target-url="https://www.bilibili.com/video/BV1xQ4y1t78k">《凡人修仙传》第77集，开播24小时，播放量狂飙，五破纪录！</a></h3>
+                      <div class="bili-video-card__info--bottom">
+                        <a class="bili-video-card__info--owner" href="//space.bilibili.com/456490533" target="_blank" data-mod="tianma.1-1-1"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" width="24" height="24" fill="currentColor" class="bili-video-card__info--owner__up">
+        
+                            <path d="M6.15 8.24805C6.5642 8.24805 6.9 8.58383 6.9 8.99805L6.9 12.7741C6.9 13.5881 7.55988 14.248 8.3739 14.248C9.18791 14.248 9.8478 13.5881 9.8478 12.7741L9.8478 8.99805C9.8478 8.58383 10.1836 8.24805 10.5978 8.24805C11.012 8.24805 11.3478 8.58383 11.3478 8.99805L11.3478 12.7741C11.3478 14.41655 10.01635 15.748 8.3739 15.748C6.73146 15.748 5.4 14.41655 5.4 12.7741L5.4 8.99805C5.4 8.58383 5.73578 8.24805 6.15 8.24805z" fill="currentColor"></path>
+                            <path d="M12.6522 8.99805C12.6522 8.58383 12.98795 8.24805 13.4022 8.24805L15.725 8.24805C17.31285 8.24805 18.6 9.53522 18.6 11.123C18.6 12.71085 17.31285 13.998 15.725 13.998L14.1522 13.998L14.1522 14.998C14.1522 15.4122 13.8164 15.748 13.4022 15.748C12.98795 15.748 12.6522 15.4122 12.6522 14.998L12.6522 8.99805zM14.1522 12.498L15.725 12.498C16.4844 12.498 17.1 11.8824 17.1 11.123C17.1 10.36365 16.4844 9.74804 15.725 9.74804L14.1522 9.74804L14.1522 12.498z" fill="currentColor"></path>
+                            <path d="M12 4.99805C9.48178 4.99805 7.283 5.12616 5.73089 5.25202C4.65221 5.33949 3.81611 6.16352 3.72 7.23254C3.60607 8.4998 3.5 10.171 3.5 11.998C3.5 13.8251 3.60607 15.4963 3.72 16.76355C3.81611 17.83255 4.65221 18.6566 5.73089 18.7441C7.283 18.8699 9.48178 18.998 12 18.998C14.5185 18.998 16.7174 18.8699 18.2696 18.74405C19.3481 18.65655 20.184 17.8328 20.2801 16.76405C20.394 15.4973 20.5 13.82645 20.5 11.998C20.5 10.16965 20.394 8.49877 20.2801 7.23205C20.184 6.1633 19.3481 5.33952 18.2696 5.25205C16.7174 5.12618 14.5185 4.99805 12 4.99805zM5.60965 3.75693C7.19232 3.62859 9.43258 3.49805 12 3.49805C14.5677 3.49805 16.8081 3.62861 18.3908 3.75696C20.1881 3.90272 21.6118 5.29278 21.7741 7.09773C21.8909 8.3969 22 10.11405 22 11.998C22 13.88205 21.8909 15.5992 21.7741 16.8984C21.6118 18.7033 20.1881 20.09335 18.3908 20.23915C16.8081 20.3675 14.5677 20.498 12 20.498C9.43258 20.498 7.19232 20.3675 5.60965 20.2392C3.81206 20.0934 2.38831 18.70295 2.22603 16.8979C2.10918 15.5982 2 13.8808 2 11.998C2 10.1153 2.10918 8.39787 2.22603 7.09823C2.38831 5.29312 3.81206 3.90269 5.60965 3.75693z" fill="currentColor"></path>
+        
+                          </svg>
+                          <span class="bili-video-card__info--author" title="凡人修仙传数据分析">凡人修仙传数据分析</span>
+                          <span class="bili-video-card__info--date">· 16小时前</span></a>
+                      </div>
+                    </div>
+                  </div>
             </div>
-
-            <div class="card col-6 col-md-6 col-lg-3">
-                <div class="card-ico">
-                    <h4 class="mbr-content-title mbr-semibold mbr-fonts-style display-4">ផលិតផល</h4>
-                    <span class="mbr-iconfont mbrib-cloud"></span>
-                </div>
-                <div class="card-text">
-                    <h3 class="count mbr-semibold mbr-fonts-style display-2">10</h3>
-
-                </div>
-            </div>
-
-
-
         </div>
     </div>
-</section>
-
-<section class="features1 cid-rGsSnQK7nI" id="features3-z">
-
-	<div class="container">
-		<!-- <h2 class="mbr-section-title pb-5 align-center mbr-fonts-style display-2"><strong>ប្រភេទ</strong></h2> -->
-
-		<div class="row">
-			<div class="col-12">
-
-				<div class="content flip">
-					@foreach($data['category'] as $catagory_item)
-					<a class="card" href="{{ url('products') }}">
-						<div class="front" style="background-image: url({{ asset($catagory_item->img) }})">
-							<p>{{$catagory_item->title}}</p>
-						</div>
-						<div class="back">
-							<div>
-								<p><b>{{$catagory_item->title}}</b></p>
-								<p>{{$catagory_item->desc}}</p>
-								<button class="button">មើលទាំងអស់។</button>
-							</div>
-						</div>
-					</a>
-					@endforeach
-					<!--<a class="card" href="{{ url('category/test') }}">
-						<div class="front" style="background-image: url({{ asset('img/people_discuss.jpg') }})">
-							<p>សកម្មភាព និងកម្មវិធី សហគម</p>
-						</div>
-						<div class="back">
-							<div>
-								<p><b>សកម្មភាព និងកម្មវិធី សហគម</b></p>
-								<p>ការពិពណ៌នាអំពីប្រភេទខ្លី និងទិដ្ឋភាពទូទៅនៃអ្វីដែលជាប្រភេទអំពី</p>
-								<button class="button">មើលទាំងអស់។</button>
-							</div>
-						</div>
-					</a>
-					<a class="card" href="{{ url('products') }}">
-						<div class="front" style="background-image: url({{ asset('img/products.jpg') }})">
-							<p>ផលិតផល</p>
-						</div>
-						<div class="back">
-							<div>
-								<p><b>ផលិតផល</b></p>
-								<p>ការពិពណ៌នាអំពីប្រភេទខ្លី និងទិដ្ឋភាពទូទៅនៃអ្វីដែលជាប្រភេទអំពី</p>
-								<button class="button">មើលទាំងអស់។</button>
-							</div>
-						</div>
-					</a><a class="card" href="{{ url('community-tourism') }}">
-						<div class="front" style="background-image: url({{ asset('img/dancing_girls.jpg') }})">
-							<p>ទេសចរណ៍ និង ផ្ទះស្នាក់</p>
-						</div>
-						<div class="back">
-							<div>
-								<p><b>ទេសចរណ៍ និង ផ្ទះស្នាក់</b></p>
-								<p>Provident consectetur natus voluptatem quis tenetur sed beatae eius sint.</p>
-								<button class="button">មើលទាំងអស់។</button>
-							</div>
-						</div>
-					</a>
-					<a class="card" href="#!">
-						<div class="front" style="background-image: url({{ asset('img/random1.jpg') }})">
-							<p>សារមន្ទីរដែក</p>
-						</div>
-						<div class="back">
-							<div>
-								<p><b>សារមន្ទីរដែក</b></p>
-								<p>Provident consectetur natus voluptatem quis tenetur sed beatae eius sint.</p>
-								<button class="button">មើលទាំងអស់។</button>
-							</div>
-						</div>
-					</a>-->
-				</div>
-
-			</div>
-			<!-- col-12 -->
-
-		</div>
-	</div>
-</section>
-
-<!-- 
-<section class="features1 cid-rGsSnQK7nI" id="features3-z">
-
-	
-
-	
-	<div class="container">
-		<div class="row">
-			<div class="card col-12 col-md-6 col-lg-3">
-
-				<svg class="svg31" xmlns="http://www.w3.org/2000/svg" width="309.28570556640625" height="336.02197265625" style="">
-
-					<rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="transparent" stroke="none">
-					</rect>
-					<g style="" class="currentLayer">
-						<path fill="#f06538" fill-opacity="1" stroke="none" stroke-opacity="1" stroke-width="2" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M7.36264,184.55495C7.36264,65.42739 73.80818,33.47253 153.12638,33.47253C232.44458,33.47253 289.54946,75.86694 298.89012,197.19231C308.23078,318.51768 219.80721,227.94506 126.20331,280.69232C32.5994,333.43958 7.36264,303.68251 7.36264,184.55495z" id="svg_3" class="selected"></path>
-					</g>
-					<defs>
-						<marker id="Arrow1Mend" refX="0" refY="0" orient="auto" inkscape:stockid="Arrow1Mend" overflow="visible">
-							<path d="M-4,0 l-2,2 l7,-2 l-7,-2 l2,2 z" fill-rule="evenodd" stroke="#000" stroke-width="1pt" style="fill: none; stroke: none; stroke-dasharray: none;" id="svg_2">
-							</path>
-						</marker>
-					</defs>
-				</svg>
-
-				<svg class="svg32" xmlns="http://www.w3.org/2000/svg" width="309.28570556640625" height="336.02197265625" style="">
-
-					<rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="transparent" stroke="none">
-					</rect>
-					<g style="" class="currentLayer">
-						<path fill="#f2f2f4" fill-opacity="1" stroke="none" stroke-opacity="1" stroke-width="2" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M7.36264,184.55495C7.36264,65.42739 73.80818,33.47253 153.12638,33.47253C232.44458,33.47253 289.54946,75.86694 298.89012,197.19231C308.23078,318.51768 219.80721,227.94506 126.20331,280.69232C32.5994,333.43958 7.36264,303.68251 7.36264,184.55495z" id="svg_3" class="selected"></path>
-					</g>
-					<defs>
-						<marker id="Arrow1Mend" refX="0" refY="0" orient="auto" inkscape:stockid="Arrow1Mend" overflow="visible">
-							<path d="M-4,0 l-2,2 l7,-2 l-7,-2 l2,2 z" fill-rule="evenodd" stroke="#000" stroke-width="1pt" style="fill: none; stroke: none; stroke-dasharray: none;" id="svg_2">
-							</path>
-						</marker>
-					</defs>
-				</svg>
-
-
-				<div class="card-img">
-					<span class="fa fa-commenting-o fa-2x"></span>
-				</div>
-				<div class="card-box m-auto">
-					<h4 class="card-title align-center pb-3 mbr-white mbr-bold mbr-fonts-style display-5">
-					ផ្សេងទៀត<br>ប្រភេទ</h4>
-					<h5 class="link align-center mbr-semibold mbr-white mbr-fonts-style display-4"><a href="#" class="text-white fa fa-arrow-right">
-							មើល​ច្រើន​ទៀត</a></h5>
-				</div>
-			</div>
-
-
-			<div class="card col-12 col-md-6 col-lg-3">
-
-				<svg class="svg11" xmlns="http://www.w3.org/2000/svg" width="309.2857111417329" height="336.0219772158291" style="">
-					<rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="transparent" stroke="none">
-					</rect>
-					<g style="" class="currentLayer">
-						<path fill="#82be61" fill-opacity="1" stroke="none" stroke-width="2" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M12.94018937135995,167.8339367842981 C45.39609213191329,74.99004072503537 114.0034869014508,10.732177077026051 171.84437755680142,11.781618684882801 C229.68524100198806,12.831060292739558 256.7002265652424,72.7142506276199 272.1827010804898,104.66632999025076 C287.66518920081916,136.6184093528816 342.19907896082464,246.22742624641148 203.2184177990085,306.0457339450666 C64.2377294270283,365.8640552488038 -19.515740599357475,260.67786005372494 12.94018937135995,167.8339367842981 z" id="svg_1" class="" transform="rotate(-4.6006340980529785 150.8597869873048,167.6643524169921) " filter=""></path>
-					</g>
-				</svg>
-
-				<svg class="svg12" xmlns="http://www.w3.org/2000/svg" width="309.2857111417329" height="336.0219772158291" style="">
-					<rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="transparent" stroke="none">
-					</rect>
-					<g style="" class="currentLayer">
-						<path fill="#f2f2f4" fill-opacity="1" stroke="none" stroke-width="2" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M12.94018937135995,167.8339367842981 C45.39609213191329,74.99004072503537 114.0034869014508,10.732177077026051 171.84437755680142,11.781618684882801 C229.68524100198806,12.831060292739558 256.7002265652424,72.7142506276199 272.1827010804898,104.66632999025076 C287.66518920081916,136.6184093528816 342.19907896082464,246.22742624641148 203.2184177990085,306.0457339450666 C64.2377294270283,365.8640552488038 -19.515740599357475,260.67786005372494 12.94018937135995,167.8339367842981 z" id="svg_1" class="" transform="rotate(-4.6006340980529785 150.8597869873048,167.6643524169921) " filter=""></path>
-					</g>
-				</svg>
-
-				<div class="card-img">
-					<span class="fa fa-commenting fa-2x"></span>
-				</div>
-				<div class="card-box m-auto">
-					<h4 class="card-title align-center pb-3 mbr-white mbr-bold mbr-fonts-style display-5">
-						ផ្សេងទៀត<br>ប្រភេទ</h4>
-					<h5 class="link align-center mbr-semibold mbr-white mbr-fonts-style display-4"><a href="#" class="text-white fa fa-arrow-right">
-							មើល​ច្រើន​ទៀត</a></h5>
-				</div>
-			</div>
-
-			<div class="card col-12 col-md-6 col-lg-3">
-
-				<svg class="svg21" xmlns="http://www.w3.org/2000/svg" width="309.28570556640625" height="336.02197265625" style="">
-					<rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="transparent" stroke="none">
-					</rect>
-					<g style="" class="currentLayer">
-						<path fill="#fcbc4d" fill-opacity="1" stroke="none" stroke-width="2" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M16.23957,92.58139C48.69547,-0.26251 138.67438,5.55148 201.82815,29.62874C264.98193,53.70599 372.00784,201.60914 247.27728,284.01577C122.54672,366.4224 112.51907,285.07282 76.57894,235.77145C40.63881,186.47008 -16.21636,185.42531 16.23957,92.58139z" id="svg_1" class="" transform="rotate(-4.6006340980529785 150.8597869873048,167.6643524169921) " filter=""></path>
-					</g>
-					<defs>
-						<marker id="Arrow1Mend" refX="0" refY="0" orient="auto" inkscape:stockid="Arrow1Mend" overflow="visible">
-							<path d="M-4,0 l-2,2 l7,-2 l-7,-2 l2,2 z" fill-rule="evenodd" stroke="#000" stroke-width="1pt" style="fill: none; stroke: none; stroke-dasharray: none;" id="svg_2">
-							</path>
-						</marker>
-					</defs>
-				</svg>
-
-				<svg class="svg22" xmlns="http://www.w3.org/2000/svg" width="309.28570556640625" height="336.02197265625" style="">
-					<rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="transparent" stroke="none">
-					</rect>
-					<g style="" class="currentLayer">
-						<path fill="#f2f2f4" fill-opacity="1" stroke="none" stroke-width="2" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M16.23957,92.58139C48.69547,-0.26251 138.67438,5.55148 201.82815,29.62874C264.98193,53.70599 372.00784,201.60914 247.27728,284.01577C122.54672,366.4224 112.51907,285.07282 76.57894,235.77145C40.63881,186.47008 -16.21636,185.42531 16.23957,92.58139z" id="svg_1" class="" transform="rotate(-4.6006340980529785 150.8597869873048,167.6643524169921) " filter=""></path>
-					</g>
-					<defs>
-						<marker id="Arrow1Mend" refX="0" refY="0" orient="auto" inkscape:stockid="Arrow1Mend" overflow="visible">
-							<path d="M-4,0 l-2,2 l7,-2 l-7,-2 l2,2 z" fill-rule="evenodd" stroke="#000" stroke-width="1pt" style="fill: none; stroke: none; stroke-dasharray: none;" id="svg_2">
-							</path>
-						</marker>
-					</defs>
-				</svg>
-
-
-				<div class="card-img">
-					<span class="fa fa-commenting-o fa-2x"></span>
-				</div>
-				<div class="card-box m-auto">
-					<h4 class="card-title align-center pb-3 mbr-white mbr-bold mbr-fonts-style display-5">
-						ផ្សេងទៀត<br>ប្រភេទ</h4>
-					<h5 class="link align-center mbr-semibold mbr-white mbr-fonts-style display-4"><a href="#" class="text-white fa fa-arrow-right">
-							មើល​ច្រើន​ទៀត</a></h5>
-				</div>
-			</div>
-
-			<div class="card col-12 col-md-6 col-lg-3">
-
-				<svg class="svg31 svg4" xmlns="http://www.w3.org/2000/svg" width="309.28570556640625" height="336.02197265625" style="">
-
-					<rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="transparent" stroke="none">
-					</rect>
-					<g style="" class="currentLayer">
-						<path fill="#f06538" fill-opacity="1" stroke="none" stroke-opacity="1" stroke-width="2" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M7.36264,184.55495C7.36264,65.42739 73.80818,33.47253 153.12638,33.47253C232.44458,33.47253 289.54946,75.86694 298.89012,197.19231C308.23078,318.51768 219.80721,227.94506 126.20331,280.69232C32.5994,333.43958 7.36264,303.68251 7.36264,184.55495z" id="svg_3" class="selected"></path>
-					</g>
-					<defs>
-						<marker id="Arrow1Mend" refX="0" refY="0" orient="auto" inkscape:stockid="Arrow1Mend" overflow="visible">
-							<path d="M-4,0 l-2,2 l7,-2 l-7,-2 l2,2 z" fill-rule="evenodd" stroke="#000" stroke-width="1pt" style="fill: none; stroke: none; stroke-dasharray: none;" id="svg_2">
-							</path>
-						</marker>
-					</defs>
-				</svg>
-
-				<svg class="svg32" xmlns="http://www.w3.org/2000/svg" width="309.28570556640625" height="336.02197265625" style="">
-
-					<rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="transparent" stroke="none">
-					</rect>
-					<g style="" class="currentLayer">
-						<path fill="#f2f2f4" fill-opacity="1" stroke="none" stroke-opacity="1" stroke-width="2" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M7.36264,184.55495C7.36264,65.42739 73.80818,33.47253 153.12638,33.47253C232.44458,33.47253 289.54946,75.86694 298.89012,197.19231C308.23078,318.51768 219.80721,227.94506 126.20331,280.69232C32.5994,333.43958 7.36264,303.68251 7.36264,184.55495z" id="svg_3" class="selected"></path>
-					</g>
-					<defs>
-						<marker id="Arrow1Mend" refX="0" refY="0" orient="auto" inkscape:stockid="Arrow1Mend" overflow="visible">
-							<path d="M-4,0 l-2,2 l7,-2 l-7,-2 l2,2 z" fill-rule="evenodd" stroke="#000" stroke-width="1pt" style="fill: none; stroke: none; stroke-dasharray: none;" id="svg_2">
-							</path>
-						</marker>
-					</defs>
-				</svg>
-
-
-				<div class="card-img">
-					<span class="mbr-iconfont mbrib-globe"></span>
-				</div>
-				<div class="card-box m-auto">
-					<h4 class="card-title align-center pb-3 mbr-white mbr-bold mbr-fonts-style display-5">
-						ផ្សេងទៀត<br>ប្រភេទ</h4>
-					<h5 class="link align-center mbr-semibold mbr-white mbr-fonts-style display-4"><a href="#" class="text-white fa fa-arrow-right">
-							មើល​ច្រើន​ទៀត</a></h5>
-				</div>
-			</div>
-
-
-
-		</div>
-
-	</div>
-
-</section> -->
-
 @endsection
 
 @push('scripts')
+    <script>
+        AOS.init();
+    </script>
 	<script type="text/javascript">
 
 	</script>
