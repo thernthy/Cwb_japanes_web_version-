@@ -35,5 +35,11 @@ class HomeController extends Controller
 	{
 		return view('front/waching_video');
 	}
+   public function	phumaisaActivity(){
+	return view('front/phumasia_activity');
+   }
+   public function	mayamer_shope_desing(){
+	return view('front/myamershop');
+   }
 
 }
