@@ -33,10 +33,17 @@ class HomeController extends Controller
 
 	public function watch($videoSlug)
 	{
-		return view('front/waching_video');
+		$data['video_taget'] = DB::table('video')
+		->where('id', $videoSlug)
+		->first();
+		return view('front/waching_video')->with('data', $data);
 	}
    public function	phumaisaActivity(){
-	return view('front/phumasia_activity');
+	$data['video'] = DB::table('video')
+	->select()
+	->orderBy('created_at', 'DESC')
+	->get();
+	return view('front/phumasia_activity')->with('data', $data);
    }
    public function	mayamer_shope_desing(){
 	return view('front/myamershop');

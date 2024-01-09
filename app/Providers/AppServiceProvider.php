@@ -4,7 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Schema;
-
+use Illuminate\Support\Facades\Validator;
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -26,5 +26,10 @@ class AppServiceProvider extends ServiceProvider
     {
         //
         Schema::defaultStringLength(191);
+        Validator::extend('validateMP4', function ($attribute, $value, $parameters, $validator) {
+            // Add your custom validation logic for MP4 files here
+            // Example: Check if the file has a .mp4 extension
+            return ends_with(strtolower($value), '.mp4');
+        });
     }
 }

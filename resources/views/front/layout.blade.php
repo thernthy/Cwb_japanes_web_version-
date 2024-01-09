@@ -24,7 +24,6 @@
 <body>
 <!-- navbar -->
 @include('front.navbar')
-
 <!-- content -->
 @yield('content')
 

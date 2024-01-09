@@ -1,10 +1,8 @@
 @extends('front.layout')
 @push('styles')
 <style>
-    
 </style>
 @endpush
-
 @section('content')
     <div class="rout_direction pt-5">
               <div class="controller">
@@ -39,7 +37,6 @@
        </div>
        
    </div>
-
 @endsection
 
 @push('scripts')

@@ -25,3 +25,6 @@ Route::get('rel/{articalName}', 'HomeController@readingArticle');
 Route::get('/phumasia-activity', 'HomeController@phumaisaActivity');
 Route::get('watch/{videoSlug}', 'HomeController@watch');
 Route::get('/shop-with-impact', 'HomeController@mayamer_shope_desing');
+Route::get('/welcomepage', function() {
+  return view('front/ex');
+});
