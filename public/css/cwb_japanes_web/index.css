@@ -37,8 +37,7 @@ body::-webkit-scrollbar-thumb
     align-items: center;
     width: 100%;
 }
-.nav div.logo {
-    float: left;
+.logo {
     width: auto;
     height: auto;
     margin-left: 20px;
@@ -414,24 +413,6 @@ ul li.active{
 
 /* video desing  block */
 
-
-h3,
-p,
-a,
-img,
-li,
-ul,
-button {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-family: inherit;
-  font-size: 100%;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1.25;
-}
-
 .video_feed_block{
     max-width: 1000px;
     margin: auto;
@@ -548,4 +529,144 @@ main {
 #comments-section h2 {
     font-size: 1.2em;
     margin-bottom: 10px;
+}
+
+/*fotter */
+
+.company_slugan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+.company_slugan p{
+    padding: 20px 0;
+    color: white;
+    line-height: 2;
+}
+
+#ignielSubscribe {width:300px; height:auto; border-radius:7.5px; display:block; margin:auto; line-height:40px; padding:0px}
+#ignielSubscribe .email__ {padding:15px 15px 5px;}
+#ignielSubscribe .email {margin:auto; color:#555; text-align:center;}
+#ignielSubscribe .email:before {content:''; width:50px; height:50px; display:block; text-align:center; margin:auto; border-radius:100px; transition:all .3s ease; -webkit-animation:ignielRing 5s 0s ease-in-out infinite; -webkit-transform-origin:50% 4px; -moz-animation:ignielRing 5s 0s ease-in-out infinite; -moz-transform-origin:50% 4px; animation:ignielRing 5s 0s ease-in-out infinite; transform-origin:50% 4px; background:url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHq0uX1oUgdSHssIUgrBSQDiFUgONzgM0AY7oXZ7-EveJs9xncf_eYmiSCug9Jm2IiGw0CMVTIx9yJkZ1NU3P_t8e2bf_gO2K26ccQUQncdkoJJY9Id9ElM1J3s-j3TEZyrbgy7f1D-QiUCPK5WJI_eGW0blvEBtf1bIurcJKH7deRdS7nvbswONld/s1600/bell.png") center center / 50px no-repeat;}
+#ignielSubscribe .medsos__ {padding:15px 0px; line-height:0px; border-top:1px solid #ccc;}
+#ignielSubscribe form {display:-webkit-box; display:-webkit-flex; display:-moz-box; display:-ms-flexbox; display:flex; flex-wrap:nowrap; align-items:center; margin:0px 0px 15px; padding:0px; position:relative;}
+#ignielSubscribe form:before {left:15px; position:absolute; display:block; width:20px; height:20px; background:url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z' fill='%23717171'/%3E%3C/svg%3E") no-repeat; content:'';}
+#ignielSubscribe input {
+    width: calc(100% - 35px); 
+    background-color:#ffffff; 
+    line-height:1.5em; 
+    border:1px solid #ccc; 
+    border-right:0px; 
+    padding:12px 10px 12px 40px; 
+    font-size:12px; text-align:left !important; 
+    border-radius:50px 0px 0px 50px; outline:none; outline-width:0px; box-shadow:none; -moz-box-shadow:none; -webkit-box-shadow:none;}
+#ignielSubscribe button {
+    background-color:#774332;
+    width:40px; 
+    min-width:40px;
+    height:100%; 
+    margin:0px; 
+    padding:0px; 
+    border: 1.5px solid white;
+    border-left: 0;
+    box-shadow:none; 
+    vertical-align:top; 
+    cursor:pointer; 
+    transition:all .3s ease; 
+    background-image:unset; 
+    border-radius:0px 50px 50px 0px;
+}
+#ignielSubscribe button:hover, #ignielSubscribe button:focus {background-color:#1d2129;}
+#ignielSubscribe button:before {display:inline-block; width:20px; height:20px; margin:0px; background:url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2,21L23,12L2,3V10L17,12L2,14V21Z' fill='%23fff'/%3E%3C/svg%3E") no-repeat; content:''; vertical-align:-3px;}
+.medsos {width:100%; text-align:center;}
+.medsos svg {width:20px;height:20px;}
+.medsos svg path {fill:#fff}
+.medsos a {display:inline-block; margin-right:7px; width:35px; height:35px; transition: all ease-in-out 300ms; border-radius:100px;}
+.medsos a:last-child {margin-right:0px;}
+.medsos a:hover {box-shadow: 0px 23px 15px -3px rgba(0,0,0,0.25); transform: translate(0px, -10px) scale(1.05);}
+.medsos .facebook{background:#3a579a}
+.medsos .twitter {background:#00abf0}
+.medsos .googleplus {background:#df4a32}
+.medsos .youtube {background:#cc181e}
+.medsos .instagram {background:#992ebc}
+.medsos .pinterest {background:#e60023}
+@-webkit-keyframes ignielRing{
+  0% { -webkit-transform: rotateZ(0); }
+  1% { -webkit-transform: rotateZ(30deg); }
+  3% { -webkit-transform: rotateZ(-28deg); }
+  5% { -webkit-transform: rotateZ(34deg); }
+  7% { -webkit-transform: rotateZ(-32deg); }
+  9% { -webkit-transform: rotateZ(30deg); }
+  11% { -webkit-transform: rotateZ(-28deg); }
+  13% { -webkit-transform: rotateZ(26deg); }
+  15% { -webkit-transform: rotateZ(-24deg); }
+  17% { -webkit-transform: rotateZ(22deg); }
+  19% { -webkit-transform: rotateZ(-20deg); }
+  21% { -webkit-transform: rotateZ(18deg); }
+  23% { -webkit-transform: rotateZ(-16deg); }
+  25% { -webkit-transform: rotateZ(14deg); }
+  27% { -webkit-transform: rotateZ(-12deg); }
+  29% { -webkit-transform: rotateZ(10deg); }
+  31% { -webkit-transform: rotateZ(-8deg); }
+  33% { -webkit-transform: rotateZ(6deg); }
+  35% { -webkit-transform: rotateZ(-4deg); }
+  37% { -webkit-transform: rotateZ(2deg); }
+  39% { -webkit-transform: rotateZ(-1deg); }
+  41% { -webkit-transform: rotateZ(1deg); }
+  43% { -webkit-transform: rotateZ(0); }
+  100% { -webkit-transform: rotateZ(0); }
+}
+@-moz-keyframes ignielRing{
+  0% { -moz-transform: rotate(0); }
+  1% { -moz-transform: rotate(30deg); }
+  3% { -moz-transform: rotate(-28deg); }
+  5% { -moz-transform: rotate(34deg); }
+  7% { -moz-transform: rotate(-32deg); }
+  9% { -moz-transform: rotate(30deg); }
+  11% { -moz-transform: rotate(-28deg); }
+  13% { -moz-transform: rotate(26deg); }
+  15% { -moz-transform: rotate(-24deg); }
+  17% { -moz-transform: rotate(22deg); }
+  19% { -moz-transform: rotate(-20deg); }
+  21% { -moz-transform: rotate(18deg); }
+  23% { -moz-transform: rotate(-16deg); }
+  25% { -moz-transform: rotate(14deg); }
+  27% { -moz-transform: rotate(-12deg); }
+  29% { -moz-transform: rotate(10deg); }
+  31% { -moz-transform: rotate(-8deg); }
+  33% { -moz-transform: rotate(6deg); }
+  35% { -moz-transform: rotate(-4deg); }
+  37% { -moz-transform: rotate(2deg); }
+  39% { -moz-transform: rotate(-1deg); }
+  41% { -moz-transform: rotate(1deg); }
+  43% { -moz-transform: rotate(0); }
+  100% { -moz-transform: rotate(0); }
+}
+@keyframes ignielRing{
+  0% { transform: rotate(0); }
+  1% { transform: rotate(30deg); }
+  3% { transform: rotate(-28deg); }
+  5% { transform: rotate(34deg); }
+  7% { transform: rotate(-32deg); }
+  9% { transform: rotate(30deg); }
+  11% { transform: rotate(-28deg); }
+  13% { transform: rotate(26deg); }
+  15% { transform: rotate(-24deg); }
+  17% { transform: rotate(22deg); }
+  19% { transform: rotate(-20deg); }
+  21% { transform: rotate(18deg); }
+  23% { transform: rotate(-16deg); }
+  25% { transform: rotate(14deg); }
+  27% { transform: rotate(-12deg); }
+  29% { transform: rotate(10deg); }
+  31% { transform: rotate(-8deg); }
+  33% { transform: rotate(6deg); }
+  35% { transform: rotate(-4deg); }
+  37% { transform: rotate(2deg); }
+  39% { transform: rotate(-1deg); }
+  41% { transform: rotate(1deg); }
+  43% { transform: rotate(0); }
+  100% { transform: rotate(0); }
 }
