@@ -25,13 +25,12 @@ class HomeController extends Controller
 	{
 		return view('front.home');
 	}
-   
 	public function readingArticle($articleSlug){
 
 		return view('front/reading_article');
 	}
 
-	public function watch($videoSlug)
+	public function watch($videoSlug, Request $request)
 	{
 		$data['video_taget'] = DB::table('video')
 		->where('id', $videoSlug)

@@ -35,7 +35,6 @@
                 <p class="mt-3 mb-3">
                     {{$data['video_taget']->description}}
                 </p>
-                
             </div>
             <!--<div id="comments-section">
                 <h2>Comments</h2>

@@ -4,4 +4,5 @@
 <script src="https://kit.fontawesome.com/c49fa14979.js" crossorigin="anonymous"></script>
 <!--This is animatiion library--->
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://kit.fontawesome.com/c49fa14979.js" crossorigin="anonymous"></script>
 @stack('scripts')
