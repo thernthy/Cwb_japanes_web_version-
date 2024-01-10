@@ -6,7 +6,9 @@
                 </div>
                 <div id="mainListDiv" class="main_list">
                     <ul class="navlinks">
-                            <li class="{{ (request()->is('trandictional')? 'active' : '' ) }} "><a href="#">カンボジアの伝統料理</a></li>
+                            <li class="{{ (request()->is('trandictoinal')? 'active' : '' ) }} ">
+                                <a href="{{ url('/trandictoinal') }}">カンボジアの伝統料理</a>
+                            </li>
                         <li class="{{ (request()->is('phumasia-activity')? 'active' : '' ) }}"><a href="{{ url('/phumasia-activity') }}">クイアクティビティ</a></li>
                         <li><a href="{{ url('welcomepage') }}">プーマシア活動</a></li>
                         <li><a href="#">環境</a></li>

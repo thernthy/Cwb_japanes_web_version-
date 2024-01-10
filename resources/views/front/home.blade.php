@@ -98,17 +98,84 @@
                 background: green;
             }
         }
+
+        .video_component{
+            max-width: 350px;
+            min-width: 100%;
+            text-align: center;
+        }
+        .video_component .video_vocer_img {
+            margin: auto;
+            width: 100%;
+            height: 300px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+            border-radius: 20px;
+            transition: all .6s;
+        }
+        .video_component .video_vocer_img:hover{
+            opacity: .5;
+        }
+        .video_component .video_vocer_img .play_icon{
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            transform: translate(50%, -50%);
+            font-size: 2.5rem;
+            color: white;
+        }
+        @media screen and (min-width:1050px) {
+            .video_component .video_vocer_img {
+                max-width: 600px;
+                height: 300px;
+            }
+        }
 </style>
 @endpush
 
 @section('content')
-    <!--<video playsinline="playsinline" autoplay="autoplay" id="myVideo" muted="muted" loop="loop" style="width: 100%;">
+   <video playsinline="playsinline" autoplay="autoplay" id="myVideo" muted="muted" loop="loop" style="width: 100%;">
 		<source src="{{ asset('img/video/Home_page_cover.mp4') }}" type="video/mp4">
-    </video>-->
+    </video>
     <div class="container-fluid">
-        <div class="row">
+        <div class="row pt-5">
             <div class="col-sm-8">
-                
+                <div class="row">
+                    <div class="video_component">
+                        <a href="{{ url('/watch', 'ウグイのビデオ') }}">
+                            <div class="video_vocer_img" style="background-image: url('{{asset('img/dace2.jpg') }}');">
+                                <div class="play_icon">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="video_title">
+                            <h4 class="p-3">動画のタイトル</h4>
+                        </div>
+                    </div>
+                    <div class="video_component">
+                        <div class="video_vocer_img" style="background-image: url('{{asset('img/dace2.jpg') }}');">
+                            <div class="play_icon">
+                                <i class="fa-regular fa-circle-play"></i>
+                            </div>
+                        </div>
+                        <div class="video_title">
+                            <h4 class="p-3">動画のタイトル</h4>
+                        </div>
+                    </div>
+                    <div class="video_component">
+                        <div class="video_vocer_img" style="background-image: url('{{asset('img/dace2.jpg') }}');">
+                            <div class="play_icon">
+                                <i class="fa-regular fa-circle-play"></i>
+                            </div>
+                        </div>
+                        <div class="video_title">
+                            <h4 class="p-3">動画のタイトル</h4>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-sm-4 side_bar_right">
                 <h2>当社の魅力</h2>

@@ -25,6 +25,9 @@ class HomeController extends Controller
 	{
 		return view('front.home');
 	}
+	public function trandictoinal(){
+		return view('front/tradictional');
+	}
 	public function readingArticle($articleSlug){
 
 		return view('front/reading_article');

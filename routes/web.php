@@ -23,6 +23,7 @@ Route::get('/', function () {
 Route::get('/', 'HomeController@index');
 Route::get('rel/{articalName}', 'HomeController@readingArticle');
 Route::get('/phumasia-activity', 'HomeController@phumaisaActivity');
+Route::get('/trandictoinal', 'HomeController@trandictoinal');
 Route::get('watch/{videoSlug}', 'HomeController@watch');
 Route::get('/shop-with-impact', 'HomeController@mayamer_shope_desing');
 Route::get('/welcomepage', function() {
