@@ -143,9 +143,10 @@
         <div class="row pt-5">
             <div class="col-sm-8">
                 <div class="row">
+                    @foreach($data['new_video_feed'] as $item)
                     <div class="video_component">
-                        <a href="{{ url('/watch', 'ウグイのビデオ') }}">
-                            <div class="video_vocer_img" style="background-image: url('{{asset('img/dace2.jpg') }}');">
+                        <a href="{{ url('/watch', $item->id) }}">
+                            <div class="video_vocer_img" style="background-image: url('{{asset($item->video_cover) }}');">
                                 <div class="play_icon">
                                     <i class="fa-regular fa-circle-play"></i>
                                 </div>
@@ -155,26 +156,7 @@
                             <h4 class="p-3">動画のタイトル</h4>
                         </div>
                     </div>
-                    <div class="video_component">
-                        <div class="video_vocer_img" style="background-image: url('{{asset('img/dace2.jpg') }}');">
-                            <div class="play_icon">
-                                <i class="fa-regular fa-circle-play"></i>
-                            </div>
-                        </div>
-                        <div class="video_title">
-                            <h4 class="p-3">動画のタイトル</h4>
-                        </div>
-                    </div>
-                    <div class="video_component">
-                        <div class="video_vocer_img" style="background-image: url('{{asset('img/dace2.jpg') }}');">
-                            <div class="play_icon">
-                                <i class="fa-regular fa-circle-play"></i>
-                            </div>
-                        </div>
-                        <div class="video_title">
-                            <h4 class="p-3">動画のタイトル</h4>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
             <div class="col-sm-4 side_bar_right">
@@ -207,6 +189,7 @@
                     国境なく働くということは、地理的な境界に制約されずに世界中の人々と協力することを意味するかもしれません。
                     これは多くの場合、テクノロジーとリモートワークの取り決めによって促進されます。
                 </p>
+                <h2 class="mt-3 mb-5 h4">新しいフィード投稿</h2>
                 <div class="img_galery">
                     <div class="img_blocks" style="background-image: url('{{asset('img/dace2.jpg') }}');">
                       
@@ -223,10 +206,7 @@
 @endsection
 
 @push('scripts')
-    <script>
-        AOS.init();
-    </script>
 	<script type="text/javascript">
-
+        
 	</script>
 @endpush

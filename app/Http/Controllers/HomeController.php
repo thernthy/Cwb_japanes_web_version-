@@ -23,7 +23,13 @@ class HomeController extends Controller
 	}
 	public function index()
 	{
-		return view('front.home');
+		$data['new_video_feed'] = DB::table('video')
+		->where('status', 1)
+		->orderBy('created_at', 'DESC')
+		->limit(3)
+		->get();
+
+		return view('front.home', compact('data'));
 	}
 	public function trandictoinal(){
 		return view('front/tradictional');
