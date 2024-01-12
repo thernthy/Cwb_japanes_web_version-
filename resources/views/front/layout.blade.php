@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html  >
-
-<!-- Mirrored from mobirise.com/extensions/petsm4/school/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 12 Sep 2023 03:44:01 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 <head>
-<!-- Site made with Mobirise Website Builder v4.11.2, https://mobirise.com -->
+<?php
+session_start();
+$csrfToken = bin2hex(random_bytes(32)); // Generate a random CSRF token
+$_SESSION['csrf_token'] = $csrfToken; // Store the token in the session
+?>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="csrf-token" content="<?php echo $csrfToken; ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" type="image/x-icon" href="{{asset('img/main_logo.png')}}">
 <link rel="stylesheet" href="{{ asset('css/cwb_japanes_web/index.css') }}">
@@ -45,6 +48,32 @@
 			menuContainer.classList.replace('ContainerUnactive', 'active')
 		}
 	})
-	
+	function deleteConfirmation() {
+			var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
+            var mail = $('#subscriptmail').val()
+			$.ajax({
+				type: 'POST',
+				url: '{{ url("/subscription") }}',
+				data:{
+					CSRF_TOKEN: CSRF_TOKEN,
+					email:mail
+				},
+				success: function (results) {
+                    if (results.success === true) {
+                        swal.fire("Done!", results.message, "success");
+                        // refresh page after 2 seconds
+                        setTimeout(function(){
+                            location.reload();
+                        },2000);
+                    } else {
+                        swal.fire("Error!", results.message, "error");
+                    }
+                },
+				error: function(xhr, error){
+
+				}
+			})
+
+	}
 </script>
 </html>

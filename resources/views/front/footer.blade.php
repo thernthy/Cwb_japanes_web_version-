@@ -16,10 +16,10 @@
                         <div class="email__">
                             <div class="email">
                               <h3 style="color: white;"> 購読する</h3>
-                                <form action="https://feedburner.google.com/fb/a/mailverify?uri=igniel" method="post" onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=igniel', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true" target="popupwindow">
-                                    <input name="email" class="email" placeholder="Contoh: nama@mail.com"/>
+                                <form>
+                                    <input name="email" class="email" id="subscriptmail" placeholder="Contoh: nama@mail.com"/>
                                     <input name="uri" type="hidden" value="igniel" /> <input name="loc" type="hidden" value="en_US" />
-                                    <button type="submit"></button>
+                                    <button type="submit" onclick="deleteConfirmation()"></button>
                                 </form>
                             </div>
                         </div>

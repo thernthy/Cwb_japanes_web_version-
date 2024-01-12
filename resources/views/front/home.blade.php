@@ -191,14 +191,11 @@
                 </p>
                 <h2 class="mt-3 mb-5 h4">新しいフィード投稿</h2>
                 <div class="img_galery">
-                    <div class="img_blocks" style="background-image: url('{{asset('img/dace2.jpg') }}');">
-                      
+                    @foreach($data['New_activty_posting'] as $item)
+                    <div class="img_blocks" style="background-image: url({{ asset($item->photo_cover) }});" 
+                        onclick='setHref("{{$item->title}}")'>
                     </div>
-                    <div class="img_blocks" style="background-image: url('{{asset('img/dace2.jpg') }}');">
-
-                    </div>
-                    <div class="img_blocks" style="background-image: url('{{asset('img/dace2.jpg') }}');">
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>
@@ -209,4 +206,11 @@
 	<script type="text/javascript">
         
 	</script>
+    <script>
+        function setHref(path) {
+            console.log(path)
+            //var newHref = url;
+            window.location.href = "{{url('rel')}}/" + path;
+        }
+   </script>
 @endpush
