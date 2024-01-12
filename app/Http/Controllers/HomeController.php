@@ -36,27 +36,50 @@ class HomeController extends Controller
 		return view('front.home', compact('data'));
 	}
 	public function trandictoinal(){
-		return view('front/tradictional');
+		$data['video'] = DB::table('video')
+		->select()
+		->orderBy('created_at', 'DESC')
+		->get();
+		$video_target = [];
+			foreach($data['video'] as $item){
+				$categoryIds = unserialize($item->category);
+				if (is_array($categoryIds) && in_array(1, $categoryIds)) {
+					$video_target[]  = $item;
+				}
+			} 
+		$data['videoArtegSelected'] = $video_target;
+		return view('front/tradictional', compact('data'));
 	}
 	public function readingArticle($articleSlug){
-
-		return view('front/reading_article');
+        $data['article'] = DB::table('activities')
+		->where('title', $articleSlug)
+		->first();
+		return view('front/reading_article', compact('data'));
 	}
 
 	public function watch($videoSlug, Request $request)
 	{
 		$data['video_taget'] = DB::table('video')
-		->where('id', $videoSlug)
+		->where('title', $videoSlug)
 		->first();
 		return view('front/waching_video')->with('data', $data);
 	}
    public function	phumaisaActivity(){
-	$data['video'] = DB::table('video')
-	->select()
-	->orderBy('created_at', 'DESC')
-	->get();
-	return view('front/phumasia_activity')->with('data', $data);
+		$data['video'] = DB::table('video')
+		->select()
+		->orderBy('created_at', 'DESC')
+		->get();
+			$video_target = [];
+			foreach($data['video'] as $item){
+				$categoryIds = unserialize($item->category);
+				if (is_array($categoryIds) && in_array(3, $categoryIds)) {
+					$video_target[]  = $item;
+				}
+			} 
+		$data['videoArtegSelected'] = $video_target;
+		return view('front/phumasia_activity', compact('data'));
    }
+
    public function	mayamer_shope_desing(){
 	return view('front/myamershop');
    }
