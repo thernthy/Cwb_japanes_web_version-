@@ -28,7 +28,11 @@ class HomeController extends Controller
 		->orderBy('created_at', 'DESC')
 		->limit(3)
 		->get();
-
+		$data['New_activty_posting'] = DB::table('activities')
+		->where('status', 1)
+		->orderBy('created_at', 'DESC')
+		->limit(3)
+		->get();
 		return view('front.home', compact('data'));
 	}
 	public function trandictoinal(){
