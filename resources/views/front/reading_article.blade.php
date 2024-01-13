@@ -37,13 +37,10 @@
              @if($data['article']->photo_4!=null)
              <img src="{{ asset($data['article']->photo_4) }}" class="mb-2" width="70%" height="250px">
              @endif
-
          </div>
        </div>
-       
    </div>
 @endsection
-
 @push('scripts')
 	<script type="text/javascript">
         

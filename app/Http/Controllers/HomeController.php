@@ -6,7 +6,6 @@ use DB;
 use Illuminate\Http\Request;
 
 use Artesaos\SEOTools\Facades\SEOTools;
-
 class HomeController extends Controller
 {
 	protected $navbar = [];

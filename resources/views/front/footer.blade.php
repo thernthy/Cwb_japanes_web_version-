@@ -16,11 +16,11 @@
                         <div class="email__">
                             <div class="email">
                               <h3 style="color: white;"> 購読する</h3>
-                                <form>
+                                <div class="subscription_col">
                                     <input name="email" class="email" id="subscriptmail" placeholder="Contoh: nama@mail.com"/>
                                     <input name="uri" type="hidden" value="igniel" /> <input name="loc" type="hidden" value="en_US" />
                                     <button type="submit" onclick="deleteConfirmation()"></button>
-                                </form>
+                                </div>
                             </div>
                         </div>
                 </div>

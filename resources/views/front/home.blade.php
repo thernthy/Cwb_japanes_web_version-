@@ -145,7 +145,7 @@
                 <div class="row">
                     @foreach($data['new_video_feed'] as $item)
                     <div class="video_component">
-                        <a href="{{ url('/watch', $item->id) }}">
+                        <a href="{{ url('/watch', $item->title) }}">
                             <div class="video_vocer_img" style="background-image: url('{{asset($item->video_cover) }}');">
                                 <div class="play_icon">
                                     <i class="fa-regular fa-circle-play"></i>
@@ -204,12 +204,10 @@
 
 @push('scripts')
 	<script type="text/javascript">
-        
 	</script>
     <script>
         function setHref(path) {
             console.log(path)
-            //var newHref = url;
             window.location.href = "{{url('rel')}}/" + path;
         }
    </script>

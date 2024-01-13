@@ -1,6 +1,8 @@
 <?php
-
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\DB;
+
+use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,6 +28,25 @@ Route::get('/phumasia-activity', 'HomeController@phumaisaActivity');
 Route::get('/trandictoinal', 'HomeController@trandictoinal');
 Route::get('watch/{videoSlug}', 'HomeController@watch');
 Route::get('/shop-with-impact', 'HomeController@mayamer_shope_desing');
+Route::post('/subscription', function(Request $request){
+  $emailCheck = DB::table('subscriptions')
+  ->select('email')
+  ->where('email', $request->email)
+  ->first();
+  if(!$emailCheck){
+      $rqr = DB::table('subscriptions')
+        ->insert([
+          'email' => $request->email,
+        ]);
+        if($rqr){
+          return response()->json(['Message' => 'Thanks you!']);
+        }else{
+          return response()->json(['Error'=>'Somthing was wrong!']);
+        }
+    }else{
+      return response()->json(["Error"=>'Your Email has been subscripted!']);
+    }
+});
 Route::get('/welcomepage', function() {
   return view('front/ex');
 });
